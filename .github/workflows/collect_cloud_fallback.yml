@@ -1,0 +1,38 @@
+name: Günlük fiyat çekimi (bulut yedeği)
+
+on:
+  schedule:
+    - cron: "15 5 * * *"      # 08:15 TR — mac runner o güne veri yazmadıysa bulut çeker
+
+concurrency:
+  group: ktufe-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fallback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bugünün verisi var mı?
+        id: chk
+        run: |
+          if [ -f "data/raw/$(date -u +%F).csv" ]; then echo "skip=true" >> $GITHUB_OUTPUT; else echo "skip=false" >> $GITHUB_OUTPUT; fi
+      - if: steps.chk.outputs.skip == 'false'
+        uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - if: steps.chk.outputs.skip == 'false'
+        run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - if: steps.chk.outputs.skip == 'false'
+        name: Fiyatları çek (bulut)
+        env: { EVDS_API_KEY: "${{ secrets.EVDS_API_KEY }}" }
+        run: python collector/collector.py --config collector/sepet.yaml --out data/raw
+      - if: steps.chk.outputs.skip == 'false'
+        name: Commit
+        run: |
+          git config user.name "ktufe-bot"; git config user.email "ktufe-bot@users.noreply.github.com"
+          git add data/raw; git diff --cached --quiet && exit 0
+          git commit -m "data: $(date -u +%F) çekimi (bulut yedek)"; git pull --rebase origin ${{ github.ref_name }}; git push

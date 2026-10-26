@@ -8,6 +8,10 @@ on:
       date:
         description: "Hedef gün (YYYY-MM-DD, boşsa bugün)"
         required: false
+      runner:
+        description: "cloud | mac  (mac = Türkiye IP'li self-hosted runner)"
+        required: false
+        default: "cloud"
 
 concurrency:
   group: ktufe-data
@@ -16,8 +20,30 @@ concurrency:
 permissions:
   contents: write
 
+# Runner seçimi: zamanlanmış çalışmalar 'mac' (self-hosted, etiket: ktufe) dener; runner çevrimdışıysa
+# GitHub işi kuyrukta bekletir -> cron için yedek olarak bulut işi 2 saat sonra koşar.
 jobs:
+  collect-mac:
+    if: github.event_name == 'schedule' || inputs.runner == 'mac'
+    runs-on: [self-hosted, ktufe]
+    timeout-minutes: 40
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m pip install -q -r requirements.txt && python3 -m playwright install chromium
+      - name: Fiyatları çek (Türkiye IP)
+        env:
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+          TARGET_DATE: ${{ inputs.date }}
+        run: python3 collector/collector.py --config collector/sepet.yaml --out data/raw ${TARGET_DATE:+--date "$TARGET_DATE"}
+      - name: Commit
+        run: |
+          git config user.name "ktufe-bot"; git config user.email "ktufe-bot@users.noreply.github.com"
+          git add data/raw; git diff --cached --quiet && exit 0
+          git commit -m "data: $(date -u +%F) çekimi (mac)"; git pull --rebase origin ${{ github.ref_name }}; git push
+
   collect:
+    if: github.event_name != 'schedule' && (inputs.runner == '' || inputs.runner == 'cloud')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
