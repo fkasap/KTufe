@@ -77,56 +77,56 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,03122,lcw_k_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/crop-flare-kadin-jean-pantolon"
 2026-10-26,istanbul,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
 2026-10-26,ankara,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
-2026-10-26,istanbul,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=228 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
-2026-10-26,ankara,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=228 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
+2026-10-26,istanbul,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=226 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
+2026-10-26,ankara,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=226 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
 2026-10-26,istanbul,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
 2026-10-26,ankara,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
-2026-10-26,istanbul,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=244 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
-2026-10-26,ankara,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=244 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
+2026-10-26,istanbul,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
+2026-10-26,ankara,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
 2026-10-26,istanbul,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
 2026-10-26,ankara,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
 2026-10-26,istanbul,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
 2026-10-26,ankara,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
-2026-10-26,istanbul,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
-2026-10-26,ankara,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
+2026-10-26,istanbul,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
+2026-10-26,ankara,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
 2026-10-26,istanbul,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
 2026-10-26,ankara,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
-2026-10-26,istanbul,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
-2026-10-26,ankara,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
+2026-10-26,istanbul,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
+2026-10-26,ankara,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
 2026-10-26,istanbul,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
 2026-10-26,ankara,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,istanbul,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,ankara,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,istanbul,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,ankara,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
 2026-10-26,istanbul,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
 2026-10-26,ankara,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
 2026-10-26,istanbul,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
 2026-10-26,ankara,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,istanbul,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,ankara,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,istanbul,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,ankara,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
 2026-10-26,istanbul,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
 2026-10-26,ankara,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,istanbul,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,ankara,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,istanbul,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=237 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,ankara,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=237 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
 2026-10-26,istanbul,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
 2026-10-26,ankara,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
 2026-10-26,istanbul,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
 2026-10-26,ankara,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
-2026-10-26,istanbul,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
-2026-10-26,ankara,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
-2026-10-26,istanbul,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=250 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
-2026-10-26,ankara,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=250 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
+2026-10-26,istanbul,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
+2026-10-26,ankara,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
+2026-10-26,istanbul,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=248 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
+2026-10-26,ankara,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=248 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
 2026-10-26,istanbul,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
 2026-10-26,ankara,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
 2026-10-26,istanbul,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
 2026-10-26,ankara,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
-2026-10-26,istanbul,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
-2026-10-26,ankara,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
+2026-10-26,istanbul,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=252 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
+2026-10-26,ankara,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=252 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
 2026-10-26,istanbul,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
 2026-10-26,ankara,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
-2026-10-26,istanbul,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
-2026-10-26,ankara,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
-2026-10-26,istanbul,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
-2026-10-26,ankara,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
+2026-10-26,istanbul,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=231 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
+2026-10-26,ankara,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=231 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
+2026-10-26,istanbul,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
+2026-10-26,ankara,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
 2026-10-26,istanbul,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
 2026-10-26,ankara,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
 2026-10-26,istanbul,03211,lcw_a_bot_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/bilekte-kalin-topuklu-bot-siya"
@@ -145,14 +145,14 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,04,mf_tup,122.5,marketfiyati,ok,
 2026-10-26,istanbul,04,evds_konut_diger,152.1,evds_file,ok,
 2026-10-26,ankara,04,evds_konut_diger,152.1,evds_file,ok,
-2026-10-26,istanbul,05312,arcelik_cm_10122,,playwright,missing,
-2026-10-26,ankara,05312,arcelik_cm_10122,,playwright,missing,
-2026-10-26,istanbul,05312,arcelik_cm_12142,,playwright,missing,
-2026-10-26,ankara,05312,arcelik_cm_12142,,playwright,missing,
-2026-10-26,istanbul,05312,arcelik_bd_283616,,playwright,missing,
-2026-10-26,ankara,05312,arcelik_bd_283616,,playwright,missing,
-2026-10-26,istanbul,05312,arcelik_bd_278551,,playwright,missing,
-2026-10-26,ankara,05312,arcelik_bd_278551,,playwright,missing,
+2026-10-26,istanbul,05312,arcelik_cm_10122,,playwright,missing,robots disallow
+2026-10-26,ankara,05312,arcelik_cm_10122,,playwright,missing,robots disallow
+2026-10-26,istanbul,05312,arcelik_cm_12142,,playwright,missing,robots disallow
+2026-10-26,ankara,05312,arcelik_cm_12142,,playwright,missing,robots disallow
+2026-10-26,istanbul,05312,arcelik_bd_283616,,playwright,missing,robots disallow
+2026-10-26,ankara,05312,arcelik_bd_283616,,playwright,missing,robots disallow
+2026-10-26,istanbul,05312,arcelik_bd_278551,,playwright,missing,robots disallow
+2026-10-26,ankara,05312,arcelik_bd_278551,,playwright,missing,robots disallow
 2026-10-26,istanbul,05611,mf_deterjan_toz,529.0,marketfiyati,ok,
 2026-10-26,ankara,05611,mf_deterjan_toz,529.0,marketfiyati,ok,
 2026-10-26,istanbul,05611,mf_bulasik,62.5,marketfiyati,ok,
@@ -185,16 +185,16 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,07111,toyota_chr,2400000.0,html_regex,ok,
 2026-10-26,istanbul,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
 2026-10-26,ankara,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
-2026-10-26,istanbul,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79579 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas NoktalarÄ± English TÃ¼rkÃ§e 
-2026-10-26,ankara,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79579 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas NoktalarÄ± English TÃ¼rkÃ§e 
+2026-10-26,istanbul,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79378 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas Noktaları English Türkçe Eng
+2026-10-26,ankara,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79378 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas Noktaları English Türkçe Eng
 2026-10-26,istanbul,07321,evds_yolcu_tasima,153.92,evds_file,ok,
 2026-10-26,ankara,07321,evds_yolcu_tasima,153.92,evds_file,ok,
 2026-10-26,istanbul,07,evds_ulastirma_diger,144.05,evds_file,ok,
 2026-10-26,ankara,07,evds_ulastirma_diger,144.05,evds_file,ok,
-2026-10-26,istanbul,08120,apple_iphone17_256,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
-2026-10-26,ankara,08120,apple_iphone17_256,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
-2026-10-26,istanbul,08120,apple_iphone17_512,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
-2026-10-26,ankara,08120,apple_iphone17_512,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
+2026-10-26,istanbul,08120,apple_iphone17_256,99999.0,html_regex,ok,
+2026-10-26,ankara,08120,apple_iphone17_256,99999.0,html_regex,ok,
+2026-10-26,istanbul,08120,apple_iphone17_512,116999.0,html_regex,ok,
+2026-10-26,ankara,08120,apple_iphone17_512,116999.0,html_regex,ok,
 2026-10-26,istanbul,08120,apple_macbook_air,84999.0,html_regex,ok,
 2026-10-26,ankara,08120,apple_macbook_air,84999.0,html_regex,ok,
 2026-10-26,istanbul,08320,evds_telekom,151.17,evds_file,ok,
