@@ -125,10 +125,10 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,03211,byn_a_sneaker_bulldozer,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
 2026-10-26,istanbul,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
 2026-10-26,ankara,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
-2026-10-26,istanbul,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124187
-2026-10-26,ankara,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124187
-2026-10-26,istanbul,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124187
-2026-10-26,ankara,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,istanbul,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124188
+2026-10-26,ankara,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124188
+2026-10-26,istanbul,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124186
+2026-10-26,ankara,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124186
 2026-10-26,istanbul,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,ankara,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,istanbul,04510,evds_elektrik,135.57,evds_file,ok,
