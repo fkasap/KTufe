@@ -53,6 +53,8 @@ def _tr_float(s: str) -> float:
     s = s.strip().replace("TL", "").replace("₺", "").strip()
     if "," in s:                       # 1.234,56
         s = s.replace(".", "").replace(",", ".")
+    elif s.count(".") > 1 or (s.count(".") == 1 and len(s.split(".")[1]) == 3):
+        s = s.replace(".", "")         # 1.965.000 / 39.999 -> binlik ayracı
     return float(s)
 
 
