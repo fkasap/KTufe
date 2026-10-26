@@ -197,11 +197,11 @@ items:
     mevsimlik: true
     skus:
       - {id: byn_k_jean_kelly, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/kelly-mom-fit-acik-indigo-kadin-jean-pantolon-p-1366736"}
-      - {id: byn_k_gomlek_1, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/didem-soydan-x-fabrika-oversize-duz-bej-kadin-gomlek-d150-p"}
-      - {id: byn_k_gomlek_2, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/people-by-fabrika-bej-kadin-bol-kesim-cizgili-gomlek-roll-p"}
-      - {id: byn_k_mont_natgeo, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/national-geographic-tas-kadin-kisa-sisme-mont-w-haku-p-1084"}
-      - {id: byn_k_elbise_wrangler, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w2"}
-      - {id: byn_k_elbise_fabrika, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/fabrika-v-yaka-desenli-kahve-bej-midi-kadin-elbise-ymn-6-p-"}
+      - {id: byn_k_gomlek_1, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/didem-soydan-x-fabrika-oversize-duz-bej-kadin-gomlek-d150-p-1398445"}
+      - {id: byn_k_gomlek_2, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/people-by-fabrika-bej-kadin-bol-kesim-cizgili-gomlek-roll-p-1410940"}
+      - {id: byn_k_mont_natgeo, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/national-geographic-tas-kadin-kisa-sisme-mont-w-haku-p-1084822"}
+      - {id: byn_k_elbise_wrangler, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w221328614-p-1129826"}
+      - {id: byn_k_elbise_fabrika, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/fabrika-v-yaka-desenli-kahve-bej-midi-kadin-elbise-ymn-6-p-1301781"}
   - coicop: "03121"
     ad: "Erkek giyim (Boyner, 7 sabit ürün)"
     anagrup: "03"
@@ -209,11 +209,11 @@ items:
     agirlik_durum: tuik
     mevsimlik: true
     skus:
-      - {id: byn_e_jean_texas, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/erkek-pamuklu-denim-pantolon-w121hrz93texas-jean-pantolon-p"}
-      - {id: byn_e_tisort_mavi, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/mavi-siyah-erkek-100-pamuk-t-shirt-063747-900-tisort-siyah-"}
-      - {id: byn_e_tisort_uzunkol, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-064622-21842-uzun-kol-penye-s"}
-      - {id: byn_e_mont_discovery, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/discovery-expedition-lacivert-erkek-kapuson-yaka-mont-d3wm-"}
-      - {id: byn_e_kazak_leecooper, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/lee-cooper-o-yaka-duz-siyah-erkek-kazak-231-lcm-241005-hold"}
+      - {id: byn_e_jean_texas, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/erkek-pamuklu-denim-pantolon-w121hrz93texas-jean-pantolon-p-1592148"}
+      - {id: byn_e_tisort_mavi, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/mavi-siyah-erkek-100-pamuk-t-shirt-063747-900-tisort-siyah-p-561501"}
+      - {id: byn_e_tisort_uzunkol, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-064622-21842-uzun-kol-penye-siyah-p-880621"}
+      - {id: byn_e_mont_discovery, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/discovery-expedition-lacivert-erkek-kapuson-yaka-mont-d3wm-mnt16-p-1636337"}
+      - {id: byn_e_kazak_leecooper, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/lee-cooper-o-yaka-duz-siyah-erkek-kazak-231-lcm-241005-holden-sayah-p-1299626"}
       - {id: byn_e_corap_blackspade, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-fume-melanj-erkek-corap-9271-men-p-147950"}
       - {id: byn_e_boxer_thedon, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/the-don-turkuaz-boxer-p-375374"}
   - coicop: "03123"
@@ -223,7 +223,7 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: byn_c_kulot_3pack, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-cok-renkli-kiz-cocuk-duz-kulot-42-1294-3-pack-br"}
+      - {id: byn_c_kulot_3pack, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-cok-renkli-kiz-cocuk-duz-kulot-42-1294-3-pack-bri-p-95534"}
       - {id: byn_c_boxer, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-beyaz-kiz-cocuk-duz-boxer-1298-p-811000"}
   - coicop: "03211"
     ad: "Ayakkabı (Boyner, 4 sabit ürün)"
@@ -232,10 +232,10 @@ items:
     agirlik_durum: tuik
     mevsimlik: false
     skus:
-      - {id: byn_a_sneaker_bulldozer, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/bulldozer-siyah-turuncu-kadin-60-suni-deri-40-sentetik-gunl"}
+      - {id: byn_a_sneaker_bulldozer, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/bulldozer-siyah-turuncu-kadin-60-suni-deri-40-sentetik-gunluk-ayakkabi-unisex-spor-ayakkabi-bul-231924-p-1481673"}
       - {id: byn_a_sneaker_fabrika, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/fabrika-bej-kadin-sneaker-marta-p-1714813"}
-      - {id: byn_a_bot_hd_kadin, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-kadin-deri-bot-laconia644-025g-p-8693"}
-      - {id: byn_a_bot_hd_erkek, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-erkek-deri-bot-colmar-025m10055-p-612"}
+      - {id: byn_a_bot_hd_kadin, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-kadin-deri-bot-laconia644-025g-p-86935"}
+      - {id: byn_a_bot_hd_erkek, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-erkek-deri-bot-colmar-025m10055-p-612521"}
 # ----------------------------------------------------- 04 KONUT-ENERJİ (11.40)
   - coicop: "04110"
     ad: "Gerçek kira"
