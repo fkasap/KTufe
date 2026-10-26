@@ -20,7 +20,7 @@ Doğrulama durumu (26 Ekim 2026):
 Her adaptör robots.txt'ye uyar ve host başına >=2 sn bekler (Politeness).
 """
 from __future__ import annotations
-import os, re, json, statistics, urllib.parse, urllib.robotparser, time
+import os, re, json, statistics, urllib.parse, urllib.robotparser, time, datetime as dt
 from typing import Optional
 
 import requests
@@ -111,13 +111,16 @@ def petrolofisi(cfg: dict) -> Optional[float]:
     html = requests.get(PO_URL, headers={"User-Agent": UA}, timeout=20).text
     text = re.sub(r"<[^>]+>", " ", html)
     text = re.sub(r"\s+", " ", text)
-    m = re.search(re.escape(cfg["il"]) + r"(.{0,300})", text, re.I)
+    # İl adı sayfada tablodan önce (il seçim listesinde) de geçer; bu yüzden
+    # il adını fiyat hücresi izleyen ilk eşleşmeyi alıyoruz.
+    cell = r"(\d{2,3}[.,]\d{2})\s*\d{2,3}[.,]\d{2}\s*TL/(?:LT|KG)\s*\+?KDV"
+    m = re.search(re.escape(cfg["il"]) + r"\s*" + r"\s*".join([cell] * 6), text, re.I)
     if not m:
         return None
-    nums = re.findall(r"(\d{2,3}[.,]\d{2})\s*\d{2,3}[.,]\d{2}\s*TL/(?:LT|KG)", m.group(1))
-    order = {"benzin": 0, "motorin": 1, "lpg": 2}
+    # Sütun sırası: 95 | Diesel | Gazyağı | Kalorifer | Fuel Oil | Otogaz
+    order = {"benzin": 1, "motorin": 2, "gazyagi": 3, "lpg": 6}
     try:
-        return _tr_float(nums[order[cfg["urun"]]])
+        return _tr_float(m.group(order[cfg["urun"]]))
     except (IndexError, KeyError):
         return None
 
@@ -129,17 +132,37 @@ def evds(cfg: dict) -> Optional[float]:
     cfg: series = "TP.TUKFIY2025.04110" (gerçek kira) vb.
     Anahtar: ortam değişkeni EVDS_API_KEY.
     """
-    key = os.environ.get("EVDS_API_KEY")
+    key = os.environ.get("EVDS_API_KEY", "").strip()
     if not key:
         return None
-    url = ("https://evds2.tcmb.gov.tr/service/evds/series=" + cfg["series"] +
-           "&startDate=01-01-2024&endDate=31-12-2030&type=json")
-    r = requests.get(url, headers={"key": key, "User-Agent": UA}, timeout=20)
-    r.raise_for_status()
-    items = r.json().get("items", [])
     col = cfg["series"].replace(".", "_")
-    vals = [float(it[col]) for it in items if it.get(col) not in (None, "")]
-    return vals[-1] if vals else None
+    if col in _EVDS_CACHE:
+        return _EVDS_CACHE[col]
+    start = (dt.date.today() - dt.timedelta(days=200)).strftime("%d-%m-%Y")
+    end = dt.date.today().strftime("%d-%m-%Y")
+    path = f"/service/evds/series={cfg['series']}&startDate={start}&endDate={end}&type=json"
+    last_err = None
+    for host in ("https://evds2.tcmb.gov.tr", "https://evds3.tcmb.gov.tr"):
+        try:
+            r = requests.get(host + path, headers={"key": key, "User-Agent": UA}, timeout=25)
+            ctype = r.headers.get("content-type", "")
+            if r.status_code != 200 or "json" not in ctype:
+                # Tanı: EVDS hata sayfalarını HTML döndürür (yanlış anahtar, IP engeli,
+                # host değişikliği). İlk 160 karakteri logla, anahtarı asla loglama.
+                print(f"[evds] {host} HTTP {r.status_code} {ctype} :: {r.text[:160]!r}")
+                last_err = f"HTTP {r.status_code}"
+                continue
+            items = r.json().get("items", [])
+            vals = [float(it[col]) for it in items if it.get(col) not in (None, "")]
+            _EVDS_CACHE[col] = vals[-1] if vals else None
+            return _EVDS_CACHE[col]
+        except Exception as e:
+            print(f"[evds] {host} {type(e).__name__}: {e}")
+            last_err = e
+    return None
+
+
+_EVDS_CACHE: dict[str, Optional[float]] = {}
 
 
 # ----------------------------------------------------------------- İBB Hal
