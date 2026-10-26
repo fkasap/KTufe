@@ -20,6 +20,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - run: pip install -r requirements.txt
+      - name: TÜİK referans verisini tazele (EVDS)
+        env: { EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }} }
+        run: python scripts/refresh_tuik.py
       - name: Motor doğrulaması (TÜİK ile tutarlılık testi)
         run: python engine/validate_tuik.py > /dev/null
       - name: Endeksi hesapla ve raporu üret
@@ -41,7 +44,7 @@ jobs:
         run: |
           git config user.name "ktufe-bot"
           git config user.email "ktufe-bot@users.noreply.github.com"
-          git add data/index reports README.md
+          git add data/index data/reference reports README.md
           git diff --cached --quiet && exit 0
           git commit -m "index: haftalık hesap $(date -u +%F)"
           git pull --rebase origin ${{ github.ref_name }}

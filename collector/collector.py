@@ -123,6 +123,7 @@ except ImportError:
 @dataclass
 class Observation:
     date: str
+    region: str
     item: str
     sku: str
     price: Optional[float]
@@ -130,21 +131,40 @@ class Observation:
     status: str
 
 
+# Konuma duyarlı adaptörler: bölge başına ayrı çağrı yapılır. Diğerleri
+# (EVDS, playwright, html_regex) tek çağrı -> her bölgeye aynı değer yazılır.
+GEO_ADAPTERS = {"marketfiyati": lambda sku, r: {**sku, "lat": r["lat"], "lon": r["lon"]},
+                "petrolofisi": lambda sku, r: {**sku, "il": r.get("po_il", sku.get("il"))},
+                "ibb_hal": lambda sku, r: sku if r.get("hal") == "ibb" else None}
+
+
 def run(config_path: str, out_dir: str, today: Optional[dt.date] = None) -> pd.DataFrame:
     import yaml
     cfg = yaml.safe_load(open(config_path, encoding="utf-8"))
     today = today or dt.date.today()
+    regions = cfg.get("regions") or [{"id": "TR", "lat": 41.03, "lon": 28.98}]
     obs: list[Observation] = []
     for item in cfg["items"]:
         for sku in item.get("skus", []):
             fn = ADAPTERS[sku["adapter"]]
-            try:
-                p = fn(sku)
-                status = "ok" if p else ("carry_forward" if sku["adapter"] == "carry_forward" else "missing")
-            except Exception as e:  # tek SKU hatası günü bozmaz
-                p, status = None, f"error:{type(e).__name__}"
-            obs.append(Observation(str(today), item["coicop"], sku["id"], p,
-                                   sku["adapter"], status))
+            geo = GEO_ADAPTERS.get(sku["adapter"])
+            targets = [(r, geo(sku, r)) for r in regions] if geo else [(None, sku)]
+            shared = None
+            for r, s in targets:
+                if s is None:          # bu bölgede bu kaynak yok (ör. Ankara'da İBB Hal)
+                    continue
+                try:
+                    p = fn(s)
+                    status = "ok" if p else ("carry_forward" if sku["adapter"] == "carry_forward" else "missing")
+                except Exception as e:  # tek SKU hatası günü bozmaz
+                    p, status = None, f"error:{type(e).__name__}"
+                if r is None:          # konumsuz kaynak: tüm bölgelere kopyala
+                    for rr in regions:
+                        obs.append(Observation(str(today), rr["id"], item["coicop"], sku["id"], p,
+                                               sku["adapter"], status))
+                else:
+                    obs.append(Observation(str(today), r["id"], item["coicop"], sku["id"], p,
+                                           sku["adapter"], status))
     df = pd.DataFrame([o.__dict__ for o in obs])
     out = pathlib.Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     df.to_csv(out / f"{today}.csv", index=False)

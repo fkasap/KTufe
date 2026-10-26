@@ -58,3 +58,19 @@ Bu bir nowcast'tır: TÜİK aylık rakamına ±0,3–0,5 puan yaklaşmak hedef, 
 TÜİK 81 ilde 39 bin işyerinden fiyat alır; burada İstanbul ağırlıklı online fiyat var.
 Madde içi ağırlıklar TÜİK'in 428 maddelik dosyası eklenene kadar yaklaşıktır
 (`agirlik_durum: yaklasik`); ana grup ağırlıkları EVDS'den kesindir.
+
+## Bölgeler ve ağırlıklar (güncelleme 26.10.2026)
+- **Bölgeli toplama:** `sepet.yaml > regions` — İstanbul (TR10) ve Ankara (TR51). Market Fiyatı
+  bölge koordinatıyla, Petrol Ofisi il adıyla ayrı çağrılır; İBB Hal yalnız İstanbul. Konumsuz
+  kaynaklar (EVDS alt endeksleri) her bölgeye aynı yazılır. **Türkiye** = bölge endekslerinin
+  `pay_tr` ile ağırlıklı geometrik birleşimi (şehir eklenince paylar güncellenir).
+- **TÜİK 2026 sepeti** `data/reference/tuik_sepet_agirlik_2026.csv` (TÜİK Veri Portalı,
+  DF_TUFE_SDMX_TT04). TÜİK ağırlığı **5. düzeyde (174 alt sınıf) biter; 428 maddeye ağırlık
+  yayınlamaz.** `madde_agirlik_2026_turetilmis.csv` alt sınıf ağırlığını maddelere eşit böler
+  (79 alt sınıf tek maddeli → o maddeler kesin). Sepetteki kodlar TÜİK 5. düzey kodlarıdır;
+  her ana grubun kalanı `artik: true` kalemiyle EVDS alt endeksinden taşınır → 13 ana grup
+  ağırlığı TÜİK ile birebir.
+- **Grafikler** (`reports/charts/`, haftalık iş üretir): bölge başına ana grup haftalık ve
+  aylık değişim, en çok/en az değişen maddeler; Türkiye için KTüfe–TÜİK aylık karşılaştırma.
+- **Doğrulama kıyası:** TÜİK bölgesel TÜFE (İBBS-2: TR10 İstanbul, TR51 Ankara) aynı veri
+  portalından; EVDS'de bölgesel seri yok.

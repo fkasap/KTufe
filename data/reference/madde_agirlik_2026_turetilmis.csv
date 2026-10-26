@@ -1,0 +1,429 @@
+kod,ad,anagrup,ust5,alt_sinif_ad,alt_sinif_agirlik,madde_sayisi_alt_sinifta,agirlik_esit_pay
+0111121,Pirinç  ,1,01111,Tahıllar  ,0.467346134,2,0.233673067
+0111192,Bulgur  ,1,01111,Tahıllar  ,0.467346134,2,0.233673067
+0111211,Buğday unu  ,1,01112,Tahıl unları  ,0.360440183,1,0.360440183
+0111311,Ekmek  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111392,Diğer pastane ürünleri  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111393,Bisküvi  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111394,Kraker  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111396,Gofret  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111398,Baklava  ,1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111399,"Simit (fırın, market vb. yerlerde satılan)  ",1,01113,Ekmek ve unlu mamuller  ,3.387290505,7,0.4838986435714286
+0111401,Kahvaltılık tahıl gevreği  ,1,01114,Kahvaltılık tahıl ürünleri  ,0.028440973,1,0.028440973
+0111501,Makarna  ,1,01115,"Makarna, erişte, kuskus ve benzeri makarna ürünleri  ",0.206955349,2,0.1034776745
+0111502,Şehriye  ,1,01115,"Makarna, erişte, kuskus ve benzeri makarna ürünleri  ",0.206955349,2,0.1034776745
+0112214,Dana eti  ,1,01122,"Et, taze, soğutulmuş veya dondurulmuş  ",3.671584944,3,1.223861648
+0112230,Kuzu eti  ,1,01122,"Et, taze, soğutulmuş veya dondurulmuş  ",3.671584944,3,1.223861648
+0112246,Tavuk eti  ,1,01122,"Et, taze, soğutulmuş veya dondurulmuş  ",3.671584944,3,1.223861648
+0112311,"Sucuk (kangal, dana etinden)  ",1,01123,"Et, kurutulmuş, tuzlanmış, salamura edilmiş veya tütsülenmiş  ",0.611272896,3,0.203757632
+0112312,Dana salam  ,1,01123,"Et, kurutulmuş, tuzlanmış, salamura edilmiş veya tütsülenmiş  ",0.611272896,3,0.203757632
+0112392,Beyaz et salam  ,1,01123,"Et, kurutulmuş, tuzlanmış, salamura edilmiş veya tütsülenmiş  ",0.611272896,3,0.203757632
+0112401,Sakatat  ,1,01124,"Kesilmiş hayvanların sakatat ve diğer parçaları (taze, soğutulmuş veya dondurulmuş, kurutulmuş, tuzlanmış, salamura edilmiş veya tütsülenmiş)  ",0.083174005,1,0.083174005
+0112511,Sosis  ,1,01125,"Kesilmiş hayvanların et, sakatat ve diğer parçalarından yemeye hazır hale getirilmiş ürünler  ",0.242162414,3,0.08072080466666666
+0112590,Hazır tavuk yemekleri  ,1,01125,"Kesilmiş hayvanların et, sakatat ve diğer parçalarından yemeye hazır hale getirilmiş ürünler  ",0.242162414,3,0.08072080466666666
+0112593,Hazır et yemekleri  ,1,01125,"Kesilmiş hayvanların et, sakatat ve diğer parçalarından yemeye hazır hale getirilmiş ürünler  ",0.242162414,3,0.08072080466666666
+0113121,Somon balığı (ithal)  ,1,01131,"Balıklar, canlı, taze, soğutulmuş veya dondurulmuş  ",0.340789413,3,0.11359647099999999
+0113151,Palamut balığı (yerli)  ,1,01131,"Balıklar, canlı, taze, soğutulmuş veya dondurulmuş  ",0.340789413,3,0.11359647099999999
+0113191,Diğer balıklar  ,1,01131,"Balıklar, canlı, taze, soğutulmuş veya dondurulmuş  ",0.340789413,3,0.11359647099999999
+0113315,Konserve balık  ,1,01133,Konserve edilmiş veya işlenmiş balık ürünleri  ,0.036944752,1,0.036944752
+0114111,Tam yağlı süt (günlük ve uzun ömürlü)  ,1,01141,Çiğ ve tam yağlı süt  ,0.520233634,1,0.520233634
+0114201,Yarım yağlı süt (uzun ömürlü)  ,1,01142,Yağı alınmış süt  ,0.055708926,1,0.055708926
+0114331,"Krema, kaymak ve benzeri süt ürünleri  ",1,01143,Diğer sütler ve krema  ,0.053094127,1,0.053094127
+0114501,Beyaz peynir  ,1,01145,Peynir  ,1.497169947,5,0.2994339894
+0114502,Kaşar peyniri  ,1,01145,Peynir  ,1.497169947,5,0.2994339894
+0114503,Tulum peyniri  ,1,01145,Peynir  ,1.497169947,5,0.2994339894
+0114504,Sürülebilir peynirler  ,1,01145,Peynir  ,1.497169947,5,0.2994339894
+0114505,Yöresel peynirler  ,1,01145,Peynir  ,1.497169947,5,0.2994339894
+0114601,Yoğurt  ,1,01146,Yoğurt ve benzeri ürünler  ,0.491080276,2,0.245540138
+0114605,Ayran  ,1,01146,Yoğurt ve benzeri ürünler  ,0.491080276,2,0.245540138
+0114701,Hazır sütlü tatlılar  ,1,01147,Süt bazlı tatlı ve içecekler  ,0.057932337,2,0.0289661685
+0114703,Aromalı sütler  ,1,01147,Süt bazlı tatlı ve içecekler  ,0.057932337,2,0.0289661685
+0114811,Yumurta  ,1,01148,Yumurtalar  ,0.60061916,1,0.60061916
+0115112,Ayçiçek yağı  ,1,01151,Bitkisel sıvı yağlar  ,0.996241844,2,0.498120922
+0115131,Zeytinyağı  ,1,01151,Bitkisel sıvı yağlar  ,0.996241844,2,0.498120922
+0115211,Tereyağı  ,1,01152,Tereyağı ve sütten elde edilen diğer yağlar  ,0.333190528,1,0.333190528
+0115301,Margarin  ,1,01153,Margarin  ,0.072564803,1,0.072564803
+0116121,Muz  ,1,01161,"Hurma, incir ve tropikal meyveler, taze  ",0.241266623,1,0.241266623
+0116221,Limon  ,1,01162,"Turunçgiller, taze  ",0.269553253,3,0.08985108433333333
+0116231,Portakal  ,1,01162,"Turunçgiller, taze  ",0.269553253,3,0.08985108433333333
+0116241,Mandalina  ,1,01162,"Turunçgiller, taze  ",0.269553253,3,0.08985108433333333
+0116311,Elma  ,1,01163,"Sert çekirdekli ve yumuşak çekirdekli meyveler, taze  ",0.505923895,3,0.16864129833333333
+0116321,"Armut, ayva  ",1,01163,"Sert çekirdekli ve yumuşak çekirdekli meyveler, taze  ",0.505923895,3,0.16864129833333333
+0116351,Şeftali  ,1,01163,"Sert çekirdekli ve yumuşak çekirdekli meyveler, taze  ",0.505923895,3,0.16864129833333333
+0116451,Çilek  ,1,01164,"Üzümsü meyveler, taze  ",0.056106947,1,0.056106947
+0116511,Üzüm  ,1,01165,"Diğer meyveler, taze  ",0.361826298,5,0.0723652596
+0116521,Kivi  ,1,01165,"Diğer meyveler, taze  ",0.361826298,5,0.0723652596
+0116531,Kavun  ,1,01165,"Diğer meyveler, taze  ",0.361826298,5,0.0723652596
+0116541,Karpuz  ,1,01165,"Diğer meyveler, taze  ",0.361826298,5,0.0723652596
+0116591,Nar  ,1,01165,"Diğer meyveler, taze  ",0.361826298,5,0.0723652596
+0116711,Kuru üzüm  ,1,01167,Kurutulmuş ve dehidre meyveler  ,0.111214092,3,0.037071364
+0116791,Kuru hurma  ,1,01167,Kurutulmuş ve dehidre meyveler  ,0.111214092,3,0.037071364
+0116793,Kuru kayısı  ,1,01167,Kurutulmuş ve dehidre meyveler  ,0.111214092,3,0.037071364
+0116811,Badem içi  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116843,Fındık içi  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116854,Antep fıstığı  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116862,Ceviz içi  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116886,Yer fıstığı  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116891,Kabak çekirdeği  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116897,Leblebi  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0116898,Ay çekirdeği  ,1,01168,"Sert kabuklu meyveler, kabuklu veya kabuksuz  ",0.746517771,8,0.093314721375
+0117123,Lahana  ,1,01171,"Yeşil yapraklı veya saplı sebzeler, taze veya soğutulmuş  ",0.215688977,4,0.05392224425
+0117131,Karnabahar  ,1,01171,"Yeşil yapraklı veya saplı sebzeler, taze veya soğutulmuş  ",0.215688977,4,0.05392224425
+0117141,Marul çeşitleri  ,1,01171,"Yeşil yapraklı veya saplı sebzeler, taze veya soğutulmuş  ",0.215688977,4,0.05392224425
+0117151,Ispanak  ,1,01171,"Yeşil yapraklı veya saplı sebzeler, taze veya soğutulmuş  ",0.215688977,4,0.05392224425
+0117211,Çarliston biber  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117215,Diğer taze biber çeşitleri  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117222,Salatalık  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117234,Patlıcan  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117241,Domates  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117253,Kabak  ,1,01172,"Meyvesi yenen sebzeler, taze veya soğutulmuş (domates, biber, salatalık, kabak vb.)  ",1.330555257,6,0.22175920950000003
+0117312,Taze fasulye  ,1,01173,"Yeşil baklagil sebzeleri, taze veya soğutulmuş  ",0.148699907,1,0.148699907
+0117410,Havuç  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117416,Turp  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117421,Kuru sarımsak  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117431,Kuru soğan  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117445,Pırasa  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117452,Kültür mantarı  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117476,Zeytin (sofralık)  ,1,01174,"Diğer sebzeler, taze veya soğutulmuş (soğan, sarımsak, havuç, mantar, zeytin vb.)  ",0.740434205,7,0.105776315
+0117511,Patates  ,1,01175,Yumrulu sebzeler  ,0.351894209,1,0.351894209
+0117611,Kuru fasulye  ,1,01176,Kuru baklagiller  ,0.217180829,3,0.07239360966666666
+0117632,Nohut  ,1,01176,Kuru baklagiller  ,0.217180829,3,0.07239360966666666
+0117643,Mercimek  ,1,01176,Kuru baklagiller  ,0.217180829,3,0.07239360966666666
+0117923,Sebze konserveleri  ,1,01179,"Konserve edilmiş veya işlenmiş sebze içerikli ürünler (salça, turşu, zeytin vb.)  ",0.438767318,4,0.1096918295
+0117992,Turşu  ,1,01179,"Konserve edilmiş veya işlenmiş sebze içerikli ürünler (salça, turşu, zeytin vb.)  ",0.438767318,4,0.1096918295
+0117995,Salça  ,1,01179,"Konserve edilmiş veya işlenmiş sebze içerikli ürünler (salça, turşu, zeytin vb.)  ",0.438767318,4,0.1096918295
+0117998,Cipsler  ,1,01179,"Konserve edilmiş veya işlenmiş sebze içerikli ürünler (salça, turşu, zeytin vb.)  ",0.438767318,4,0.1096918295
+0118121,Toz şeker  ,1,01181,Şeker  ,0.354523861,2,0.1772619305
+0118122,Kesme şeker  ,1,01181,Şeker  ,0.354523861,2,0.1772619305
+0118313,Bal  ,1,01183,"Reçel, meyve jöleleri, marmelat, meyve püreleri ve ezmeleri, bal  ",0.287689934,3,0.09589664466666666
+0118391,Reçel  ,1,01183,"Reçel, meyve jöleleri, marmelat, meyve püreleri ve ezmeleri, bal  ",0.287689934,3,0.09589664466666666
+0118397,Pekmez  ,1,01183,"Reçel, meyve jöleleri, marmelat, meyve püreleri ve ezmeleri, bal  ",0.287689934,3,0.09589664466666666
+0118401,Fındık ezmesi  ,1,01184,"Sert kabuklu meyve püresi, meyve ezmesi ve macunu  ",0.064226124,2,0.032113062
+0118408,Tahin  ,1,01184,"Sert kabuklu meyve püresi, meyve ezmesi ve macunu  ",0.064226124,2,0.032113062
+0118512,Çikolata  ,1,01185,"Çikolata, kakao, kakao bazlı gıda ürünleri  ",0.350765809,2,0.1753829045
+0118593,Sürülebilir krem çikolata  ,1,01185,"Çikolata, kakao, kakao bazlı gıda ürünleri  ",0.350765809,2,0.1753829045
+0118601,Dondurma  ,1,01186,"Buz, dondurma ve buzlu şerbet (sorbe)  ",0.213287124,1,0.213287124
+0118916,Tahin helvası  ,1,01189,Başka yerde sınıflandırılmamış tatlılar ve diğer şekerlemeler  ,0.254936792,4,0.063734198
+0118991,Lokum  ,1,01189,Başka yerde sınıflandırılmamış tatlılar ve diğer şekerlemeler  ,0.254936792,4,0.063734198
+0118994,Sakız  ,1,01189,Başka yerde sınıflandırılmamış tatlılar ve diğer şekerlemeler  ,0.254936792,4,0.063734198
+0118995,Ambalajlı şeker  ,1,01189,Başka yerde sınıflandırılmamış tatlılar ve diğer şekerlemeler  ,0.254936792,4,0.063734198
+0119145,Hazır pizzalar  ,1,01191,"Yemeye hazır gıdalar (hazır pizza, börek, çorba vb.)  ",0.26430003,4,0.0660750075
+0119161,Hazır çorbalar  ,1,01191,"Yemeye hazır gıdalar (hazır pizza, börek, çorba vb.)  ",0.26430003,4,0.0660750075
+0119192,Hazır börekler  ,1,01191,"Yemeye hazır gıdalar (hazır pizza, börek, çorba vb.)  ",0.26430003,4,0.0660750075
+0119195,Diğer hazır yemekler  ,1,01191,"Yemeye hazır gıdalar (hazır pizza, börek, çorba vb.)  ",0.26430003,4,0.0660750075
+0119212,Bebek sütü (toz karışım)  ,1,01192,Bebek mamaları  ,0.087738491,1,0.087738491
+0119311,Tuz  ,1,01193,"Tuz, çeşniler ve soslar  ",0.131724143,4,0.03293103575
+0119393,Sirke  ,1,01193,"Tuz, çeşniler ve soslar  ",0.131724143,4,0.03293103575
+0119396,Ketçap  ,1,01193,"Tuz, çeşniler ve soslar  ",0.131724143,4,0.03293103575
+0119397,Mayonez  ,1,01193,"Tuz, çeşniler ve soslar  ",0.131724143,4,0.03293103575
+0119401,Taze aromatik otlar  ,1,01194,"Baharatlar, yemeklerde kullanılan otlar ve tohumlar  ",0.175525683,2,0.0877628415
+0119402,Baharatlar  ,1,01194,"Baharatlar, yemeklerde kullanılan otlar ve tohumlar  ",0.175525683,2,0.0877628415
+0119902,Kabartma maddeleri  ,1,01199,Başka yerde sınıflandırılmamış diğer gıda ürünleri  ,0.069424626,2,0.034712313
+0119904,Hazır toz tatlı karışımları  ,1,01199,Başka yerde sınıflandırılmamış diğer gıda ürünleri  ,0.069424626,2,0.034712313
+0121001,Meyve suyu  ,1,01210,Meyve ve sebze suları  ,0.18316647,1,0.18316647
+0122011,Kahve  ,1,01220,Kahve  ,0.337268859,2,0.1686344295
+0122012,Hazır kahve  ,1,01220,Kahve  ,0.337268859,2,0.1686344295
+0123021,Çay  ,1,01230,Çay ve demlenerek hazırlanan diğer bitkisel ürünler  ,0.705047138,2,0.352523569
+0123034,Soğuk çay  ,1,01230,Çay ve demlenerek hazırlanan diğer bitkisel ürünler  ,0.705047138,2,0.352523569
+0125001,Su  ,1,01250,Maden suları ve kaynak suları  ,0.595369919,2,0.2976849595
+0125002,Maden suyu ve sodası  ,1,01250,Maden suları ve kaynak suları  ,0.595369919,2,0.2976849595
+0126002,Gazoz  ,1,01260,Meşrubatlar  ,0.519538261,2,0.2597691305
+0126003,Kola  ,1,01260,Meşrubatlar  ,0.519538261,2,0.2597691305
+0211001,Rakı  ,2,02110,İçkiler ve likörler  ,0.278116238,3,0.09270541266666667
+0211002,Votka  ,2,02110,İçkiler ve likörler  ,0.278116238,3,0.09270541266666667
+0211006,Viski  ,2,02110,İçkiler ve likörler  ,0.278116238,3,0.09270541266666667
+0212101,Şarap  ,2,02121,"Şarap, üzümden  ",0.047768728,1,0.047768728
+0213001,Bira  ,2,02130,Biralar  ,0.271810877,1,0.271810877
+0230101,Sigaralar  ,2,02301,Sigara  ,2.157204157,1,2.157204157
+0312104,Erkek kaban  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312105,Erkek mont  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312108,Erkek takım elbise  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312109,Erkek ceket  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312110,Erkek pantolon  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312112,Erkek kazak  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312115,Erkek gömlek  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312116,Erkek sweatshirt  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312117,Erkek tişört  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312120,Erkek eşofman altı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312122,Erkek pijama takımı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312126,Erkek iç çamaşırı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312131,Erkek çorap  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312143,Erkek çocuk mont  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312152,Erkek çocuk pantolon  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312158,Erkek çocuk sweatshirt  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312159,Erkek çocuk tişört  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312164,Erkek çocuk eşofman altı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312165,Erkek çocuk pijama takımı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312168,Erkek çocuk iç çamaşırı  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312172,Erkek çocuk çorap  ,3,03121,Erkek ve erkek çocuk giysileri  ,3.062071844,21,0.14581294495238095
+0312204,Kadın kaban  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312205,Kadın mont  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312213,Kadın elbise  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312214,Kadın ceket  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312215,Kadın etek  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312216,Kadın pantolon  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312217,Kadın hırka  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312219,Kadın kazak  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312222,Kadın gömlek  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312223,Kadın sweatshirt  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312224,Kadın tişört  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312230,Kadın eşofman altı  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312235,Kadın pijama takımı  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312238,Kadın iç çamaşırı  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312243,Kadın çorap  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312252,Kız çocuk mont  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312262,Kız çocuk pantolon  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312269,Kız çocuk sweatshirt  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312270,Kız çocuk tişört  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312273,Kız çocuk tayt  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312275,Kız çocuk eşofman altı  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312276,Kız çocuk pijama takımı  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312284,Kız çocuk çorap  ,3,03122,Kadın ve kız çocuk giysileri  ,3.189323656,23,0.13866624591304347
+0312304,Bebek tulumu  ,3,03123,Bebek giysileri (0-2 yaş)  ,0.140870977,4,0.03521774425
+0312309,Bebek pijama takımı  ,3,03123,Bebek giysileri (0-2 yaş)  ,0.140870977,4,0.03521774425
+0312310,Bebek iç çamaşırı  ,3,03123,Bebek giysileri (0-2 yaş)  ,0.140870977,4,0.03521774425
+0312316,Bebek elbise  ,3,03123,Bebek giysileri (0-2 yaş)  ,0.140870977,4,0.03521774425
+0312401,Okul forması  ,3,03124,Okul üniformaları  ,0.118073585,1,0.118073585
+0313108,Erkek kemer  ,3,03131,Diğer giyim eşyaları  ,0.194533808,2,0.097266904
+0313110,Kadın eşarp  ,3,03131,Diğer giyim eşyaları  ,0.194533808,2,0.097266904
+0314101,Kuru temizleme ücreti  ,3,03141,Giyim eşyalarının temizlenmesi  ,0.015413883,1,0.015413883
+0314205,Giysi tamir ücreti  ,3,03142,"Giyim eşyalarının onarımı, tadilatı, dikimi ve kiralanması  ",0.075485442,1,0.075485442
+0321101,Erkek ayakkabı  ,3,03211,Erkek ayakkabıları  ,0.526498594,3,0.17549953133333332
+0321102,Erkek bot  ,3,03211,Erkek ayakkabıları  ,0.526498594,3,0.17549953133333332
+0321104,Erkek spor ayakkabısı  ,3,03211,Erkek ayakkabıları  ,0.526498594,3,0.17549953133333332
+0321201,Kadın ayakkabı  ,3,03212,Kadın ayakkabıları  ,0.405378699,4,0.10134467475
+0321202,Kadın bot  ,3,03212,Kadın ayakkabıları  ,0.405378699,4,0.10134467475
+0321204,Kadın spor ayakkabısı  ,3,03212,Kadın ayakkabıları  ,0.405378699,4,0.10134467475
+0321206,Kadın terlik  ,3,03212,Kadın ayakkabıları  ,0.405378699,4,0.10134467475
+0321302,Çocuk bot  ,3,03213,Bebek ve çocuk ayakkabıları  ,0.176149511,2,0.0880747555
+0321304,Çocuk spor ayakkabısı  ,3,03213,Bebek ve çocuk ayakkabıları  ,0.176149511,2,0.0880747555
+0411001,Kiracılar tarafından ödenen gerçek kira  ,4,04110,Kiracılar tarafından ödenen gerçek kira  ,6.763809368,1,6.763809368
+0431101,Badana ve boya malzemeleri  ,4,04311,Konutun bakım ve onarımı için malzemeler  ,0.348249981,5,0.0696499962
+0431102,Yer ve duvar döşeme malzemeleri  ,4,04311,Konutun bakım ve onarımı için malzemeler  ,0.348249981,5,0.0696499962
+0431106,Pvc kapı ve pencere malzemeleri  ,4,04311,Konutun bakım ve onarımı için malzemeler  ,0.348249981,5,0.0696499962
+0431108,Sıhhi tesisat malzemeleri  ,4,04311,Konutun bakım ve onarımı için malzemeler  ,0.348249981,5,0.0696499962
+0431109,Konutun bakım ve onarımına yönelik diğer malzemeler  ,4,04311,Konutun bakım ve onarımı için malzemeler  ,0.348249981,5,0.0696499962
+0432015,Konutun bakım ve onarımına yönelik işçilik ücretleri  ,4,04320,"Konutun bakım, onarım ve güvenlik hizmetleri  ",0.449745834,1,0.449745834
+0441101,Su (belediye şebeke suyu)  ,4,04411,Su (şebeke suyu)  ,0.662139988,1,0.662139988
+0451001,Elektrik  ,4,04510,Elektrik  ,1.273653602,1,1.273653602
+0452101,Doğalgaz  ,4,04521,Doğalgaz ve ilgili abonelik ücretleri  ,1.081752508,2,0.540876254
+0452102,Doğalgaz abonelik ücreti  ,4,04521,Doğalgaz ve ilgili abonelik ücretleri  ,1.081752508,2,0.540876254
+0452201,Tüpgaz (ev tüpü)  ,4,04522,Tüpgaz (ev tüpü)  ,0.322739226,1,0.322739226
+0454101,Kömür  ,4,04541,"Kömür, kömür briketi ve turba  ",0.345451289,1,0.345451289
+0454201,Odun  ,4,04542,"Yakacak odun, peletler ve briketler dahil  ",0.154458205,1,0.154458205
+0511102,Mutfak masası  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511105,Mutfak sandalyesi  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511108,Yatak odası takımı  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511111,Yatak  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511114,Yatak bazası  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511115,Genç odası takımı  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511116,Oturma odası takımı  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511117,Yemek odası takımı  ,5,05111,Ev mobilyaları  ,2.623578037,8,0.327947254625
+0511401,Halı  ,5,05114,"Mefruşat, halılar ve kilimler  ",0.372633014,1,0.372633014
+0521101,Perde  ,5,05211,Döşemelik kumaşlar ve perdeler  ,0.231027718,3,0.07700923933333333
+0521102,Stor perde  ,5,05211,Döşemelik kumaşlar ve perdeler  ,0.231027718,3,0.07700923933333333
+0521103,Tül perde  ,5,05211,Döşemelik kumaşlar ve perdeler  ,0.231027718,3,0.07700923933333333
+0521201,Yatak örtüsü  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521204,Yorgan  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521206,Battaniye  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521207,Pike takımı  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521208,Nevresim takımı  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521209,Yastık  ,5,05212,Yatak takımları ve yatak olarak kullanılan eşyalar  ,0.284102381,6,0.047350396833333336
+0521307,Havlu  ,5,05213,Masa ve banyo tekstili  ,0.053881115,1,0.053881115
+0521904,Banyo paspası  ,5,05219,Diğer ev tekstilleri  ,0.115952026,2,0.057976013
+0521905,Diğer ev tekstili  ,5,05219,Diğer ev tekstilleri  ,0.115952026,2,0.057976013
+0531101,Buzdolabı  ,5,05311,Elektrikli büyük mutfak eşyaları  ,0.679810692,4,0.169952673
+0531103,Derin dondurucu  ,5,05311,Elektrikli büyük mutfak eşyaları  ,0.679810692,4,0.169952673
+0531106,Bulaşık makinesi  ,5,05311,Elektrikli büyük mutfak eşyaları  ,0.679810692,4,0.169952673
+0531108,Fırın ve ocaklar  ,5,05311,Elektrikli büyük mutfak eşyaları  ,0.679810692,4,0.169952673
+0531201,Çamaşır makinesi  ,5,05312,Çamaşır makineleri ve kurutma makineleri  ,0.379293411,2,0.1896467055
+0531202,Çamaşır kurutma makinesi  ,5,05312,Çamaşır makineleri ve kurutma makineleri  ,0.379293411,2,0.1896467055
+0531301,Klima  ,5,05313,"Isıtıcılar, klimalar  ",0.318817929,3,0.106272643
+0531303,Soba  ,5,05313,"Isıtıcılar, klimalar  ",0.318817929,3,0.106272643
+0531306,Kombi  ,5,05313,"Isıtıcılar, klimalar  ",0.318817929,3,0.106272643
+0531401,Elektrikli süpürgeler  ,5,05314,Temizlik ekipmanları (elektrik süpürgesi vb.)  ,0.220193458,1,0.220193458
+0532101,Elektrikli kesici aletler (blender)  ,5,05321,Yiyecek pişirme ve işlemede kullanılan küçük aletler  ,0.087506044,2,0.043753022
+0532102,Elektrikli küçük ev aletleri  ,5,05321,Yiyecek pişirme ve işlemede kullanılan küçük aletler  ,0.087506044,2,0.043753022
+0532201,Elektrikli çay makinesi  ,5,05322,İçecek hazırlamada kullanılan küçük aletler  ,0.050213719,1,0.050213719
+0532901,Ütü  ,5,05329,Diğer küçük ev aletleri  ,0.053425764,1,0.053425764
+0533001,Ev aletlerinin bakım ve onarımı  ,5,05330,"Ev aletlerinin onarımı, kurulumu ve kiralanması  ",0.152478157,1,0.152478157
+0540102,Cam ev eşyası  ,5,05401,"Cam, kristal, seramik, porselen ve çin porseleni eşyalar  ",0.323909898,2,0.161954949
+0540104,Porselen ev eşyası  ,5,05401,"Cam, kristal, seramik, porselen ve çin porseleni eşyalar  ",0.323909898,2,0.161954949
+0540201,"Kaşık, çatal, bıçak takımı (çelik)  ",5,05402,Çatal bıçak takımları ve gümüş çatal bıçak takımları  ,0.058622313,1,0.058622313
+0540301,Çelik mutfak eşyaları  ,5,05403,Mutfak gereçleri ve eşyaları  ,0.397980621,3,0.132660207
+0540314,Yapışmaz malzemeden mutfak eşyaları  ,5,05403,Mutfak gereçleri ve eşyaları  ,0.397980621,3,0.132660207
+0540316,Termos  ,5,05403,Mutfak gereçleri ve eşyaları  ,0.397980621,3,0.132660207
+0552201,Pil  ,5,05522,"Çeşitli hırdavat malzemeleri ve aksesuarlar (pil, ampul vb.)  ",0.176973812,2,0.088486906
+0552203,Ampul  ,5,05522,"Çeşitli hırdavat malzemeleri ve aksesuarlar (pil, ampul vb.)  ",0.176973812,2,0.088486906
+0561101,Çamaşır için temizlik ve bakım ürünleri  ,5,05611,Ev temizlik ve bakım ürünleri  ,0.840230161,5,0.1680460322
+0561102,Bulaşık için temizlik ve bakım ürünleri  ,5,05611,Ev temizlik ve bakım ürünleri  ,0.840230161,5,0.1680460322
+0561103,Hijyenik zeminler için temizlik ve bakım ürünleri  ,5,05611,Ev temizlik ve bakım ürünleri  ,0.840230161,5,0.1680460322
+0561106,Temizlik bezleri  ,5,05611,Ev temizlik ve bakım ürünleri  ,0.840230161,5,0.1680460322
+0561198,Yüzey temizlik havlusu  ,5,05611,Ev temizlik ve bakım ürünleri  ,0.840230161,5,0.1680460322
+0561902,"Saklama ve muhafaza malzemeleri (streç film, alüminyum folyo vb.)  ",5,05619,Diğer dayanıklı olmayan ev eşyaları  ,0.19862545,3,0.06620848333333333
+0561903,"Kağıt sofra malzemeleri (kağıt havlu, kağıt peçete vb.)  ",5,05619,Diğer dayanıklı olmayan ev eşyaları  ,0.19862545,3,0.06620848333333333
+0561915,Diğer dayanıklı olmayan ev eşyaları  ,5,05619,Diğer dayanıklı olmayan ev eşyaları  ,0.19862545,3,0.06620848333333333
+0562901,Ev eşyalarının bakım ve onarımına yönelik hizmetler  ,5,05629,Diğer hanehalkı hizmetleri  ,0.300844281,2,0.1504221405
+0562902,Gündelikçi ücreti  ,5,05629,Diğer hanehalkı hizmetleri  ,0.300844281,2,0.1504221405
+0611101,İlaçlar  ,6,06111,"İlaçlar, aşılar ve diğer eczacılık ürünleri  ",0.68718056,2,0.34359028
+0611102,İlaç katılım payı  ,6,06111,"İlaçlar, aşılar ve diğer eczacılık ürünleri  ",0.68718056,2,0.34359028
+0613101,Numaralı gözlük cam ve çerçevesi  ,6,06131,Görmeye yardımcı ürünler  ,0.223223533,2,0.1116117665
+0613102,Kontakt lens  ,6,06131,Görmeye yardımcı ürünler  ,0.223223533,2,0.1116117665
+0613318,Günlük yaşam için destekleyici ürünler  ,6,06133,Hareket ve günlük yaşam için yardımcı ürünler  ,0.093230064,1,0.093230064
+0622902,Diş dolgusu ücreti  ,6,06229,Diğer ayaktan ağız ve diş tedavi hizmetleri  ,0.597760203,4,0.14944005075
+0622906,Diş implantı ücreti  ,6,06229,Diğer ayaktan ağız ve diş tedavi hizmetleri  ,0.597760203,4,0.14944005075
+0622907,Diş kanal tedavisi ücreti  ,6,06229,Diğer ayaktan ağız ve diş tedavi hizmetleri  ,0.597760203,4,0.14944005075
+0622908,Diş protez kaplama ücreti  ,6,06229,Diğer ayaktan ağız ve diş tedavi hizmetleri  ,0.597760203,4,0.14944005075
+0623101,Doktor muayene ücreti  ,6,06231,Ayaktan tedavi edici ve rehabilite edici hizmetler  ,0.398787278,3,0.13292909266666667
+0623102,Muayene katılım payı  ,6,06231,Ayaktan tedavi edici ve rehabilite edici hizmetler  ,0.398787278,3,0.13292909266666667
+0623103,Fizik tedavi ücreti  ,6,06231,Ayaktan tedavi edici ve rehabilite edici hizmetler  ,0.398787278,3,0.13292909266666667
+0631002,Ameliyat ücreti  ,6,06310,Yatarak tedavi edici ve rehabilite edici hizmetler  ,0.722242796,3,0.24074759866666665
+0631003,Normal doğum ücreti  ,6,06310,Yatarak tedavi edici ve rehabilite edici hizmetler  ,0.722242796,3,0.24074759866666665
+0631004,Sezaryen doğum ücreti  ,6,06310,Yatarak tedavi edici ve rehabilite edici hizmetler  ,0.722242796,3,0.24074759866666665
+0641001,Röntgen ücreti  ,6,06410,Tanısal görüntüleme hizmetleri ve medikal (tıbbi) laboratuvar hizmetleri  ,0.069875567,4,0.01746889175
+0641002,Ultrason ücreti  ,6,06410,Tanısal görüntüleme hizmetleri ve medikal (tıbbi) laboratuvar hizmetleri  ,0.069875567,4,0.01746889175
+0641005,Mr (emar) ücreti  ,6,06410,Tanısal görüntüleme hizmetleri ve medikal (tıbbi) laboratuvar hizmetleri  ,0.069875567,4,0.01746889175
+0641008,Laboratuvar tahlil ücreti  ,6,06410,Tanısal görüntüleme hizmetleri ve medikal (tıbbi) laboratuvar hizmetleri  ,0.069875567,4,0.01746889175
+0711104,Benzinli otomobil  ,7,07111,Birinci el motorlu taşıtlar  ,4.585654796,3,1.5285515986666667
+0711107,Hibrit otomobil  ,7,07111,Birinci el motorlu taşıtlar  ,4.585654796,3,1.5285515986666667
+0711109,Elektrikli otomobil  ,7,07111,Birinci el motorlu taşıtlar  ,4.585654796,3,1.5285515986666667
+0712001,Motosiklet  ,7,07120,Motosikletler  ,0.4768837,1,0.4768837
+0713001,Bisiklet  ,7,07130,Bisikletler  ,0.055285327,1,0.055285327
+0721101,Otomobil lastikleri  ,7,07211,Lastikler  ,0.183635255,1,0.183635255
+0721201,Otomobil yedek parça ve ekipmanları  ,7,07212,Kişisel ulaşım araçlarının parçaları  ,0.112440248,1,0.112440248
+0721302,Otomobil aksesuarları  ,7,07213,Kişisel ulaşım araçlarının aksesuarları  ,0.062392116,1,0.062392116
+0722101,Motorin (mazot)  ,7,07221,Motorin (Mazot)  ,1.391928284,1,1.391928284
+0722201,Benzin  ,7,07222,Benzin  ,1.236361641,1,1.236361641
+0722301,LPG ücreti (taşıtlar için)  ,7,07223,Kişisel ulaşım araçları için diğer yakıtlar  ,0.580058015,2,0.2900290075
+0722398,Elektrikli araç şarj ücreti  ,7,07223,Kişisel ulaşım araçları için diğer yakıtlar  ,0.580058015,2,0.2900290075
+0722401,Motor yağları  ,7,07224,Yağlar  ,0.020665548,1,0.020665548
+0723001,Otomobil yedek parça ve aksesuar montaj hizmeti  ,7,07230,Kişisel ulaşım araçlarının bakım ve onarımı  ,0.991676735,2,0.4958383675
+0723002,Otomobil tamir ve bakım hizmeti  ,7,07230,Kişisel ulaşım araçlarının bakım ve onarımı  ,0.991676735,2,0.4958383675
+0724201,Otoban geçiş ücreti  ,7,07242,Geçiş ücretleri  ,0.034306235,2,0.0171531175
+0724202,Köprü geçiş ücreti  ,7,07242,Geçiş ücretleri  ,0.034306235,2,0.0171531175
+0724302,Sürücü kursu ücreti  ,7,07243,"Sürücü kursları, araç muayene, emisyon ölçüm ücreti vb. hizmetler  ",0.189974964,2,0.094987482
+0724304,Araç muayene ve emisyon ölçüm ücreti  ,7,07243,"Sürücü kursları, araç muayene, emisyon ölçüm ücreti vb. hizmetler  ",0.189974964,2,0.094987482
+0724401,Araç kiralama ücreti  ,7,07244,Kişisel ulaşım araçlarının sürücüsüz olarak kiralanması  ,0.072260226,1,0.072260226
+0731102,Tren bileti ücreti (şehirlerarası)  ,7,07311,Tren ile yolcu taşımacılığı  ,0.098408556,1,0.098408556
+0731201,Metro bileti ücreti  ,7,07312,Metro ve tramvay ile yolcu taşımacılığı  ,0.016701197,2,0.0083505985
+0731203,Tramvay bileti ücreti  ,7,07312,Metro ve tramvay ile yolcu taşımacılığı  ,0.016701197,2,0.0083505985
+0732101,Belediye otobüs bileti ücreti  ,7,07321,Otobüs ile yolcu taşımacılığı  ,3.653443337,3,1.2178144456666666
+0732104,Şehirlerarası otobüs bileti ücreti  ,7,07321,Otobüs ile yolcu taşımacılığı  ,3.653443337,3,1.2178144456666666
+0732106,Dolmuş ücreti  ,7,07321,Otobüs ile yolcu taşımacılığı  ,3.653443337,3,1.2178144456666666
+0732201,Taksi ücreti  ,7,07322,Taksi ve sürücüsü ile birlikte kiralanmış taşıtlarla yolcu taşımacılığı  ,0.662454294,1,0.662454294
+0732301,Okul servisi ücreti  ,7,07323,Okul servisleri  ,0.788977245,1,0.788977245
+0733101,Uçak bileti ücreti (yurtiçi)  ,7,07331,Hava yolu ile yurt içi yolcu taşımacılığı  ,0.586317414,1,0.586317414
+0733201,Uçak bileti ücreti (yurt dışı)  ,7,07332,Hava yolu ile yurt dışı yolcu taşımacılığı  ,0.287360407,1,0.287360407
+0734001,Vapur bileti ücreti  ,7,07340,Deniz ve iç sularda yolcu taşımacılığı  ,0.048304264,1,0.048304264
+0741201,Kargo gönderim ücreti  ,7,07412,Kurye ve paket/koli dağıtım hizmetleri  ,0.041215677,1,0.041215677
+0749101,Nakliye ücreti  ,7,07491,Nakliye ve depolama hizmetleri  ,0.433804755,1,0.433804755
+0749201,"Malların dağıtım ücretleri (kurye, paket servis vb.)  ",7,07492,"Malların dağıtım ücretleri (kurye, paket servis vb.)  ",0.006389764,1,0.006389764
+0812002,Cep telefonu  ,8,08120,Mobil telefon ve ekipmanları  ,0.873802095,1,0.873802095
+0813101,Bilgisayar  ,8,08131,"Bilgisayarlar, diz üstü bilsayarlar ve tablet bilgisayarlar  ",0.180806685,1,0.180806685
+0813209,Bilgisayar ekipmanları  ,8,08132,Bilgisayar çevre birimleri ve sarf malzemeleri  ,0.017588402,1,0.017588402
+0814001,Ses ve görüntü ekipmanları  ,8,08140,"Ses ve görüntü alma, kaydetme ve çoğaltma ekipmanları  ",0.258278482,2,0.129139241
+0814007,Televizyon  ,8,08140,"Ses ve görüntü alma, kaydetme ve çoğaltma ekipmanları  ",0.258278482,2,0.129139241
+0819103,Diğer iletişim ekipmanları  ,8,08191,Diğer bilgi ve iletişim ekipmanları  ,0.037188284,1,0.037188284
+0819201,Diğer bilgi ve iletişim aksesuarları  ,8,08192,Diğer bilgi ve iletişim aksesuarları  ,0.108913067,1,0.108913067
+0832001,Cep telefonu görüşme ücreti  ,8,08320,Mobil iletişim hizmetleri  ,1.146516888,1,1.146516888
+0833001,İnternet ücreti  ,8,08330,İnternet erişim hizmetleri  ,0.339468168,1,0.339468168
+0835001,Bilgi ve iletişim ekipmanlarının tamir ve bakımı  ,8,08350,Bilgi ve iletişim ekipmanlarının onarımı ve kiralanması  ,0.04794957,1,0.04794957
+0839201,Görsel ve işitsel platform aboneliği  ,8,08392,"Görsel-işitsel içeriklerin aboneliği, kiralanması ve çevrim içi yayın hizmetleri  ",0.092988358,1,0.092988358
+0921104,Elektronik oyunlar (oyun konsolları vb.)  ,9,09211,"Video oyunu bilgisayarları, oyun konsolları, oyun uygulamaları ve yazılımları  ",0.038515362,1,0.038515362
+0921204,Diğer oyuncaklar  ,9,09212,"Diğer oyunlar, oyuncaklar ve hobiler  ",0.196182189,2,0.0980910945
+0921207,Tekerlekli sürülebilir oyuncaklar  ,9,09212,"Diğer oyunlar, oyuncaklar ve hobiler  ",0.196182189,2,0.0980910945
+0922102,Evde kullanılan spor aletleri  ,9,09221,Spor ekipmanları  ,0.159752174,3,0.053250724666666666
+0922103,Spor ekipmanları  ,9,09221,Spor ekipmanları  ,0.159752174,3,0.053250724666666666
+0922107,Sportif faaliyetler için özel amaçlı giysi ve aksesuarlar  ,9,09221,Spor ekipmanları  ,0.159752174,3,0.053250724666666666
+0932201,Evcil hayvan mamaları  ,9,09322,Ev hayvanları ve diğer evcil hayvanlar için ürünler  ,0.484609872,2,0.242304936
+0932204,Evcil hayvanlara yönelik diğer ürünler  ,9,09322,Ev hayvanları ve diğer evcil hayvanlar için ürünler  ,0.484609872,2,0.242304936
+0945001,Veterinerlik hizmetleri  ,9,09450,Veterinerlik ve ev hayvanları için diğer hizmetler  ,0.278447273,1,0.278447273
+0946103,Hobi ve eğlence hizmetleri  ,9,09461,Eğlence ve dinlence hizmetleri  ,0.376458859,1,0.376458859
+0946201,"Sportif tesislere yapılan ödemeler (üyelik, kiralama vb.)  ",9,09462,Spor faaliyetlerine katılım  ,1.203360635,2,0.6016803175
+0946203,Spor amaçlı kurs ücretleri  ,9,09462,Spor faaliyetlerine katılım  ,1.203360635,2,0.6016803175
+0947001,Şans oyunları  ,9,09470,Şans oyunları  ,0.071460918,1,0.071460918
+0961001,Sinema bileti  ,9,09610,"Sinema, tiyatro ve konser salonlarında verilen hizmetler  ",0.184897635,2,0.0924488175
+0961002,Tiyatro bileti  ,9,09610,"Sinema, tiyatro ve konser salonlarında verilen hizmetler  ",0.184897635,2,0.0924488175
+0969006,"Düğün, nişan vb. toplantılar için salon kirası  ",9,09690,Diğer kültürel hizmetler  ,0.241937157,1,0.241937157
+0971102,Test kitapları  ,9,09711,Eğitsel kitaplar ve ders kitapları  ,0.243569508,2,0.121784754
+0971103,Ders kitapları  ,9,09711,Eğitsel kitaplar ve ders kitapları  ,0.243569508,2,0.121784754
+0971901,Çocuk kitapları  ,9,09719,Diğer kitaplar  ,0.096467458,2,0.048233729
+0971902,Diğer kitaplar  ,9,09719,Diğer kitaplar  ,0.096467458,2,0.048233729
+0974001,Okul defterleri  ,9,09740,Kırtasiye ve çizim malzemeleri  ,0.17131905,5,0.03426381
+0974003,Kalemler  ,9,09740,Kırtasiye ve çizim malzemeleri  ,0.17131905,5,0.03426381
+0974004,Resim boyaları  ,9,09740,Kırtasiye ve çizim malzemeleri  ,0.17131905,5,0.03426381
+0974005,Yazım ve çizim kağıtları  ,9,09740,Kırtasiye ve çizim malzemeleri  ,0.17131905,5,0.03426381
+0974009,Diğer kırtasiye malzemeleri  ,9,09740,Kırtasiye ve çizim malzemeleri  ,0.17131905,5,0.03426381
+0980002,Yurt içi hafta sonu turları  ,9,09800,Paket turlar ve tatiller  ,0.591221909,5,0.1182443818
+0980003,Yurt içi diğer turlar  ,9,09800,Paket turlar ve tatiller  ,0.591221909,5,0.1182443818
+0980006,Yurt dışı turlar  ,9,09800,Paket turlar ve tatiller  ,0.591221909,5,0.1182443818
+0980008,Umre ücreti (Diyanet İşleri Başkanlığı)  ,9,09800,Paket turlar ve tatiller  ,0.591221909,5,0.1182443818
+0980009,Umre ücreti (acente)  ,9,09800,Paket turlar ve tatiller  ,0.591221909,5,0.1182443818
+1010101,Anaokulu ücreti  ,10,10101,Okul öncesi eğitim  ,0.239807041,1,0.239807041
+1010201,Özel ilkokul ücreti  ,10,10102,İlkokul eğitimi (temel eğitim)  ,0.458636148,1,0.458636148
+1020001,Özel ortaokul ücreti  ,10,10200,Ortaöğretim eğitimi (ortaokul ve lise)  ,0.547906793,2,0.2739533965
+1020002,Özel lise ücreti  ,10,10200,Ortaöğretim eğitimi (ortaokul ve lise)  ,0.547906793,2,0.2739533965
+1040001,Özel üniversite ücreti  ,10,10400,Yükseköğretim eğitimi  ,0.775150018,2,0.387575009
+1040002,Açıköğretim öğrenci katkı ücreti (ikinci üniversite)  ,10,10400,Yükseköğretim eğitimi  ,0.775150018,2,0.387575009
+1111130,Çorbalar (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111131,Sıcak yemekler (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111132,Kebaplar (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111133,Pideler (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111135,Ekmekarası yiyecekler (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111144,Hamur tatlıları (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111148,Kahvaltı (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111152,Sıcak içecekler (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111153,Soğuk içecekler/meşrubat (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111155,Ayran (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111156,Alkollü içecekler (hizmet sunulan yerlerde tüketilen)  ,11,11111,"Lokantalar, kafeler ve benzerleri, tam sunum hizmeti verenler  ",7.53392648,11,0.6849024072727272
+1111207,Çiğ köfte (hızlı hizmet sunulan yerlerde tüketilen)  ,11,11112,"Lokantalar, kafeler ve benzerleri, sınırlı sunum hizmeti verenler  ",0.37664322,3,0.12554774
+1111231,Pizza (hızlı hizmet sunulan yerlerde tüketilen)  ,11,11112,"Lokantalar, kafeler ve benzerleri, sınırlı sunum hizmeti verenler  ",0.37664322,3,0.12554774
+1111237,Hamburger (hızlı hizmet sunulan yerlerde tüketilen)  ,11,11112,"Lokantalar, kafeler ve benzerleri, sınırlı sunum hizmeti verenler  ",0.37664322,3,0.12554774
+1112108,Tost (kantinde satılan)  ,11,11121,"Üniversitelerin, okulların ve kreşlerin kafeteryaları ve kantinleri  ",0.526962877,3,0.17565429233333332
+1112113,Simit (kantinde satılan)  ,11,11121,"Üniversitelerin, okulların ve kreşlerin kafeteryaları ve kantinleri  ",0.526962877,3,0.17565429233333332
+1112120,Çay (kantinde satılan)  ,11,11121,"Üniversitelerin, okulların ve kreşlerin kafeteryaları ve kantinleri  ",0.526962877,3,0.17565429233333332
+1120101,Otel ücreti  ,11,11201,"Otel, motel, pansiyon ve benzeri yerlerdeki konaklama hizmetleri  ",2.58956584,1,2.58956584
+1120301,Yurt ücreti (üniversite-özel)  ,11,11203,"Yatılı okullar, üniversiteler ve diğer eğitim kurumlarındaki konaklama hizmetleri  ",0.107801583,2,0.0539007915
+1120398,Yurt ücreti (üniversite-devlet)  ,11,11203,"Yatılı okullar, üniversiteler ve diğer eğitim kurumlarındaki konaklama hizmetleri  ",0.107801583,2,0.0539007915
+1212098,Sağlık sigortası  ,12,12120,Sağlık sigortası  ,0.028177868,1,0.028177868
+1213001,Konut sigortası (yangın ve diğer afetler)  ,12,12130,Konut sigortası  ,0.045829863,2,0.0229149315
+1213002,Zorunlu deprem sigortası (dask)  ,12,12130,Konut sigortası  ,0.045829863,2,0.0229149315
+1214101,Kasko ve zorunlu trafik sigortası  ,12,12141,Özel taşımacılık sigortası  ,0.354199851,1,0.354199851
+1222001,Diğer bankacılık hizmet ücretleri  ,12,12220,Mevduat kabul eden kuruluşlara yapılan doğrudan ödemeler  ,0.483387195,2,0.2416935975
+1222002,Kredi kartı yıllık aidatı  ,12,12220,Mevduat kabul eden kuruluşlara yapılan doğrudan ödemeler  ,0.483387195,2,0.2416935975
+1229101,Para transfer ücretleri  ,12,12291,Havale ücretleri  ,0.162405223,1,0.162405223
+1311101,Elektrikli tıraş makinesi  ,13,13111,Kişisel bakıma yönelik elektrikli aletler  ,0.063957329,3,0.021319109666666666
+1311103,Elektrikli saç bakım aletleri  ,13,13111,Kişisel bakıma yönelik elektrikli aletler  ,0.063957329,3,0.021319109666666666
+1311104,Diğer elektrikli kişisel bakım aletleri  ,13,13111,Kişisel bakıma yönelik elektrikli aletler  ,0.063957329,3,0.021319109666666666
+1312001,Tıraş bıçağı  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312002,Diş fırçası  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312016,Diş macunu  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312017,El sabunu (katı ve sıvı)  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312018,Banyo sabunu  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312019,Parfüm  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312020,Deodorant  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312021,Kolonya  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312022,Diğer kişisel bakım ürünleri  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312023,Makyaj malzemeleri  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312024,Güneş kremi  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312025,Saç bakım ürünleri  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312026,Tuvalet kağıdı  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312027,Diğer kağıt ürünleri  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1312030,Hijyenik kadın bağı  ,13,13120,"Kişisel bakıma yönelik diğer aletler, malzemeler ve ürünler  ",1.222698987,15,0.0815132658
+1313101,Erkek berberi hizmetleri  ,13,13131,Kuaförlük hizmetleri  ,0.39276971,2,0.196384855
+1313102,Kadın kuaförü hizmetleri  ,13,13131,Kuaförlük hizmetleri  ,0.39276971,2,0.196384855
+1313202,Kişisel bakım hizmetleri (kadın için)  ,13,13132,Kişisel bakım hizmetleri  ,0.192544633,1,0.192544633
+1321101,Mücevher (altın)  ,13,13211,Mücevherat ve kol saatleri  ,0.448906158,2,0.224453079
+1321105,Kol saati  ,13,13211,Mücevherat ve kol saatleri  ,0.448906158,2,0.224453079
+1329101,Seyahat eşyaları  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1329104,Kadın çantası  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1329106,Okul çantası  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1329111,Güneş gözlükleri  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1329114,Bebek arabası  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1329129,Bebek bezi  ,13,13291,"Başka yerde sınıflandırılmamış seyahat eşyaları, bebekler için malzemeler ve diğer kişisel eşyalar  ",0.645059708,6,0.10750995133333334
+1330101,Kreş ve gündüz bakım hizmeti  ,13,13301,Çocuk bakım hizmetleri  ,0.351719459,1,0.351719459
+1390208,Hac ücreti (Diyanet İşleri Başkanlığı paket fiyatı)  ,13,13902,Dini hizmetler  ,0.402152788,1,0.402152788
+1390901,Noter ücreti  ,13,13909,Başka yerde sınıflandırılmamış diğer hizmetler  ,0.773691227,4,0.19342280675
+1390902,Otomobil ekspertiz ücreti  ,13,13909,Başka yerde sınıflandırılmamış diğer hizmetler  ,0.773691227,4,0.19342280675
+1390903,Hukuki hizmetler  ,13,13909,Başka yerde sınıflandırılmamış diğer hizmetler  ,0.773691227,4,0.19342280675
+1390906,Diğer hizmetler için ödemeler  ,13,13909,Başka yerde sınıflandırılmamış diğer hizmetler  ,0.773691227,4,0.19342280675

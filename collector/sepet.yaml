@@ -21,13 +21,19 @@
 # =============================================================================
 
 defaults:
-  lat: 41.03          # İstanbul merkez; TÜİK 81 il ağırlıklı, İstanbul ~%25
-  lon: 28.98
   distance: 15000
+
+# Bölgeler: Market Fiyatı lat/lon ile, Petrol Ofisi il adıyla, İBB Hal yalnız İstanbul.
+# tuik_ibbs: TÜİK bölgesel TÜFE kodu (doğrulama için). pay_tr: "Türkiye" birleşiminde
+# bölge payı; şimdilik 2 şehir -> İstanbul/Ankara nüfus+harcama oranına yakın 0.70/0.30.
+# Şehir eklendikçe paylar TÜİK İBBS ağırlıklarından yeniden türetilir.
+regions:
+  - {id: istanbul, ad: İstanbul, tuik_ibbs: TR10, lat: 41.01, lon: 28.97, po_il: "ISTANBUL (AVRUPA)", hal: ibb, pay_tr: 0.70}
+  - {id: ankara,   ad: Ankara,   tuik_ibbs: TR51, lat: 39.93, lon: 32.86, po_il: "ANKARA", pay_tr: 0.30}
 
 items:
 # ---------------------------------------------------------------- 01 GIDA (24.44)
-  - coicop: "01.1.1.3"
+  - coicop: "01113"
     ad: "Ekmek"
     anagrup: "01"
     agirlik: 1.60
@@ -36,7 +42,7 @@ items:
       - {id: mf_ekmek_1, adapter: marketfiyati, keywords: "ekmek 250 g", market: "Migros"}
       - {id: mf_ekmek_2, adapter: marketfiyati, keywords: "ekmek 250 g", market: "CarrefourSA"}
       - {id: mf_ekmek_3, adapter: marketfiyati, keywords: "tam buğday ekmeği 350 g"}
-  - coicop: "01.1.1.5"
+  - coicop: "01115"
     ad: "Makarna"
     anagrup: "01"
     agirlik: 0.45
@@ -44,7 +50,7 @@ items:
     skus:
       - {id: mf_makarna_1, adapter: marketfiyati, keywords: "makarna 500 g burgu"}
       - {id: mf_makarna_2, adapter: marketfiyati, keywords: "makarna 500 g spagetti"}
-  - coicop: "01.1.1.1"
+  - coicop: "01111"
     ad: "Pirinç"
     anagrup: "01"
     agirlik: 0.50
@@ -52,7 +58,7 @@ items:
     skus:
       - {id: mf_pirinc_1, adapter: marketfiyati, keywords: "baldo pirinç 1 kg"}
       - {id: mf_pirinc_2, adapter: marketfiyati, keywords: "osmancık pirinç 1 kg"}
-  - coicop: "01.1.2.1"
+  - coicop: "01122"
     ad: "Dana eti"
     anagrup: "01"
     agirlik: 1.90
@@ -60,7 +66,7 @@ items:
     skus:
       - {id: mf_dana_kiyma, adapter: marketfiyati, keywords: "dana kıyma kg"}
       - {id: mf_dana_kusbasi, adapter: marketfiyati, keywords: "dana kuşbaşı kg"}
-  - coicop: "01.1.2.4"
+  - coicop: "01125"
     ad: "Tavuk eti"
     anagrup: "01"
     agirlik: 1.20
@@ -69,7 +75,7 @@ items:
       - {id: mf_tavuk_but, adapter: marketfiyati, keywords: "piliç but kg"}
       - {id: mf_tavuk_gogus, adapter: marketfiyati, keywords: "piliç göğüs kg"}
       - {id: mf_tavuk_butun, adapter: marketfiyati, keywords: "bütün piliç kg"}
-  - coicop: "01.1.4.1"
+  - coicop: "01141"
     ad: "Süt"
     anagrup: "01"
     agirlik: 0.70
@@ -77,7 +83,7 @@ items:
     skus:
       - {id: mf_sut_1, adapter: marketfiyati, keywords: "süt 1 l tam yağlı"}
       - {id: mf_sut_2, adapter: marketfiyati, keywords: "günlük süt 1 l"}
-  - coicop: "01.1.4.5"
+  - coicop: "01145"
     ad: "Peynir"
     anagrup: "01"
     agirlik: 1.50
@@ -85,7 +91,7 @@ items:
     skus:
       - {id: mf_beyaz_peynir, adapter: marketfiyati, keywords: "beyaz peynir 600 g"}
       - {id: mf_kasar, adapter: marketfiyati, keywords: "kaşar peyniri 600 g"}
-  - coicop: "01.1.4.7"
+  - coicop: "01148"
     ad: "Yumurta"
     anagrup: "01"
     agirlik: 0.60
@@ -93,7 +99,7 @@ items:
     skus:
       - {id: mf_yumurta_1, adapter: marketfiyati, keywords: "yumurta 30 lu"}
       - {id: mf_yumurta_2, adapter: marketfiyati, keywords: "yumurta 15 li l"}
-  - coicop: "01.1.5.3"
+  - coicop: "01151"
     ad: "Ayçiçek yağı"
     anagrup: "01"
     agirlik: 0.80
@@ -101,7 +107,7 @@ items:
     skus:
       - {id: mf_aycicek_1, adapter: marketfiyati, keywords: "ayçiçek yağı 5 l"}
       - {id: mf_aycicek_2, adapter: marketfiyati, keywords: "ayçiçek yağı 1 l"}
-  - coicop: "01.1.6.1"
+  - coicop: "01163"
     ad: "Taze meyve (sepet)"
     anagrup: "01"
     agirlik: 2.60
@@ -113,7 +119,7 @@ items:
       - {id: hal_portakal, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "PORTAKAL"}
       - {id: mf_elma, adapter: marketfiyati, keywords: "elma kg"}
       - {id: mf_muz, adapter: marketfiyati, keywords: "muz kg"}
-  - coicop: "01.1.7.1"
+  - coicop: "01172"
     ad: "Taze sebze (sepet)"
     anagrup: "01"
     agirlik: 3.00
@@ -127,7 +133,7 @@ items:
       - {id: hal_sogan, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "SOGAN"}
       - {id: mf_domates, adapter: marketfiyati, keywords: "domates kg"}
       - {id: mf_patates, adapter: marketfiyati, keywords: "patates kg"}
-  - coicop: "01.1.8.1"
+  - coicop: "01181"
     ad: "Şeker"
     anagrup: "01"
     agirlik: 0.35
@@ -135,7 +141,7 @@ items:
     skus:
       - {id: mf_seker_1, adapter: marketfiyati, keywords: "toz şeker 1 kg"}
       - {id: mf_seker_2, adapter: marketfiyati, keywords: "küp şeker 1 kg"}
-  - coicop: "01.2.1.2"
+  - coicop: "01230"
     ad: "Çay"
     anagrup: "01"
     agirlik: 0.55
@@ -143,7 +149,7 @@ items:
     skus:
       - {id: mf_cay_1, adapter: marketfiyati, keywords: "çay 1 kg dökme"}
       - {id: mf_cay_2, adapter: marketfiyati, keywords: "çay 500 g"}
-  - coicop: "01.2.2.1"
+  - coicop: "01260"
     ad: "Su ve gazlı içecekler"
     anagrup: "01"
     agirlik: 0.70
@@ -151,7 +157,8 @@ items:
     skus:
       - {id: mf_su_5l, adapter: marketfiyati, keywords: "su 5 l"}
       - {id: mf_kola_1l, adapter: marketfiyati, keywords: "kola 1 l"}
-  - coicop: "01.x.rest"
+  - coicop: "01"
+    artik: true
     ad: "Gıda - diğer (TÜİK alt endeksi ile taşınır)"
     anagrup: "01"
     agirlik: 8.00
@@ -160,7 +167,7 @@ items:
       - {id: evds_gida_01, adapter: evds, series: "TP.TUKFIY2025.01"}
 
 # ------------------------------------------------ 02 ALKOL-TÜTÜN (2.75)
-  - coicop: "02.2.0.1"
+  - coicop: "02301"
     ad: "Sigara"
     anagrup: "02"
     agirlik: 2.30
@@ -168,16 +175,16 @@ items:
     skus:
       # Yönetilen fiyat; ÖTV değişiminde sıçrar. TÜİK alt endeksi + haber takibi.
       - {id: evds_tutun, adapter: evds, series: "TP.TUKFIY2025.023"}
-  - coicop: "02.1.x"
+  - coicop: "02130"
     ad: "Alkollü içecekler"
     anagrup: "02"
     agirlik: 0.45
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_alkol, adapter: evds, series: "TP.TUKFIY2025.021"}
+      - {id: evds_alkol, adapter: evds, series: "TP.TUKFIY2025.0213"}
 
 # -------------------------------------------------- 03 GİYİM-AYAKKABI (7.90)
-  - coicop: "03.1.2"
+  - coicop: "03122"
     ad: "Giyim (pazar yeri sepeti)"
     anagrup: "03"
     agirlik: 6.30
@@ -188,18 +195,18 @@ items:
       # 20-30 sabit SKU ile doldurun. Pattern sayfadaki "₺" fiyatını yakalar.
       - {id: pw_giyim_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
       - {id: pw_giyim_2, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_giyim, adapter: evds, series: "TP.TUKFIY2025.031"}
-  - coicop: "03.2.1"
+      - {id: evds_giyim, adapter: evds, series: "TP.TUKFIY2025.03122"}
+  - coicop: "03211"
     ad: "Ayakkabı"
     anagrup: "03"
     agirlik: 1.60
     agirlik_durum: yaklasik
     skus:
       - {id: pw_ayakkabi_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_ayakkabi, adapter: evds, series: "TP.TUKFIY2025.032"}
+      - {id: evds_ayakkabi, adapter: evds, series: "TP.TUKFIY2025.03211"}
 
 # ----------------------------------------------------- 04 KONUT-ENERJİ (11.40)
-  - coicop: "04.1.1.0"
+  - coicop: "04110"
     ad: "Gerçek kira"
     anagrup: "04"
     agirlik: 5.80
@@ -207,29 +214,30 @@ items:
     skus:
       # İlan verisi mevcut kiracıyı ölçmez; TÜİK'in gerçek kira alt endeksi taşınır.
       - {id: evds_kira, adapter: evds, series: "TP.TUKFIY2025.04110"}
-  - coicop: "04.5.1"
+  - coicop: "04510"
     ad: "Elektrik"
     anagrup: "04"
     agirlik: 1.80
     agirlik_durum: yaklasik
     skus:
       # Yönetilen tarife; EPDK duyurusuyla değişir. TÜİK alt endeksi + tarife takvimi.
-      - {id: evds_elektrik, adapter: evds, series: "TP.TUKFIY2025.0451"}
-  - coicop: "04.5.2"
+      - {id: evds_elektrik, adapter: evds, series: "TP.TUKFIY2025.04510"}
+  - coicop: "04521"
     ad: "Doğalgaz"
     anagrup: "04"
     agirlik: 1.40
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_dogalgaz, adapter: evds, series: "TP.TUKFIY2025.0452"}
-  - coicop: "04.4.1"
+      - {id: evds_dogalgaz, adapter: evds, series: "TP.TUKFIY2025.04521"}
+  - coicop: "04411"
     ad: "Su"
     anagrup: "04"
     agirlik: 0.80
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_su, adapter: evds, series: "TP.TUKFIY2025.0441"}
-  - coicop: "04.x.rest"
+      - {id: evds_su, adapter: evds, series: "TP.TUKFIY2025.04411"}
+  - coicop: "04"
+    artik: true
     ad: "Konut - diğer (bakım-onarım, tüp vb.)"
     anagrup: "04"
     agirlik: 1.60
@@ -239,7 +247,7 @@ items:
       - {id: evds_konut_diger, adapter: evds, series: "TP.TUKFIY2025.04"}
 
 # ------------------------------------------------------- 05 EV EŞYASI (7.92)
-  - coicop: "05.3.1"
+  - coicop: "05312"
     ad: "Beyaz eşya"
     anagrup: "05"
     agirlik: 2.20
@@ -247,8 +255,8 @@ items:
     skus:
       - {id: pw_buzdolabi, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
       - {id: pw_camasir, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_beyaz_esya, adapter: evds, series: "TP.TUKFIY2025.053"}
-  - coicop: "05.6.1"
+      - {id: evds_beyaz_esya, adapter: evds, series: "TP.TUKFIY2025.05312"}
+  - coicop: "05611"
     ad: "Temizlik ürünleri"
     anagrup: "05"
     agirlik: 1.50
@@ -258,7 +266,8 @@ items:
       - {id: mf_bulasik, adapter: marketfiyati, keywords: "bulaşık deterjanı 750 ml"}
       - {id: mf_camasir_suyu, adapter: marketfiyati, keywords: "çamaşır suyu 4 l"}
       - {id: mf_tuvalet_kagidi, adapter: marketfiyati, keywords: "tuvalet kağıdı 32 li"}
-  - coicop: "05.x.rest"
+  - coicop: "05"
+    artik: true
     ad: "Ev eşyası - diğer (mobilya, tekstil)"
     anagrup: "05"
     agirlik: 4.20
@@ -267,15 +276,16 @@ items:
       - {id: evds_ev_esyasi, adapter: evds, series: "TP.TUKFIY2025.05"}
 
 # ------------------------------------------------------------ 06 SAĞLIK (2.79)
-  - coicop: "06.1.1"
+  - coicop: "06111"
     ad: "İlaç"
     anagrup: "06"
     agirlik: 1.00
     agirlik_durum: yaklasik
     skus:
       # Kur güncellemesiyle (Şubat) sıçrar; TİTCK fiyat listesi + TÜİK alt endeksi.
-      - {id: evds_ilac, adapter: evds, series: "TP.TUKFIY2025.0611"}
-  - coicop: "06.x.rest"
+      - {id: evds_ilac, adapter: evds, series: "TP.TUKFIY2025.06111"}
+  - coicop: "06"
+    artik: true
     ad: "Sağlık hizmetleri"
     anagrup: "06"
     agirlik: 1.79
@@ -284,31 +294,28 @@ items:
       - {id: evds_saglik, adapter: evds, series: "TP.TUKFIY2025.06"}
 
 # -------------------------------------------------------- 07 ULAŞTIRMA (16.62)
-  - coicop: "07.2.2.2"
+  - coicop: "07222"
     ad: "Benzin"
     anagrup: "07"
     agirlik: 2.60
     agirlik_durum: yaklasik
     skus:
       - {id: po_benzin_ist_avr, adapter: petrolofisi, il: "ISTANBUL (AVRUPA)", urun: benzin}
-      - {id: po_benzin_ankara, adapter: petrolofisi, il: "ANKARA", urun: benzin}
-      - {id: po_benzin_izmir, adapter: petrolofisi, il: "IZMIR", urun: benzin}
-  - coicop: "07.2.2.1"
+  - coicop: "07221"
     ad: "Motorin"
     anagrup: "07"
     agirlik: 1.60
     agirlik_durum: yaklasik
     skus:
       - {id: po_motorin_ist_avr, adapter: petrolofisi, il: "ISTANBUL (AVRUPA)", urun: motorin}
-      - {id: po_motorin_ankara, adapter: petrolofisi, il: "ANKARA", urun: motorin}
-  - coicop: "07.2.2.3"
+  - coicop: "07223"
     ad: "LPG"
     anagrup: "07"
     agirlik: 0.60
     agirlik_durum: yaklasik
     skus:
       - {id: po_lpg_ist_avr, adapter: petrolofisi, il: "ISTANBUL (AVRUPA)", urun: lpg}
-  - coicop: "07.1.1"
+  - coicop: "07111"
     ad: "Otomobil"
     anagrup: "07"
     agirlik: 5.50
@@ -316,16 +323,17 @@ items:
     skus:
       # Marka liste fiyatı sayfaları (aylık güncellenir); 5-6 en çok satan model.
       - {id: pw_oto_1, adapter: playwright, url: "MARKA_FIYAT_LISTESI_URL", pattern: 'MODEL_ADI.*?([0-9.]+)\s*TL'}
-      - {id: evds_oto, adapter: evds, series: "TP.TUKFIY2025.0711"}
-  - coicop: "07.3.x"
+      - {id: evds_oto, adapter: evds, series: "TP.TUKFIY2025.07111"}
+  - coicop: "07321"
     ad: "Toplu taşıma + uçak"
     anagrup: "07"
     agirlik: 3.00
     agirlik_durum: yaklasik
     skus:
       # Belediye tarifeleri (İETT/EGO/ESHOT) duyuruyla değişir; uçak: bilet siteleri.
-      - {id: evds_yolcu_tasima, adapter: evds, series: "TP.TUKFIY2025.073"}
-  - coicop: "07.x.rest"
+      - {id: evds_yolcu_tasima, adapter: evds, series: "TP.TUKFIY2025.07321"}
+  - coicop: "07"
+    artik: true
     ad: "Ulaştırma - diğer (bakım, yedek parça, sigorta hariç)"
     anagrup: "07"
     agirlik: 3.32
@@ -334,7 +342,7 @@ items:
       - {id: evds_ulastirma_diger, adapter: evds, series: "TP.TUKFIY2025.07"}
 
 # ------------------------------------------------- 08 BİLGİ-İLETİŞİM (3.10)
-  - coicop: "08.1.x"
+  - coicop: "08120"
     ad: "Telefon-bilgisayar"
     anagrup: "08"
     agirlik: 1.20
@@ -342,24 +350,25 @@ items:
     skus:
       - {id: pw_telefon_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
       - {id: pw_laptop_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-  - coicop: "08.3.x"
+  - coicop: "08320"
     ad: "Telekom hizmetleri"
     anagrup: "08"
     agirlik: 1.90
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_telekom, adapter: evds, series: "TP.TUKFIY2025.083"}
+      - {id: evds_telekom, adapter: evds, series: "TP.TUKFIY2025.08320"}
 
 # --------------------------------------------------- 09 EĞLENCE-KÜLTÜR (4.34)
-  - coicop: "09.6.x"
+  - coicop: "09800"
     ad: "Paket tur"
     anagrup: "09"
     agirlik: 1.60
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: evds_paket_tur, adapter: evds, series: "TP.TUKFIY2025.096"}
-  - coicop: "09.x.rest"
+      - {id: evds_paket_tur, adapter: evds, series: "TP.TUKFIY2025.09800"}
+  - coicop: "09"
+    artik: true
     ad: "Eğlence-kültür diğer (kitap, kırtasiye, spor)"
     anagrup: "09"
     agirlik: 2.74
@@ -369,7 +378,8 @@ items:
       - {id: evds_eglence, adapter: evds, series: "TP.TUKFIY2025.09"}
 
 # ------------------------------------------------------------ 10 EĞİTİM (2.02)
-  - coicop: "10.x"
+  - coicop: "10"
+    artik: true
     ad: "Eğitim hizmetleri"
     anagrup: "10"
     agirlik: 2.02
@@ -379,7 +389,7 @@ items:
       - {id: evds_egitim, adapter: evds, series: "TP.TUKFIY2025.10"}
 
 # ----------------------------------------------- 11 LOKANTA-KONAKLAMA (11.13)
-  - coicop: "11.1.1"
+  - coicop: "11111"
     ad: "Lokanta (yemek platformu sepeti)"
     anagrup: "11"
     agirlik: 9.00
@@ -388,18 +398,19 @@ items:
       # Platform menü sayfaları JS-render; aynı restoranın aynı 5-10 ürünü sabit SKU.
       - {id: pw_yemek_1, adapter: playwright, url: "RESTORAN_MENU_URL", pattern: 'URUN_ADI.*?([0-9.]+,[0-9]{2})'}
       - {id: pw_yemek_2, adapter: playwright, url: "RESTORAN_MENU_URL", pattern: 'URUN_ADI.*?([0-9.]+,[0-9]{2})'}
-      - {id: evds_lokanta, adapter: evds, series: "TP.TUKFIY2025.111"}
-  - coicop: "11.2.x"
+      - {id: evds_lokanta, adapter: evds, series: "TP.TUKFIY2025.11111"}
+  - coicop: "11201"
     ad: "Konaklama"
     anagrup: "11"
     agirlik: 2.13
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: evds_konaklama, adapter: evds, series: "TP.TUKFIY2025.112"}
+      - {id: evds_konaklama, adapter: evds, series: "TP.TUKFIY2025.11201"}
 
 # ------------------------------------------- 12 SİGORTA-FİNANS (1.07)
-  - coicop: "12.x"
+  - coicop: "12"
+    artik: true
     ad: "Sigorta ve finansal hizmetler"
     anagrup: "12"
     agirlik: 1.07
@@ -408,7 +419,7 @@ items:
       - {id: evds_sigorta, adapter: evds, series: "TP.TUKFIY2025.12"}
 
 # --------------------------------------------- 13 KİŞİSEL BAKIM (4.49)
-  - coicop: "13.1.x"
+  - coicop: "13120"
     ad: "Kişisel bakım ürünleri"
     anagrup: "13"
     agirlik: 2.20
@@ -418,7 +429,8 @@ items:
       - {id: mf_dis_macunu, adapter: marketfiyati, keywords: "diş macunu 75 ml"}
       - {id: mf_sabun, adapter: marketfiyati, keywords: "sıvı sabun 1,5 l"}
       - {id: mf_bebek_bezi, adapter: marketfiyati, keywords: "bebek bezi jumbo"}
-  - coicop: "13.x.rest"
+  - coicop: "13"
+    artik: true
     ad: "Kişisel bakım - diğer (kuaför, takı/altın)"
     anagrup: "13"
     agirlik: 2.29
