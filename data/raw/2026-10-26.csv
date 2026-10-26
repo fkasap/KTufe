@@ -39,18 +39,36 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,01151,mf_aycicek_1,445.0,marketfiyati,ok,
 2026-10-26,istanbul,01151,mf_aycicek_2,445.0,marketfiyati,ok,
 2026-10-26,ankara,01151,mf_aycicek_2,445.0,marketfiyati,ok,
-2026-10-26,istanbul,01163,hal_elma,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=ELMA&limit=50&sort=_id+desc (Caused by ConnectTimeo"
-2026-10-26,istanbul,01163,hal_muz,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=MUZ&limit=50&sort=_id+desc (Caused by ConnectTimeou"
-2026-10-26,istanbul,01163,hal_portakal,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=PORTAKAL&limit=50&sort=_id+desc (Caused by ConnectT"
+2026-10-26,istanbul,01163,hal_elma,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01163,hal_elma,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01163,hal_muz,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01163,hal_muz,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01163,hal_portakal,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01163,hal_portakal,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01163,hal_mandalina,14.21,html_regex,ok,
+2026-10-26,ankara,01163,hal_mandalina,14.21,html_regex,ok,
+2026-10-26,istanbul,01163,hal_limon,14.77,html_regex,ok,
+2026-10-26,ankara,01163,hal_limon,14.77,html_regex,ok,
 2026-10-26,istanbul,01163,mf_elma,39.45,marketfiyati,ok,
 2026-10-26,ankara,01163,mf_elma,39.45,marketfiyati,ok,
 2026-10-26,istanbul,01163,mf_muz,119.25,marketfiyati,ok,
 2026-10-26,ankara,01163,mf_muz,119.25,marketfiyati,ok,
-2026-10-26,istanbul,01172,hal_domates,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=DOMATES&limit=50&sort=_id+desc (Caused by ConnectTi"
-2026-10-26,istanbul,01172,hal_salatalik,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=SALATALIK&limit=50&sort=_id+desc (Caused by Connect"
-2026-10-26,istanbul,01172,hal_biber,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=BIBER&limit=50&sort=_id+desc (Caused by ConnectTime"
-2026-10-26,istanbul,01172,hal_patates,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=PATATES&limit=50&sort=_id+desc (Caused by ConnectTi"
-2026-10-26,istanbul,01172,hal_sogan,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=SOGAN&limit=50&sort=_id+desc (Caused by ConnectTime"
+2026-10-26,istanbul,01172,hal_domates_beef,30.57,html_regex,ok,
+2026-10-26,ankara,01172,hal_domates_beef,30.57,html_regex,ok,
+2026-10-26,istanbul,01172,hal_domates_diger,33.89,html_regex,ok,
+2026-10-26,ankara,01172,hal_domates_diger,33.89,html_regex,ok,
+2026-10-26,istanbul,01172,hal_salatalik,40.57,html_regex,ok,
+2026-10-26,ankara,01172,hal_salatalik,40.57,html_regex,ok,
+2026-10-26,istanbul,01172,hal_biber_sivri,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01172,hal_biber_sivri,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01172,hal_patates,13.96,html_regex,ok,
+2026-10-26,ankara,01172,hal_patates,13.96,html_regex,ok,
+2026-10-26,istanbul,01172,hal_sogan,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01172,hal_sogan,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01172,hal_kabak,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,ankara,01172,hal_kabak,,html_regex,missing,"nomatch len=80407 title=T.C. Ticaret Bakanlığı Hal Kayıt Sistemi -  Ana S ::  T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa Daha yüksek erişilebilirlik modunu a"
+2026-10-26,istanbul,01172,hal_patlican,25.39,html_regex,ok,
+2026-10-26,ankara,01172,hal_patlican,25.39,html_regex,ok,
 2026-10-26,istanbul,01172,mf_domates,69.95,marketfiyati,ok,
 2026-10-26,ankara,01172,mf_domates,69.95,marketfiyati,ok,
 2026-10-26,istanbul,01172,mf_patates,59.5,marketfiyati,ok,
@@ -73,66 +91,44 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,02301,evds_tutun,141.35,evds_file,ok,
 2026-10-26,istanbul,02130,evds_alkol,138.36,evds_file,ok,
 2026-10-26,ankara,02130,evds_alkol,138.36,evds_file,ok,
-2026-10-26,istanbul,03122,lcw_k_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/crop-flare-kadin-jean-pantolon"
-2026-10-26,ankara,03122,lcw_k_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/crop-flare-kadin-jean-pantolon"
-2026-10-26,istanbul,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
-2026-10-26,ankara,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
-2026-10-26,istanbul,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=226 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
-2026-10-26,ankara,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=226 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
-2026-10-26,istanbul,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
-2026-10-26,ankara,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
-2026-10-26,istanbul,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
-2026-10-26,ankara,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
-2026-10-26,istanbul,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
-2026-10-26,ankara,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
-2026-10-26,istanbul,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
-2026-10-26,ankara,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
-2026-10-26,istanbul,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
-2026-10-26,ankara,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
-2026-10-26,istanbul,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
-2026-10-26,ankara,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
-2026-10-26,istanbul,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
-2026-10-26,ankara,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
-2026-10-26,istanbul,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,ankara,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,istanbul,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,ankara,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,istanbul,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,ankara,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
-2026-10-26,istanbul,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,ankara,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,istanbul,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,ankara,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
-2026-10-26,istanbul,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,ankara,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,istanbul,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,ankara,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
-2026-10-26,istanbul,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
-2026-10-26,ankara,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
-2026-10-26,istanbul,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
-2026-10-26,ankara,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
-2026-10-26,istanbul,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
-2026-10-26,ankara,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
-2026-10-26,istanbul,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=248 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
-2026-10-26,ankara,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=248 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
-2026-10-26,istanbul,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
-2026-10-26,ankara,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
-2026-10-26,istanbul,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
-2026-10-26,ankara,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
-2026-10-26,istanbul,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=252 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
-2026-10-26,ankara,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=252 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
-2026-10-26,istanbul,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
-2026-10-26,ankara,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=236 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
-2026-10-26,istanbul,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
-2026-10-26,ankara,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
-2026-10-26,istanbul,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
-2026-10-26,ankara,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
-2026-10-26,istanbul,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=231 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
-2026-10-26,ankara,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=231 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
-2026-10-26,istanbul,03211,lcw_a_bot_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/bilekte-kalin-topuklu-bot-siya"
-2026-10-26,ankara,03211,lcw_a_bot_1,,playwright,missing,"nomatch title=Access Denied textlen=232 :: Access Denied You don't have permission to access ""http://www.lcw.com/bilekte-kalin-topuklu-bot-siya"
-2026-10-26,istanbul,03211,lcw_a_bot_2,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/kut-burunlu-bilekte-topuklu-bo"
-2026-10-26,ankara,03211,lcw_a_bot_2,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/kut-burunlu-bilekte-topuklu-bo"
+2026-10-26,istanbul,03122,byn_k_jean_kelly,1150.0,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_jean_kelly,1150.0,html_regex,ok,
+2026-10-26,istanbul,03122,byn_k_gomlek_1,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03122,byn_k_gomlek_1,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03122,byn_k_gomlek_2,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03122,byn_k_gomlek_2,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03122,byn_k_mont_natgeo,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,ankara,03122,byn_k_mont_natgeo,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,istanbul,03122,byn_k_elbise_wrangler,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03122,byn_k_elbise_wrangler,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03122,byn_k_elbise_fabrika,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03122,byn_k_elbise_fabrika,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_jean_texas,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03121,byn_e_jean_texas,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_tisort_mavi,,html_regex,missing,nomatch len=510523 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03121,byn_e_tisort_mavi,,html_regex,missing,nomatch len=510523 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_tisort_uzunkol,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03121,byn_e_tisort_uzunkol,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_mont_discovery,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03121,byn_e_mont_discovery,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_kazak_leecooper,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03121,byn_e_kazak_leecooper,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03121,byn_e_corap_blackspade,349.95,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_corap_blackspade,349.95,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_boxer_thedon,549.95,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_boxer_thedon,549.95,html_regex,ok,
+2026-10-26,istanbul,03123,byn_c_kulot_3pack,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03123,byn_c_kulot_3pack,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03123,byn_c_boxer,674.95,html_regex,ok,
+2026-10-26,ankara,03123,byn_c_boxer,674.95,html_regex,ok,
+2026-10-26,istanbul,03211,byn_a_sneaker_bulldozer,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,ankara,03211,byn_a_sneaker_bulldozer,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
+2026-10-26,ankara,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
+2026-10-26,istanbul,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,ankara,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,istanbul,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124187
+2026-10-26,ankara,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124187
 2026-10-26,istanbul,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,ankara,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,istanbul,04510,evds_elektrik,135.57,evds_file,ok,
