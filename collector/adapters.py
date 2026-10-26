@@ -214,7 +214,7 @@ def playwright_text(cfg: dict) -> Optional[float]:
     normal tarayıcı gibi davranır, robots.txt'ye uyum _polite ile korunur.
     """
     if not _polite(cfg["url"]):
-        return None
+        _note("robots disallow"); return None
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         b = p.chromium.launch()
@@ -242,8 +242,19 @@ def html_regex(cfg: dict) -> Optional[float]:
     r = requests.get(cfg["url"], headers={"User-Agent": UA, "Accept-Language": "tr-TR,tr;q=0.9"}, timeout=25)
     if r.status_code != 200:
         _note(f"HTTP {r.status_code} len={len(r.text)}"); return None
+    if "charset" not in r.headers.get("content-type", "").lower():
+        r.encoding = r.apparent_encoding or "utf-8"      # Togg: charset başlığı yok -> mojibake
     text = _clean(r.text)
+    nth = int(cfg.get("nth_distinct", 1))              # Apple: n. farklı tutar (256 GB=1, 512 GB=2)
     for hay in (text, r.text):
+        if nth > 1:
+            seen = []
+            for m in re.finditer(cfg["pattern"], hay, re.S):
+                if m.group(1) not in seen:
+                    seen.append(m.group(1))
+                if len(seen) == nth:
+                    return _tr_float(seen[-1])
+            continue
         m = re.search(cfg["pattern"], hay, re.S)
         if m:
             return _tr_float(m.group(1))

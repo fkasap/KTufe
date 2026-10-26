@@ -184,6 +184,9 @@ items:
       - {id: evds_alkol, adapter: evds_file, series: "TP.TUKFIY2025.0213"}
 
 # -------------------------------------------------- 03 GİYİM-AYAKKABI (7.90)
+  # NOT (26.10.2026): LCW, GitHub runner IP'lerine "Access Denied" veriyor (Akamai). Bu SKU'lar
+  # konut/ofis IP'li bir self-hosted runner'dan sorunsuz çalışır; bulut runner'da "missing" kalır
+  # ve giyim TÜİK alt endeksiyle (artık kalem) taşınır.
   - coicop: "03122"
     ad: "Kadın giyim (LCW, 10 sabit ürün)"
     anagrup: "03"
@@ -392,8 +395,8 @@ items:
     agirlik: 1.07
     agirlik_durum: tuik
     skus:
-      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '256\s*GB[^0-9]{0,400}?(\d{2,3}\.\d{3}),00 TL'}
-      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '512\s*GB[^0-9]{0,400}?(\d{2,3}\.\d{3}),00 TL'}
+      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '(\d{2,3}\.\d{3}),00 TL', nth_distinct: 1}
+      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '(\d{2,3}\.\d{3}),00 TL', nth_distinct: 2}
       - {id: apple_macbook_air, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-mac/macbook-air", pattern: '(\d{2,3}\.\d{3}),00 TL'}
   - coicop: "08320"
     ad: "Telekom hizmetleri"
