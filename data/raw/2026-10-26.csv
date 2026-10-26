@@ -93,42 +93,42 @@ date,region,item,sku,price,source,status,note
 2026-10-26,ankara,02130,evds_alkol,138.36,evds_file,ok,
 2026-10-26,istanbul,03122,byn_k_jean_kelly,1150.0,html_regex,ok,
 2026-10-26,ankara,03122,byn_k_jean_kelly,1150.0,html_regex,ok,
-2026-10-26,istanbul,03122,byn_k_gomlek_1,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03122,byn_k_gomlek_1,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03122,byn_k_gomlek_2,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03122,byn_k_gomlek_2,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03122,byn_k_mont_natgeo,,html_regex,missing,HTTP 404 len=124187
-2026-10-26,ankara,03122,byn_k_mont_natgeo,,html_regex,missing,HTTP 404 len=124187
-2026-10-26,istanbul,03122,byn_k_elbise_wrangler,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03122,byn_k_elbise_wrangler,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03122,byn_k_elbise_fabrika,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03122,byn_k_elbise_fabrika,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03121,byn_e_jean_texas,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03121,byn_e_jean_texas,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03121,byn_e_tisort_mavi,,html_regex,missing,nomatch len=510523 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03121,byn_e_tisort_mavi,,html_regex,missing,nomatch len=510523 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03121,byn_e_tisort_uzunkol,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03121,byn_e_tisort_uzunkol,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03121,byn_e_mont_discovery,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03121,byn_e_mont_discovery,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,istanbul,03121,byn_e_kazak_leecooper,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03121,byn_e_kazak_leecooper,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03122,byn_k_gomlek_1,629.99,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_gomlek_1,629.99,html_regex,ok,
+2026-10-26,istanbul,03122,byn_k_gomlek_2,399.99,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_gomlek_2,399.99,html_regex,ok,
+2026-10-26,istanbul,03122,byn_k_mont_natgeo,2239.95,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_mont_natgeo,2239.95,html_regex,ok,
+2026-10-26,istanbul,03122,byn_k_elbise_wrangler,2735.0,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_elbise_wrangler,2735.0,html_regex,ok,
+2026-10-26,istanbul,03122,byn_k_elbise_fabrika,749.99,html_regex,ok,
+2026-10-26,ankara,03122,byn_k_elbise_fabrika,749.99,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_jean_texas,2924.35,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_jean_texas,2924.35,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_tisort_mavi,449.99,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_tisort_mavi,449.99,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_tisort_uzunkol,999.99,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_tisort_uzunkol,999.99,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_mont_discovery,4499.99,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_mont_discovery,4499.99,html_regex,ok,
+2026-10-26,istanbul,03121,byn_e_kazak_leecooper,1999.0,html_regex,ok,
+2026-10-26,ankara,03121,byn_e_kazak_leecooper,1999.0,html_regex,ok,
 2026-10-26,istanbul,03121,byn_e_corap_blackspade,349.95,html_regex,ok,
 2026-10-26,ankara,03121,byn_e_corap_blackspade,349.95,html_regex,ok,
 2026-10-26,istanbul,03121,byn_e_boxer_thedon,549.95,html_regex,ok,
 2026-10-26,ankara,03121,byn_e_boxer_thedon,549.95,html_regex,ok,
-2026-10-26,istanbul,03123,byn_c_kulot_3pack,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03123,byn_c_kulot_3pack,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03123,byn_c_kulot_3pack,674.95,html_regex,ok,
+2026-10-26,ankara,03123,byn_c_kulot_3pack,674.95,html_regex,ok,
 2026-10-26,istanbul,03123,byn_c_boxer,674.95,html_regex,ok,
 2026-10-26,ankara,03123,byn_c_boxer,674.95,html_regex,ok,
-2026-10-26,istanbul,03211,byn_a_sneaker_bulldozer,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
-2026-10-26,ankara,03211,byn_a_sneaker_bulldozer,,html_regex,missing,nomatch len=510524 title=- ::  İnternetin Boyner&#x27;i Online Alışverişin Adresi Kadın Erkek Ayakkabı &amp; Çanta Kozme
+2026-10-26,istanbul,03211,byn_a_sneaker_bulldozer,799.95,html_regex,ok,
+2026-10-26,ankara,03211,byn_a_sneaker_bulldozer,799.95,html_regex,ok,
 2026-10-26,istanbul,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
 2026-10-26,ankara,03211,byn_a_sneaker_fabrika,2624.25,html_regex,ok,
-2026-10-26,istanbul,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124188
-2026-10-26,ankara,03211,byn_a_bot_hd_kadin,,html_regex,missing,HTTP 404 len=124188
-2026-10-26,istanbul,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124186
-2026-10-26,ankara,03211,byn_a_bot_hd_erkek,,html_regex,missing,HTTP 404 len=124186
+2026-10-26,istanbul,03211,byn_a_bot_hd_kadin,6959.2,html_regex,ok,
+2026-10-26,ankara,03211,byn_a_bot_hd_kadin,6959.2,html_regex,ok,
+2026-10-26,istanbul,03211,byn_a_bot_hd_erkek,6959.2,html_regex,ok,
+2026-10-26,ankara,03211,byn_a_bot_hd_erkek,6959.2,html_regex,ok,
 2026-10-26,istanbul,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,ankara,04110,evds_kira,156.04,evds_file,ok,
 2026-10-26,istanbul,04510,evds_elektrik,135.57,evds_file,ok,
