@@ -12,7 +12,7 @@
 #   petrolofisi   81 il statik HTML, KDV dahil fiyat. Sayfa içeriği doğrulandı.
 #   evds_file     TÜİK alt endeksleri, data/reference/evds_alt_endeksler.csv'den (EVDS
 #                 yurt dışı IP'lere kapalı; dosya aylık tazelenir, bkz. README).
-#   ibb_hal       İBB Açık Veri CKAN; resource_id portaldan elle alınacak.
+#   hal.gov.tr    Ticaret Bakanlığı Hal Kayıt Sistemi ana sayfası: günlük ulusal toptan fiyat (statik).
 #   playwright    JS-render sayfalar; pattern'ler ilk çalıştırmada ayarlanır.
 #
 # Market Fiyatı'nda product_id'yi şöyle bulun: platformda ürünü arayın, URL'deki
@@ -114,9 +114,11 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: hal_elma, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "ELMA"}
-      - {id: hal_muz, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "MUZ"}
-      - {id: hal_portakal, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "PORTAKAL"}
+      - {id: hal_elma, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'ELMA\(STARKING\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_muz, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'MUZ\(YERLİ\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_portakal, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PORTAKAL\(WASHINGTON\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_mandalina, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'MANDALİNA[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_limon, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'LİMON[^0-9]{0,60}?([0-9.,]+)\s*TL'}
       - {id: mf_elma, adapter: marketfiyati, keywords: "elma kg"}
       - {id: mf_muz, adapter: marketfiyati, keywords: "muz kg"}
   - coicop: "01172"
@@ -126,11 +128,14 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: hal_domates, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "DOMATES"}
-      - {id: hal_salatalik, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "SALATALIK"}
-      - {id: hal_biber, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "BIBER"}
-      - {id: hal_patates, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "PATATES"}
-      - {id: hal_sogan, adapter: ibb_hal, resource_id: "RESOURCE_ID_GIRIN", urun: "SOGAN"}
+      - {id: hal_domates_beef, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'DOMATES\(BEEF\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_domates_diger, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'DOMATES\(DİĞER\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_salatalik, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'SALATALIK[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_biber_sivri, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'BİBER\(SİVRİ\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_patates, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PATATES[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_sogan, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'SOĞAN\(KURU\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_kabak, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'KABAK\(SAKIZ\)[^0-9]{0,60}?([0-9.,]+)\s*TL'}
+      - {id: hal_patlican, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PATLICAN[^0-9]{0,60}?([0-9.,]+)\s*TL'}
       - {id: mf_domates, adapter: marketfiyati, keywords: "domates kg"}
       - {id: mf_patates, adapter: marketfiyati, keywords: "patates kg"}
   - coicop: "01181"
@@ -184,67 +189,53 @@ items:
       - {id: evds_alkol, adapter: evds_file, series: "TP.TUKFIY2025.0213"}
 
 # -------------------------------------------------- 03 GİYİM-AYAKKABI (7.90)
-  # NOT (26.10.2026): LCW, GitHub runner IP'lerine "Access Denied" veriyor (Akamai). Bu SKU'lar
-  # konut/ofis IP'li bir self-hosted runner'dan sorunsuz çalışır; bulut runner'da "missing" kalır
-  # ve giyim TÜİK alt endeksiyle (artık kalem) taşınır.
   - coicop: "03122"
-    ad: "Kadın giyim (LCW, 10 sabit ürün)"
+    ad: "Kadın giyim (Boyner, 6 sabit ürün; JSON-LD fiyat)"
     anagrup: "03"
     agirlik: 3.19
     agirlik_durum: tuik
     mevsimlik: true
     skus:
-      - {id: lcw_k_jean_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/crop-flare-kadin-jean-pantolon-ekru-o-5486042"}
-      - {id: lcw_k_jean_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/flare-kadin-jean-pantolon-kahverengi-o-5409648"}
-      - {id: lcw_k_jean_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/cepli-wideleg-jean-indigo-o-5455308"}
-      - {id: lcw_k_kaban_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-siyah-o-5461655"}
-      - {id: lcw_k_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kapitone-kadin-sisme-mont-siyah-o-5261283"}
-      - {id: lcw_k_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kapitone-oversize-kadin-sisme-mont-kahverengi-o-5260657"}
-      - {id: lcw_k_kazak_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/baklava-desenli-oversize-kadin-triko-kazak-antrasit-o-5379352"}
-      - {id: lcw_k_kazak_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/parlak-dokulu-kadin-triko-kazak-siyah-o-5407630"}
-      - {id: lcw_k_tunik_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/yarim-balikci-yaka-kadin-triko-tunik-siyah-o-5392986"}
-      - {id: lcw_k_hirka_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/bisiklet-yaka-cizgili-kadin-triko-hirka-ekru-o-4609108"}
+      - {id: byn_k_jean_kelly, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/kelly-mom-fit-acik-indigo-kadin-jean-pantolon-p-1366736"}
+      - {id: byn_k_gomlek_1, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/didem-soydan-x-fabrika-oversize-duz-bej-kadin-gomlek-d150-p"}
+      - {id: byn_k_gomlek_2, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/people-by-fabrika-bej-kadin-bol-kesim-cizgili-gomlek-roll-p"}
+      - {id: byn_k_mont_natgeo, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/national-geographic-tas-kadin-kisa-sisme-mont-w-haku-p-1084"}
+      - {id: byn_k_elbise_wrangler, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w2"}
+      - {id: byn_k_elbise_fabrika, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/fabrika-v-yaka-desenli-kahve-bej-midi-kadin-elbise-ymn-6-p-"}
   - coicop: "03121"
-    ad: "Erkek giyim (LCW, 12 sabit ürün)"
+    ad: "Erkek giyim (Boyner, 7 sabit ürün)"
     anagrup: "03"
     agirlik: 3.06
     agirlik_durum: tuik
     mevsimlik: true
     skus:
-      - {id: lcw_e_jean_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5444982"}
-      - {id: lcw_e_jean_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-indigo-o-5651363"}
-      - {id: lcw_e_jean_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5584448"}
-      - {id: lcw_e_tisort_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-beyaz-o-5271243"}
-      - {id: lcw_e_tisort_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-siyah-o-5271247"}
-      - {id: lcw_e_gomlek_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-4278383"}
-      - {id: lcw_e_gomlek_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-5417728"}
-      - {id: lcw_e_gomlek_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ekose-erkek-gomlek-yesil-o-4276019"}
-      - {id: lcw_e_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-kapusonlu-erkek-sisme-mont-siyah-o-5323741"}
-      - {id: lcw_e_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-pelus-yaka-erkek-mont-siyah-o-5340483"}
-      - {id: lcw_e_ceket_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/standart-kalip-erkek-deri-gorunumlu-ceket-siyah-o-4526858"}
-      - {id: lcw_e_boxer_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-bordo-o-5326133"}
+      - {id: byn_e_jean_texas, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/erkek-pamuklu-denim-pantolon-w121hrz93texas-jean-pantolon-p"}
+      - {id: byn_e_tisort_mavi, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/mavi-siyah-erkek-100-pamuk-t-shirt-063747-900-tisort-siyah-"}
+      - {id: byn_e_tisort_uzunkol, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-064622-21842-uzun-kol-penye-s"}
+      - {id: byn_e_mont_discovery, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/discovery-expedition-lacivert-erkek-kapuson-yaka-mont-d3wm-"}
+      - {id: byn_e_kazak_leecooper, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/lee-cooper-o-yaka-duz-siyah-erkek-kazak-231-lcm-241005-hold"}
+      - {id: byn_e_corap_blackspade, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-fume-melanj-erkek-corap-9271-men-p-147950"}
+      - {id: byn_e_boxer_thedon, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/the-don-turkuaz-boxer-p-375374"}
   - coicop: "03123"
-    ad: "Çocuk giyim (LCW, 4 sabit ürün)"
+    ad: "Çocuk giyim (Boyner, 2 sabit ürün)"
     anagrup: "03"
-    agirlik: 0.80
+    agirlik: 0.8
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: lcw_c_esofman_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/baskili-erkek-cocuk-esofman-takim-kahverengi-o-5563894"}
-      - {id: lcw_c_esofman_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/dinozor-baskili-erkek-cocuk-esofman-takimi-lacivert-o-5336007"}
-      - {id: lcw_c_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont-lila-o-5332241"}
-      - {id: lcw_c_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil-o-5252029"}
+      - {id: byn_c_kulot_3pack, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-cok-renkli-kiz-cocuk-duz-kulot-42-1294-3-pack-br"}
+      - {id: byn_c_boxer, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/blackspade-beyaz-kiz-cocuk-duz-boxer-1298-p-811000"}
   - coicop: "03211"
-    ad: "Ayakkabı (LCW, 4 sabit ürün)"
+    ad: "Ayakkabı (Boyner, 4 sabit ürün)"
     anagrup: "03"
     agirlik: 1.11
     agirlik_durum: tuik
+    mevsimlik: false
     skus:
-      - {id: lcw_a_spor_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/topuk-detayli-spor-ayakkabi-bej-o-5533468"}
-      - {id: lcw_a_spor_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/fileli-erkek-spor-ayakkabi-gri-o-5603906"}
-      - {id: lcw_a_bot_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/bilekte-kalin-topuklu-bot-siyah-o-5543473"}
-      - {id: lcw_a_bot_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kut-burunlu-bilekte-topuklu-bot-kahverengi-o-5424588"}
-
+      - {id: byn_a_sneaker_bulldozer, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/bulldozer-siyah-turuncu-kadin-60-suni-deri-40-sentetik-gunl"}
+      - {id: byn_a_sneaker_fabrika, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/fabrika-bej-kadin-sneaker-marta-p-1714813"}
+      - {id: byn_a_bot_hd_kadin, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-kadin-deri-bot-laconia644-025g-p-8693"}
+      - {id: byn_a_bot_hd_erkek, adapter: html_regex, pattern: '"price"\s*:\s*"?([0-9]+(?:\.[0-9]+)?)', url: "https://www.boyner.com.tr/harley-davidson-siyah-erkek-deri-bot-colmar-025m10055-p-612"}
 # ----------------------------------------------------- 04 KONUT-ENERJİ (11.40)
   - coicop: "04110"
     ad: "Gerçek kira"
