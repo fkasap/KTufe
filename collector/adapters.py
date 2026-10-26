@@ -138,13 +138,15 @@ def evds(cfg: dict) -> Optional[float]:
     col = cfg["series"].replace(".", "_")
     if col in _EVDS_CACHE:
         return _EVDS_CACHE[col]
+    if _EVDS_DOWN.get("down"):          # bu çalıştırmada EVDS yanıt vermiyor: 25 kez bekleme
+        return None
     start = (dt.date.today() - dt.timedelta(days=200)).strftime("%d-%m-%Y")
     end = dt.date.today().strftime("%d-%m-%Y")
     path = f"/service/evds/series={cfg['series']}&startDate={start}&endDate={end}&type=json"
     last_err = None
     for host in ("https://evds2.tcmb.gov.tr", "https://evds3.tcmb.gov.tr"):
         try:
-            r = requests.get(host + path, headers={"key": key, "User-Agent": UA}, timeout=25)
+            r = requests.get(host + path, headers={"key": key, "User-Agent": UA}, timeout=12)
             ctype = r.headers.get("content-type", "")
             if r.status_code != 200 or "json" not in ctype:
                 # Tanı: EVDS hata sayfalarını HTML döndürür (yanlış anahtar, IP engeli,
@@ -159,10 +161,13 @@ def evds(cfg: dict) -> Optional[float]:
         except Exception as e:
             print(f"[evds] {host} {type(e).__name__}: {e}")
             last_err = e
+    _EVDS_DOWN["down"] = True
+    print("[evds] iki host da başarısız; bu çalıştırmada kalan EVDS kalemleri atlanıyor")
     return None
 
 
 _EVDS_CACHE: dict[str, Optional[float]] = {}
+_EVDS_DOWN: dict[str, bool] = {}
 
 
 # ----------------------------------------------------------------- İBB Hal
