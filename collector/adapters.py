@@ -25,6 +25,18 @@ from typing import Optional
 
 import requests
 
+LAST_NOTE: dict = {"v": ""}
+
+def _note(msg: str):
+    LAST_NOTE["v"] = str(msg)[:220].replace("\n", " ")
+
+
+def _clean(html: str) -> str:
+    t = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
+    t = re.sub(r"<[^>]+>", " ", t)
+    return re.sub(r"\s+", " ", t)
+
+
 UA = "WebTUFE-Replica/0.1 (akademik/kisisel arastirma; iletisim: EPOSTA_GIRIN)"
 _last: dict[str, float] = {}
 _robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
@@ -213,43 +225,31 @@ def playwright_text(cfg: dict) -> Optional[float]:
             pg.wait_for_timeout(cfg.get("wait_ms", 5000))
             txt = pg.inner_text("body")
             html = pg.content()
+            title = pg.title()
         finally:
             b.close()
     for hay in (txt, html):
         m = re.search(cfg["pattern"], hay, re.S)
         if m:
             return _tr_float(m.group(1))
+    _note(f"nomatch title={title[:50]} textlen={len(txt)} :: {txt[:100]}")
     return None
 
 
 def html_regex(cfg: dict) -> Optional[float]:
     if not _polite(cfg["url"]):
-        return None
-    r = requests.get(cfg["url"], headers={"User-Agent": UA}, timeout=20)
-    r.raise_for_status()
-    m = re.search(cfg["pattern"], r.text, re.S)
-    return _tr_float(m.group(1)) if m else None
-
-
-# ------------------------------------------------------------ EVDS (dosya)
-_EVDS_FILE = None
-def evds_file(cfg: dict) -> Optional[float]:
-    """
-    TÜİK alt endeksini repodaki data/reference/evds_alt_endeksler.csv'den okur
-    (EVDS, yurt dışı runner IP'lerine HTML doğrulama sayfası döndürdüğü için canlı
-    çağrı yerine aylık tazelenen anlık görüntü). cfg: series = "TP.TUKFIY2025.04110"
-    Dosyanın son satırı = TÜİK'in son açıkladığı ay; günlere sabit taşınır.
-    """
-    global _EVDS_FILE
-    import pandas as pd, pathlib
-    if _EVDS_FILE is None:
-        f = pathlib.Path(__file__).resolve().parents[1] / "data/reference/evds_alt_endeksler.csv"
-        _EVDS_FILE = pd.read_csv(f, index_col=0) if f.exists() else pd.DataFrame()
-    col = cfg["series"]
-    if col not in _EVDS_FILE.columns:
-        return None
-    v = _EVDS_FILE[col].dropna()
-    return float(v.iloc[-1]) if len(v) else None
+        _note("robots disallow"); return None
+    r = requests.get(cfg["url"], headers={"User-Agent": UA, "Accept-Language": "tr-TR,tr;q=0.9"}, timeout=25)
+    if r.status_code != 200:
+        _note(f"HTTP {r.status_code} len={len(r.text)}"); return None
+    text = _clean(r.text)
+    for hay in (text, r.text):
+        m = re.search(cfg["pattern"], hay, re.S)
+        if m:
+            return _tr_float(m.group(1))
+    title = re.search(r"<title>(.*?)</title>", r.text, re.S | re.I)
+    _note(f"nomatch len={len(r.text)} title={title.group(1).strip()[:50] if title else '-'} :: {text[:90]}")
+    return None
 
 
 ADAPTERS = {

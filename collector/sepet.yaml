@@ -361,12 +361,12 @@ items:
     skus:
       # Toyota: her model sayfasındaki menü bloğu tüm modellerin "Başlangıç fiyatı"nı içerir;
       # ilk tutar = kampanyalı güncel fiyat (TÜİK işlem fiyatını alır), ikincisi liste fiyatı.
-      - {id: toyota_corolla_sedan, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla\s*BENZİN[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_corolla_hb, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Hatchback[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_yaris, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris\s*HYBRID[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_yaris_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris Cross[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_chr, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'C-HR[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_corolla_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Cross[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_corolla_sedan, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla\s*BENZİN[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_corolla_hb, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Hatchback[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_yaris, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris\s*HYBRID[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_yaris_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris Cross[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_chr, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'C-HR[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_corolla_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Cross[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
       - {id: togg_t10x_v1, adapter: html_regex, url: "https://www.togg.com.tr/price-list", pattern: 'V1 RWD Standart Menzil[^0-9]{0,120}?(\d\.\d{3}\.\d{3})'}
   - coicop: "07321"
     ad: "Toplu taşıma + uçak"
@@ -392,8 +392,8 @@ items:
     agirlik: 1.07
     agirlik_durum: tuik
     skus:
-      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '256\s*GB[^0-9]{0,200}?(\d{2,3}\.\d{3}),00 TL'}
-      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '512\s*GB[^0-9]{0,200}?(\d{2,3}\.\d{3}),00 TL'}
+      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '256\s*GB[^0-9]{0,400}?(\d{2,3}\.\d{3}),00 TL'}
+      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '512\s*GB[^0-9]{0,400}?(\d{2,3}\.\d{3}),00 TL'}
       - {id: apple_macbook_air, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-mac/macbook-air", pattern: '(\d{2,3}\.\d{3}),00 TL'}
   - coicop: "08320"
     ad: "Telekom hizmetleri"

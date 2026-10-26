@@ -129,6 +129,7 @@ class Observation:
     price: Optional[float]
     source: str
     status: str
+    note: str = ""
 
 
 # Konuma duyarlı adaptörler: bölge başına ayrı çağrı yapılır. Diğerleri
@@ -153,18 +154,24 @@ def run(config_path: str, out_dir: str, today: Optional[dt.date] = None) -> pd.D
             for r, s in targets:
                 if s is None:          # bu bölgede bu kaynak yok (ör. Ankara'da İBB Hal)
                     continue
+                note = ""
                 try:
+                    try:
+                        from adapters import LAST_NOTE; LAST_NOTE["v"] = ""
+                    except ImportError:
+                        LAST_NOTE = {"v": ""}
                     p = fn(s)
                     status = "ok" if p else ("carry_forward" if sku["adapter"] == "carry_forward" else "missing")
+                    note = LAST_NOTE["v"] if p is None else ""
                 except Exception as e:  # tek SKU hatası günü bozmaz
-                    p, status = None, f"error:{type(e).__name__}"
+                    p, status, note = None, f"error:{type(e).__name__}", str(e)[:200].replace("\n", " ")
                 if r is None:          # konumsuz kaynak: tüm bölgelere kopyala
                     for rr in regions:
                         obs.append(Observation(str(today), rr["id"], item["coicop"], sku["id"], p,
-                                               sku["adapter"], status))
+                                               sku["adapter"], status, note))
                 else:
                     obs.append(Observation(str(today), r["id"], item["coicop"], sku["id"], p,
-                                           sku["adapter"], status))
+                                           sku["adapter"], status, note))
     df = pd.DataFrame([o.__dict__ for o in obs])
     out = pathlib.Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     df.to_csv(out / f"{today}.csv", index=False)
