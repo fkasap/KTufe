@@ -1,220 +1,28 @@
-[
- {
-  "name": "boyner_jean",
-  "cat_url": "https://www.boyner.com.tr/erkek-jean-pantolon-c-1022",
-  "cat_status": 200,
-  "links": [
-   "https://www.boyner.com.tr/boyner-evde-nora-cift-kisilik-lastikli-carsaf-160-x-200-cm-ekru-p-15928498",
-   "https://www.boyner.com.tr/helen-george-pembe-kalpli-cift-kisilik-nevresim-seti-p-15249661",
-   "https://www.boyner.com.tr/linens-premium-hemlin-nevresim-takimi-cift-kisilik-beyaz-p-15572785"
-  ],
-  "cat_prices": [
-   "6.000 TL",
-   "18.000 TL",
-   "6.000 TL",
-   "5.000 TL",
-   "15.000 TL",
-   "5.000 TL",
-   "6.000 TL",
-   "18.000 TL"
-  ],
-  "cat_jsonld": true,
-  "products": [
-   {
-    "url": "https://www.boyner.com.tr/boyner-evde-nora-cift-kisilik-lastikli-carsaf-160-x-200-cm-ekru-p-15928498",
-    "status": 200,
-    "len": 573527,
-    "title": "",
-    "og_title": "Boyner Evde Nora Çift Kişilik Lastikli Çarşaf 160 X 200 Cm Ekru - 15928498 | Boyner",
-    "jsonld_price": "799.95,",
-    "prices": [
-     "6.000 TL",
-     "18.000 TL",
-     "6.000 TL",
-     "5.000 TL",
-     "15.000 TL",
-     "5.000 TL"
-    ]
-   },
-   {
-    "url": "https://www.boyner.com.tr/helen-george-pembe-kalpli-cift-kisilik-nevresim-seti-p-15249661",
-    "status": 200,
-    "len": 576631,
-    "title": "",
-    "og_title": "Helen George Pembe Kalpli Çift Kişilik Nevresim Seti - 15249661 | Boyner",
-    "jsonld_price": "2040,",
-    "prices": [
-     "6.000 TL",
-     "18.000 TL",
-     "6.000 TL",
-     "5.000 TL",
-     "15.000 TL",
-     "5.000 TL"
-    ]
-   }
-  ]
- },
- {
-  "name": "boyner_kadin_kazak",
-  "cat_url": "https://www.boyner.com.tr/kadin-kazak-c-1051",
-  "cat_status": 404,
+{
+ "boyner_cats": {},
+ "boyner_sitemap_status": 200,
+ "boyner_sitemap_sample": [
+  "https://sitemap.boyner.com.tr/bynsitemap/product.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/productimage.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/category.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/brand.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/brandproducttype.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/campaign.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/brand_gender_category.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/brand_gender.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/gender_category.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/internal_search_sitemap.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/merchants.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/custom_sitemap.xml"
+ ],
+ "boyner_products": [],
+ "hal https://hal.gov.tr/": {
+  "status": 404,
+  "len": 315,
+  "prices": [],
+  "title": "Not Found",
   "links": [],
-  "cat_prices": [],
-  "cat_jsonld": false,
-  "products": []
- },
- {
-  "name": "boyner_ayakkabi",
-  "cat_url": "https://www.boyner.com.tr/erkek-spor-ayakkabi-c-1174",
-  "cat_status": 404,
-  "links": [],
-  "cat_prices": [],
-  "cat_jsonld": false,
-  "products": []
- },
- {
-  "name": "defacto_jean",
-  "cat_url": "https://www.defacto.com.tr/erkek-jean",
-  "cat_status": 200,
-  "links": [],
-  "cat_prices": [
-   "39,99 TL"
-  ],
-  "cat_jsonld": false,
-  "products": []
- },
- {
-  "name": "defacto_kadin",
-  "cat_url": "https://www.defacto.com.tr/kadin-elbise",
-  "cat_status": 200,
-  "links": [],
-  "cat_prices": [
-   "39,99 TL"
-  ],
-  "cat_jsonld": false,
-  "products": []
- },
- {
-  "name": "vestel_cm",
-  "cat_url": "https://www.vestel.com.tr/camasir-makinesi",
-  "cat_status": 200,
-  "links": [
-   "https://www.vestel.com.tr/12-kg-camasir-makinesi-c-1407",
-   "https://www.vestel.com.tr/10-kg-camasir-makinesi-c-1408",
-   "https://www.vestel.com.tr/9-kg-camasir-makinesi-c-1409"
-  ],
-  "cat_prices": [],
-  "cat_jsonld": true,
-  "products": [
-   {
-    "url": "https://www.vestel.com.tr/12-kg-camasir-makinesi-c-1407",
-    "status": 200,
-    "len": 282264,
-    "title": "12 kg. Çamaşır Makinesi Fiyatları ve Modelleri | Vestel",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": []
-   },
-   {
-    "url": "https://www.vestel.com.tr/10-kg-camasir-makinesi-c-1408",
-    "status": 200,
-    "len": 321016,
-    "title": "10 kg. Çamaşır Makinesi Fiyatları ve Modelleri | Vestel",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": []
-   }
-  ]
- },
- {
-  "name": "vestel_bd",
-  "cat_url": "https://www.vestel.com.tr/buzdolabi",
-  "cat_status": 200,
-  "links": [
-   "https://www.vestel.com.tr/buzdolabi-c-13",
-   "https://www.vestel.com.tr/gardrop-tipi-buzdolabi-c-56",
-   "https://www.vestel.com.tr/dondurucu-altta-no-frost-buzdolabi-c-54"
-  ],
-  "cat_prices": [],
-  "cat_jsonld": true,
-  "products": [
-   {
-    "url": "https://www.vestel.com.tr/buzdolabi-c-13",
-    "status": 200,
-    "len": 642561,
-    "title": "Buzdolabı Fiyatları ve Modelleri | Vestel",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": []
-   },
-   {
-    "url": "https://www.vestel.com.tr/gardrop-tipi-buzdolabi-c-56",
-    "status": 200,
-    "len": 380088,
-    "title": "Gardırop Tipi Buzdolabı Fiyatları ve Modelleri | Vestel",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": []
-   }
-  ]
- },
- {
-  "name": "kahvedunyasi",
-  "cat_url": "https://www.kahvedunyasi.com/",
-  "cat_status": 200,
-  "links": [
-   "https://www.kahvedunyasi.com/orijin-cikolata-koleksiyo-c-212",
-   "https://www.kahvedunyasi.com/cikolata/kutu-cikolata/sosyal-sorumluluk-cikolata-kutulari-c-49"
-  ],
-  "cat_prices": [
-   "870,00 TL",
-   "1.300,00 TL",
-   "350,00 TL",
-   "350,00 TL",
-   "250,00 TL",
-   "365,00 TL",
-   "500,00 TL",
-   "250,00 TL"
-  ],
-  "cat_jsonld": false,
-  "products": [
-   {
-    "url": "https://www.kahvedunyasi.com/orijin-cikolata-koleksiyo-c-212",
-    "status": 200,
-    "len": 403967,
-    "title": "Orijin Çikolata Koleksiyo",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": [
-     "200,00 TL",
-     "200,00 TL",
-     "200,00 TL",
-     "200,00 TL",
-     "200,00 TL",
-     "200,00 TL"
-    ]
-   },
-   {
-    "url": "https://www.kahvedunyasi.com/cikolata/kutu-cikolata/sosyal-sorumluluk-cikolata-kutulari-c-49",
-    "status": 200,
-    "len": 405873,
-    "title": "Kahve Dünyası Sosyal Sorumluluk Çikolata Çeşitleri ve Fiyatları",
-    "og_title": "",
-    "jsonld_price": "",
-    "prices": [
-     "1.000,00 TL",
-     "300,00 TL",
-     "845,00 TL",
-     "1.075,00 TL",
-     "850,00 TL",
-     "900,00 TL"
-    ]
-   }
-  ]
- },
- {
-  "name": "hal_gov",
-  "cat_url": "https://www.hal.gov.tr/",
-  "error": "ConnectionError: HTTPSConnectionPool(host='www.hal.gov.tr', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='ww"
+  "sample": "",
+  "domates": ""
  }
-]
+}
