@@ -10,8 +10,8 @@
 #                 verisi, zincir marketlerin günlük fiyatları. API şeması açık
 #                 kaynak istemciden; canlı test bu oturumda yapılamadı.
 #   petrolofisi   81 il statik HTML, KDV dahil fiyat. Sayfa içeriği doğrulandı.
-#   evds          TÜİK alt endeksleri (TCMB EVDS, anahtar gerekir). Seri kodları
-#                 doğrulandı (bie_tukfiy2025, 349 seri).
+#   evds_file     TÜİK alt endeksleri, data/reference/evds_alt_endeksler.csv'den (EVDS
+#                 yurt dışı IP'lere kapalı; dosya aylık tazelenir, bkz. README).
 #   ibb_hal       İBB Açık Veri CKAN; resource_id portaldan elle alınacak.
 #   playwright    JS-render sayfalar; pattern'ler ilk çalıştırmada ayarlanır.
 #
@@ -164,7 +164,7 @@ items:
     agirlik: 8.00
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_gida_01, adapter: evds, series: "TP.TUKFIY2025.01"}
+      - {id: evds_gida_01, adapter: evds_file, series: "TP.TUKFIY2025.01"}
 
 # ------------------------------------------------ 02 ALKOL-TÜTÜN (2.75)
   - coicop: "02301"
@@ -174,14 +174,14 @@ items:
     agirlik_durum: yaklasik
     skus:
       # Yönetilen fiyat; ÖTV değişiminde sıçrar. TÜİK alt endeksi + haber takibi.
-      - {id: evds_tutun, adapter: evds, series: "TP.TUKFIY2025.023"}
+      - {id: evds_tutun, adapter: evds_file, series: "TP.TUKFIY2025.023"}
   - coicop: "02130"
     ad: "Alkollü içecekler"
     anagrup: "02"
     agirlik: 0.45
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_alkol, adapter: evds, series: "TP.TUKFIY2025.0213"}
+      - {id: evds_alkol, adapter: evds_file, series: "TP.TUKFIY2025.0213"}
 
 # -------------------------------------------------- 03 GİYİM-AYAKKABI (7.90)
   - coicop: "03122"
@@ -195,7 +195,7 @@ items:
       # 20-30 sabit SKU ile doldurun. Pattern sayfadaki "₺" fiyatını yakalar.
       - {id: pw_giyim_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
       - {id: pw_giyim_2, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_giyim, adapter: evds, series: "TP.TUKFIY2025.03122"}
+      - {id: evds_giyim, adapter: evds_file, series: "TP.TUKFIY2025.03122"}
   - coicop: "03211"
     ad: "Ayakkabı"
     anagrup: "03"
@@ -203,7 +203,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: pw_ayakkabi_1, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_ayakkabi, adapter: evds, series: "TP.TUKFIY2025.03211"}
+      - {id: evds_ayakkabi, adapter: evds_file, series: "TP.TUKFIY2025.03211"}
 
 # ----------------------------------------------------- 04 KONUT-ENERJİ (11.40)
   - coicop: "04110"
@@ -213,7 +213,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       # İlan verisi mevcut kiracıyı ölçmez; TÜİK'in gerçek kira alt endeksi taşınır.
-      - {id: evds_kira, adapter: evds, series: "TP.TUKFIY2025.04110"}
+      - {id: evds_kira, adapter: evds_file, series: "TP.TUKFIY2025.04110"}
   - coicop: "04510"
     ad: "Elektrik"
     anagrup: "04"
@@ -221,21 +221,21 @@ items:
     agirlik_durum: yaklasik
     skus:
       # Yönetilen tarife; EPDK duyurusuyla değişir. TÜİK alt endeksi + tarife takvimi.
-      - {id: evds_elektrik, adapter: evds, series: "TP.TUKFIY2025.04510"}
+      - {id: evds_elektrik, adapter: evds_file, series: "TP.TUKFIY2025.04510"}
   - coicop: "04521"
     ad: "Doğalgaz"
     anagrup: "04"
     agirlik: 1.40
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_dogalgaz, adapter: evds, series: "TP.TUKFIY2025.04521"}
+      - {id: evds_dogalgaz, adapter: evds_file, series: "TP.TUKFIY2025.04521"}
   - coicop: "04411"
     ad: "Su"
     anagrup: "04"
     agirlik: 0.80
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_su, adapter: evds, series: "TP.TUKFIY2025.04411"}
+      - {id: evds_su, adapter: evds_file, series: "TP.TUKFIY2025.04411"}
   - coicop: "04"
     artik: true
     ad: "Konut - diğer (bakım-onarım, tüp vb.)"
@@ -244,7 +244,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: mf_tup, adapter: marketfiyati, keywords: "tüp 12 kg"}
-      - {id: evds_konut_diger, adapter: evds, series: "TP.TUKFIY2025.04"}
+      - {id: evds_konut_diger, adapter: evds_file, series: "TP.TUKFIY2025.04"}
 
 # ------------------------------------------------------- 05 EV EŞYASI (7.92)
   - coicop: "05312"
@@ -255,7 +255,7 @@ items:
     skus:
       - {id: pw_buzdolabi, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
       - {id: pw_camasir, adapter: playwright, url: "URUN_URL_GIRIN", pattern: '([0-9.]+,[0-9]{2})\s*TL'}
-      - {id: evds_beyaz_esya, adapter: evds, series: "TP.TUKFIY2025.05312"}
+      - {id: evds_beyaz_esya, adapter: evds_file, series: "TP.TUKFIY2025.05312"}
   - coicop: "05611"
     ad: "Temizlik ürünleri"
     anagrup: "05"
@@ -273,7 +273,7 @@ items:
     agirlik: 4.20
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_ev_esyasi, adapter: evds, series: "TP.TUKFIY2025.05"}
+      - {id: evds_ev_esyasi, adapter: evds_file, series: "TP.TUKFIY2025.05"}
 
 # ------------------------------------------------------------ 06 SAĞLIK (2.79)
   - coicop: "06111"
@@ -283,7 +283,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       # Kur güncellemesiyle (Şubat) sıçrar; TİTCK fiyat listesi + TÜİK alt endeksi.
-      - {id: evds_ilac, adapter: evds, series: "TP.TUKFIY2025.06111"}
+      - {id: evds_ilac, adapter: evds_file, series: "TP.TUKFIY2025.06111"}
   - coicop: "06"
     artik: true
     ad: "Sağlık hizmetleri"
@@ -291,7 +291,7 @@ items:
     agirlik: 1.79
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_saglik, adapter: evds, series: "TP.TUKFIY2025.06"}
+      - {id: evds_saglik, adapter: evds_file, series: "TP.TUKFIY2025.06"}
 
 # -------------------------------------------------------- 07 ULAŞTIRMA (16.62)
   - coicop: "07222"
@@ -323,7 +323,7 @@ items:
     skus:
       # Marka liste fiyatı sayfaları (aylık güncellenir); 5-6 en çok satan model.
       - {id: pw_oto_1, adapter: playwright, url: "MARKA_FIYAT_LISTESI_URL", pattern: 'MODEL_ADI.*?([0-9.]+)\s*TL'}
-      - {id: evds_oto, adapter: evds, series: "TP.TUKFIY2025.07111"}
+      - {id: evds_oto, adapter: evds_file, series: "TP.TUKFIY2025.07111"}
   - coicop: "07321"
     ad: "Toplu taşıma + uçak"
     anagrup: "07"
@@ -331,7 +331,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       # Belediye tarifeleri (İETT/EGO/ESHOT) duyuruyla değişir; uçak: bilet siteleri.
-      - {id: evds_yolcu_tasima, adapter: evds, series: "TP.TUKFIY2025.07321"}
+      - {id: evds_yolcu_tasima, adapter: evds_file, series: "TP.TUKFIY2025.07321"}
   - coicop: "07"
     artik: true
     ad: "Ulaştırma - diğer (bakım, yedek parça, sigorta hariç)"
@@ -339,7 +339,7 @@ items:
     agirlik: 3.32
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_ulastirma_diger, adapter: evds, series: "TP.TUKFIY2025.07"}
+      - {id: evds_ulastirma_diger, adapter: evds_file, series: "TP.TUKFIY2025.07"}
 
 # ------------------------------------------------- 08 BİLGİ-İLETİŞİM (3.10)
   - coicop: "08120"
@@ -356,7 +356,7 @@ items:
     agirlik: 1.90
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_telekom, adapter: evds, series: "TP.TUKFIY2025.08320"}
+      - {id: evds_telekom, adapter: evds_file, series: "TP.TUKFIY2025.08320"}
 
 # --------------------------------------------------- 09 EĞLENCE-KÜLTÜR (4.34)
   - coicop: "09800"
@@ -366,7 +366,7 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: evds_paket_tur, adapter: evds, series: "TP.TUKFIY2025.09800"}
+      - {id: evds_paket_tur, adapter: evds_file, series: "TP.TUKFIY2025.09800"}
   - coicop: "09"
     artik: true
     ad: "Eğlence-kültür diğer (kitap, kırtasiye, spor)"
@@ -375,7 +375,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: mf_defter, adapter: marketfiyati, keywords: "defter a4 80 yaprak"}
-      - {id: evds_eglence, adapter: evds, series: "TP.TUKFIY2025.09"}
+      - {id: evds_eglence, adapter: evds_file, series: "TP.TUKFIY2025.09"}
 
 # ------------------------------------------------------------ 10 EĞİTİM (2.02)
   - coicop: "10"
@@ -386,7 +386,7 @@ items:
     agirlik_durum: kesin
     skus:
       # Yılda bir Eylül sıçraması; TÜİK alt endeksi taşınır.
-      - {id: evds_egitim, adapter: evds, series: "TP.TUKFIY2025.10"}
+      - {id: evds_egitim, adapter: evds_file, series: "TP.TUKFIY2025.10"}
 
 # ----------------------------------------------- 11 LOKANTA-KONAKLAMA (11.13)
   - coicop: "11111"
@@ -398,7 +398,7 @@ items:
       # Platform menü sayfaları JS-render; aynı restoranın aynı 5-10 ürünü sabit SKU.
       - {id: pw_yemek_1, adapter: playwright, url: "RESTORAN_MENU_URL", pattern: 'URUN_ADI.*?([0-9.]+,[0-9]{2})'}
       - {id: pw_yemek_2, adapter: playwright, url: "RESTORAN_MENU_URL", pattern: 'URUN_ADI.*?([0-9.]+,[0-9]{2})'}
-      - {id: evds_lokanta, adapter: evds, series: "TP.TUKFIY2025.11111"}
+      - {id: evds_lokanta, adapter: evds_file, series: "TP.TUKFIY2025.11111"}
   - coicop: "11201"
     ad: "Konaklama"
     anagrup: "11"
@@ -406,7 +406,7 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: evds_konaklama, adapter: evds, series: "TP.TUKFIY2025.11201"}
+      - {id: evds_konaklama, adapter: evds_file, series: "TP.TUKFIY2025.11201"}
 
 # ------------------------------------------- 12 SİGORTA-FİNANS (1.07)
   - coicop: "12"
@@ -416,7 +416,7 @@ items:
     agirlik: 1.07
     agirlik_durum: kesin
     skus:
-      - {id: evds_sigorta, adapter: evds, series: "TP.TUKFIY2025.12"}
+      - {id: evds_sigorta, adapter: evds_file, series: "TP.TUKFIY2025.12"}
 
 # --------------------------------------------- 13 KİŞİSEL BAKIM (4.49)
   - coicop: "13120"
@@ -436,4 +436,4 @@ items:
     agirlik: 2.29
     agirlik_durum: yaklasik
     skus:
-      - {id: evds_kisisel_diger, adapter: evds, series: "TP.TUKFIY2025.13"}
+      - {id: evds_kisisel_diger, adapter: evds_file, series: "TP.TUKFIY2025.13"}

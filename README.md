@@ -74,3 +74,11 @@ Madde içi ağırlıklar TÜİK'in 428 maddelik dosyası eklenene kadar yaklaş�
   aylık değişim, en çok/en az değişen maddeler; Türkiye için KTüfe–TÜİK aylık karşılaştırma.
 - **Doğrulama kıyası:** TÜİK bölgesel TÜFE (İBBS-2: TR10 İstanbul, TR51 Ankara) aynı veri
   portalından; EVDS'de bölgesel seri yok.
+
+## EVDS verisi nasıl geliyor (26.10.2026 sonrası)
+TCMB EVDS, GitHub runner'ının yurt dışı IP'sine JSON yerine HTML doğrulama sayfası döndürüyor
+(HTTP 200, `text/html`). Bu yüzden EVDS canlı çağrılmaz; TÜİK alt endeksleri
+`data/reference/evds_alt_endeksler.csv` dosyasından okunur (`evds_file` adaptörü). Dosya
+TÜİK'in her ayın 3'ünde açıkladığı veriden sonra tazelenir (25 seri, 2024-12'den itibaren).
+Tazeleme: EVDS erişimi olan bir yerden `scripts/refresh_tuik.py` ya da elle. Kira, tarife,
+eğitim gibi bu kalemler ay içinde değişmediği için günlük çekimde canlı veri kaybı yoktur.
