@@ -191,16 +191,16 @@ items:
     agirlik_durum: tuik
     mevsimlik: true
     skus:
-      - {id: lcw_k_jean_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/crop-flare-kadin-jean-pantolon-ekru-o-5486042"}
-      - {id: lcw_k_jean_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/flare-kadin-jean-pantolon-kahverengi-o-5409648"}
-      - {id: lcw_k_jean_3, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/cepli-wideleg-jean-indigo-o-5455308"}
-      - {id: lcw_k_kaban_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-siyah-o-5461655"}
-      - {id: lcw_k_mont_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kapusonlu-kapitone-kadin-sisme-mont-siyah-o-5261283"}
-      - {id: lcw_k_mont_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kapusonlu-kapitone-oversize-kadin-sisme-mont-kahverengi-o-5260657"}
-      - {id: lcw_k_kazak_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/baklava-desenli-oversize-kadin-triko-kazak-antrasit-o-5379352"}
-      - {id: lcw_k_kazak_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/parlak-dokulu-kadin-triko-kazak-siyah-o-5407630"}
-      - {id: lcw_k_tunik_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/yarim-balikci-yaka-kadin-triko-tunik-siyah-o-5392986"}
-      - {id: lcw_k_hirka_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/bisiklet-yaka-cizgili-kadin-triko-hirka-ekru-o-4609108"}
+      - {id: lcw_k_jean_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/crop-flare-kadin-jean-pantolon-ekru-o-5486042"}
+      - {id: lcw_k_jean_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/flare-kadin-jean-pantolon-kahverengi-o-5409648"}
+      - {id: lcw_k_jean_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/cepli-wideleg-jean-indigo-o-5455308"}
+      - {id: lcw_k_kaban_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-siyah-o-5461655"}
+      - {id: lcw_k_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kapitone-kadin-sisme-mont-siyah-o-5261283"}
+      - {id: lcw_k_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kapitone-oversize-kadin-sisme-mont-kahverengi-o-5260657"}
+      - {id: lcw_k_kazak_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/baklava-desenli-oversize-kadin-triko-kazak-antrasit-o-5379352"}
+      - {id: lcw_k_kazak_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/parlak-dokulu-kadin-triko-kazak-siyah-o-5407630"}
+      - {id: lcw_k_tunik_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/yarim-balikci-yaka-kadin-triko-tunik-siyah-o-5392986"}
+      - {id: lcw_k_hirka_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/bisiklet-yaka-cizgili-kadin-triko-hirka-ekru-o-4609108"}
   - coicop: "03121"
     ad: "Erkek giyim (LCW, 12 sabit ürün)"
     anagrup: "03"
@@ -208,18 +208,18 @@ items:
     agirlik_durum: tuik
     mevsimlik: true
     skus:
-      - {id: lcw_e_jean_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5444982"}
-      - {id: lcw_e_jean_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-indigo-o-5651363"}
-      - {id: lcw_e_jean_3, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5584448"}
-      - {id: lcw_e_tisort_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-beyaz-o-5271243"}
-      - {id: lcw_e_tisort_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-siyah-o-5271247"}
-      - {id: lcw_e_gomlek_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-4278383"}
-      - {id: lcw_e_gomlek_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-5417728"}
-      - {id: lcw_e_gomlek_3, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-ekose-erkek-gomlek-yesil-o-4276019"}
-      - {id: lcw_e_mont_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-kapusonlu-erkek-sisme-mont-siyah-o-5323741"}
-      - {id: lcw_e_mont_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/regular-fit-pelus-yaka-erkek-mont-siyah-o-5340483"}
-      - {id: lcw_e_ceket_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/standart-kalip-erkek-deri-gorunumlu-ceket-siyah-o-4526858"}
-      - {id: lcw_e_boxer_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-bordo-o-5326133"}
+      - {id: lcw_e_jean_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5444982"}
+      - {id: lcw_e_jean_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-indigo-o-5651363"}
+      - {id: lcw_e_jean_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/779-regular-fit-esnek-kumas-jean-siyah-o-5584448"}
+      - {id: lcw_e_tisort_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-beyaz-o-5271243"}
+      - {id: lcw_e_tisort_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ince-kumas-tisort-03-siyah-o-5271247"}
+      - {id: lcw_e_gomlek_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-4278383"}
+      - {id: lcw_e_gomlek_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-oxford-erkek-gomlek-mavi-o-5417728"}
+      - {id: lcw_e_gomlek_3, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-ekose-erkek-gomlek-yesil-o-4276019"}
+      - {id: lcw_e_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-kapusonlu-erkek-sisme-mont-siyah-o-5323741"}
+      - {id: lcw_e_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/regular-fit-pelus-yaka-erkek-mont-siyah-o-5340483"}
+      - {id: lcw_e_ceket_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/standart-kalip-erkek-deri-gorunumlu-ceket-siyah-o-4526858"}
+      - {id: lcw_e_boxer_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-bordo-o-5326133"}
   - coicop: "03123"
     ad: "Çocuk giyim (LCW, 4 sabit ürün)"
     anagrup: "03"
@@ -227,20 +227,20 @@ items:
     agirlik_durum: yaklasik
     mevsimlik: true
     skus:
-      - {id: lcw_c_esofman_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/baskili-erkek-cocuk-esofman-takim-kahverengi-o-5563894"}
-      - {id: lcw_c_esofman_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/dinozor-baskili-erkek-cocuk-esofman-takimi-lacivert-o-5336007"}
-      - {id: lcw_c_mont_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont-lila-o-5332241"}
-      - {id: lcw_c_mont_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil-o-5252029"}
+      - {id: lcw_c_esofman_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/baskili-erkek-cocuk-esofman-takim-kahverengi-o-5563894"}
+      - {id: lcw_c_esofman_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/dinozor-baskili-erkek-cocuk-esofman-takimi-lacivert-o-5336007"}
+      - {id: lcw_c_mont_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont-lila-o-5332241"}
+      - {id: lcw_c_mont_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil-o-5252029"}
   - coicop: "03211"
     ad: "Ayakkabı (LCW, 4 sabit ürün)"
     anagrup: "03"
     agirlik: 1.11
     agirlik_durum: tuik
     skus:
-      - {id: lcw_a_spor_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/topuk-detayli-spor-ayakkabi-bej-o-5533468"}
-      - {id: lcw_a_spor_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/fileli-erkek-spor-ayakkabi-gri-o-5603906"}
-      - {id: lcw_a_bot_1, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/bilekte-kalin-topuklu-bot-siyah-o-5543473"}
-      - {id: lcw_a_bot_2, adapter: html_regex, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', url: "https://www.lcw.com/kut-burunlu-bilekte-topuklu-bot-kahverengi-o-5424588"}
+      - {id: lcw_a_spor_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/topuk-detayli-spor-ayakkabi-bej-o-5533468"}
+      - {id: lcw_a_spor_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/fileli-erkek-spor-ayakkabi-gri-o-5603906"}
+      - {id: lcw_a_bot_1, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/bilekte-kalin-topuklu-bot-siyah-o-5543473"}
+      - {id: lcw_a_bot_2, adapter: playwright, pattern: 'og:title" content="[^"]*?([0-9.]+,[0-9]{2}) TL', wait_ms: 3000, url: "https://www.lcw.com/kut-burunlu-bilekte-topuklu-bot-kahverengi-o-5424588"}
 
 # ----------------------------------------------------- 04 KONUT-ENERJİ (11.40)
   - coicop: "04110"
@@ -290,10 +290,10 @@ items:
     agirlik: 1.06
     agirlik_durum: tuik
     skus:
-      - {id: arcelik_cm_10122, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '10122.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 4000}
-      - {id: arcelik_cm_12142, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '12142 A.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 4000}
-      - {id: arcelik_bd_283616, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '283616 EI.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 4000}
-      - {id: arcelik_bd_278551, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '278551 EGC.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 4000}
+      - {id: arcelik_cm_10122, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '10122.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
+      - {id: arcelik_cm_12142, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '12142 A.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
+      - {id: arcelik_bd_283616, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '283616 EI.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
+      - {id: arcelik_bd_278551, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '278551 EGC.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
   - coicop: "05611"
     ad: "Temizlik ürünleri"
     anagrup: "05"
@@ -359,11 +359,15 @@ items:
     agirlik: 4.59
     agirlik_durum: tuik
     skus:
-      # Sayfadaki ilk 7 haneli TL tutar = güncel (kampanyalı) satış fiyatı; TÜİK de işlem fiyatını alır
-      - {id: toyota_corolla, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: '(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_yaris, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/yaris", pattern: '(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: toyota_chr, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/c-hr", pattern: '(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: togg_t10x_v1, adapter: html_regex, url: "https://www.togg.com.tr/price-list", pattern: 'V1 RWD Standart Menzil.*?(\d\.\d{3}\.\d{3})\s*₺'}
+      # Toyota: her model sayfasındaki menü bloğu tüm modellerin "Başlangıç fiyatı"nı içerir;
+      # ilk tutar = kampanyalı güncel fiyat (TÜİK işlem fiyatını alır), ikincisi liste fiyatı.
+      - {id: toyota_corolla_sedan, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla\s*BENZİN[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_corolla_hb, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Hatchback[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_yaris, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris\s*HYBRID[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_yaris_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris Cross[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_chr, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'C-HR[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: toyota_corolla_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Cross[^0-9]{0,80}?(\d\.\d{3}\.\d{3})\s*TL'}
+      - {id: togg_t10x_v1, adapter: html_regex, url: "https://www.togg.com.tr/price-list", pattern: 'V1 RWD Standart Menzil[^0-9]{0,120}?(\d\.\d{3}\.\d{3})'}
   - coicop: "07321"
     ad: "Toplu taşıma + uçak"
     anagrup: "07"
@@ -388,8 +392,8 @@ items:
     agirlik: 1.07
     agirlik_durum: tuik
     skus:
-      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '(\d{2,3}\.\d{3}),00 TL'}
-      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '99\.999,00 TL.*?(\d{2,3}\.\d{3}),00 TL'}
+      - {id: apple_iphone17_256, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '256\s*GB[^0-9]{0,200}?(\d{2,3}\.\d{3}),00 TL'}
+      - {id: apple_iphone17_512, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-iphone/iphone-17", pattern: '512\s*GB[^0-9]{0,200}?(\d{2,3}\.\d{3}),00 TL'}
       - {id: apple_macbook_air, adapter: html_regex, url: "https://www.apple.com/tr/shop/buy-mac/macbook-air", pattern: '(\d{2,3}\.\d{3}),00 TL'}
   - coicop: "08320"
     ad: "Telekom hizmetleri"

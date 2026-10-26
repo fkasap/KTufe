@@ -196,21 +196,30 @@ def ibb_hal(cfg: dict) -> Optional[float]:
 # -------------------------------------------------------------- Playwright
 def playwright_text(cfg: dict) -> Optional[float]:
     """
-    JS-render gerektiren sayfalar. cfg: url, pattern (regex, grup 1 fiyat), wait_ms
-    pip install playwright && playwright install chromium
+    Gerçek tarayıcı (Chromium) ile sayfa; pattern önce görünür metinde, sonra ham
+    HTML'de (meta og:title vb.) aranır. cfg: url, pattern, wait_ms (vars. 5000)
+    LCW gibi WAF arkasındaki siteler düz HTTP istemcisine 403 verir; Playwright
+    normal tarayıcı gibi davranır, robots.txt'ye uyum _polite ile korunur.
     """
     if not _polite(cfg["url"]):
         return None
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         b = p.chromium.launch()
-        pg = b.new_page(user_agent=UA)
-        pg.goto(cfg["url"], timeout=30000)
-        pg.wait_for_timeout(cfg.get("wait_ms", 2500))
-        txt = pg.inner_text("body")
-        b.close()
-    m = re.search(cfg["pattern"], txt, re.S)
-    return _tr_float(m.group(1)) if m else None
+        ctx = b.new_context(locale="tr-TR", viewport={"width": 1366, "height": 900})
+        pg = ctx.new_page()
+        try:
+            pg.goto(cfg["url"], timeout=45000, wait_until="domcontentloaded")
+            pg.wait_for_timeout(cfg.get("wait_ms", 5000))
+            txt = pg.inner_text("body")
+            html = pg.content()
+        finally:
+            b.close()
+    for hay in (txt, html):
+        m = re.search(cfg["pattern"], hay, re.S)
+        if m:
+            return _tr_float(m.group(1))
+    return None
 
 
 def html_regex(cfg: dict) -> Optional[float]:
