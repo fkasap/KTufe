@@ -1,0 +1,45 @@
+name: Günlük fiyat çekimi
+
+on:
+  schedule:
+    - cron: "15 3 * * *"      # 06:15 TR — sakin saat, cron gecikmesi az
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Hedef gün (YYYY-MM-DD, boşsa bugün)"
+        required: false
+
+concurrency:
+  group: ktufe-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Playwright (yalnızca JS-render kaynaklar için)
+        run: python -m playwright install --with-deps chromium
+      - name: Fiyatları çek
+        env:
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+          TARGET_DATE: ${{ inputs.date }}
+        run: |
+          python collector/collector.py --config collector/sepet.yaml --out data/raw \
+            ${TARGET_DATE:+--date "$TARGET_DATE"}
+      - name: Commit
+        run: |
+          git config user.name "ktufe-bot"
+          git config user.email "ktufe-bot@users.noreply.github.com"
+          git add data/raw
+          git diff --cached --quiet && echo "yeni veri yok" && exit 0
+          git commit -m "data: $(date -u +%F) çekimi"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
