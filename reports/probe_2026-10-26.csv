@@ -2,25 +2,24 @@ name,status,robots,blocked,price_like,length,ctype,title,final_url,url
 koton,404,True,False,0,35618,text/html; charset=utf-8,Koton: Türkiye'nin Öncü Moda ve Giyim Markası koton.com,https://www.koton.com/erkek-jean/,https://www.koton.com/erkek-jean/
 defacto,200,True,True,1,300958,text/html; charset=utf-8,Erkek Jean Pantolon Modelleri ve Fiyatlar&#x131; | DeFacto Kot,https://www.defacto.com.tr/erkek-jean-pantolon,https://www.defacto.com.tr/erkek-jean
 mavi,403,False,True,0,5768,text/html; charset=UTF-8,Attention Required! | Cloudflare,https://www.mavi.com/erkek/jean/c/1,https://www.mavi.com/erkek/jean/c/1
-flo,200,True,True,0,21328,text/html; charset=utf-8,Tarayıcınız kontrol ediliyor - reCAPTCHA,https://www.flo.com.tr/erkek-spor-ayakkabi,https://www.flo.com.tr/erkek-spor-ayakkabi
+flo,200,True,True,0,21329,text/html; charset=utf-8,Tarayıcınız kontrol ediliyor - reCAPTCHA,https://www.flo.com.tr/erkek-spor-ayakkabi,https://www.flo.com.tr/erkek-spor-ayakkabi
 boyner,200,True,True,12,822570,text/html; charset=utf-8,,https://www.boyner.com.tr/ev-tekstili-x-c608,https://www.boyner.com.tr/erkek-jean-pantolon-c-1022
 decathlon,200,False,False,0,708865,text/html; charset=utf-8,Erkek Spor Giyim Ürünleri ve Fiyatları | Decathlon,https://www.decathlon.com.tr/erkek/giyim,https://www.decathlon.com.tr/erkek/giyim
 hm,403,False,True,0,412,text/html,Access Denied,https://www2.hm.com/tr_tr/erkek/urunler/jean.html,https://www2.hm.com/tr_tr/erkek/urunler/jean.html
 zara,403,False,True,0,410,text/html,Access Denied,https://www.zara.com/tr/tr/erkek-jean-l659.html,https://www.zara.com/tr/tr/erkek-jean-l659.html
 lcw,403,True,True,0,393,text/html,Access Denied,https://www.lcw.com/erkek-jean-t-194,https://www.lcw.com/erkek-jean-t-194
-colins,404,True,True,0,201698,text/html; charset=utf-8,Colin's ile Jean Modası ve Günlük Giyim,https://www.colins.com.tr/Common/FileNotFound?err=639286393154987620,https://www.colins.com.tr/erkek-jean
-hepsiburada,403,False,True,0,1755,text/html,Hepsiburada | GÃ¼venlik,https://www.hepsiburada.com/erkek-kot-pantolon-c-12087132,https://www.hepsiburada.com/erkek-kot-pantolon-c-12087132
+colins,404,True,True,0,201698,text/html; charset=utf-8,Colin's ile Jean Modası ve Günlük Giyim,https://www.colins.com.tr/Common/FileNotFound?err=639286399570323808,https://www.colins.com.tr/erkek-jean
+hepsiburada,403,False,True,0,1756,text/html,Hepsiburada | GÃ¼venlik,https://www.hepsiburada.com/erkek-kot-pantolon-c-12087132,https://www.hepsiburada.com/erkek-kot-pantolon-c-12087132
 trendyol,200,True,False,0,83842,text/html; charset=utf-8,"Online Alışveriş Sitesi, Türkiye'nin Trend Yolu | Trendyol",https://www.trendyol.com/en/select-country?cb=%2Ferkek-kot-pantolon-x-g2-c120,https://www.trendyol.com/erkek-kot-pantolon-x-g2-c120
 n11,404,False,False,0,11102,text/html; charset=utf-8,n11.com,https://www.n11.com/giyim-ve-ayakkabi/erkek-giyim/pantolon/kot-pantolon,https://www.n11.com/giyim-ve-ayakkabi/erkek-giyim/pantolon/kot-pantolon
 beko,403,False,True,0,393,text/html,Access Denied,https://www.beko.com.tr/camasir-makinesi,https://www.beko.com.tr/camasir-makinesi
 vestel,200,True,False,0,444950,text/html; charset=utf-8,Çamaşır Makineleri | Vestel,https://www.vestel.com.tr/camasir-makinesi-c-58,https://www.vestel.com.tr/camasir-makinesi
-samsung,200,False,False,2,393889,text/html; charset=UTF-8,Cep Telefonu Modelleri ve Fiyatları | Samsung Türkiye,https://www.samsung.com/tr/smartphones/all-smartphones/,https://www.samsung.com/tr/smartphones/all-smartphones/
+samsung,200,False,False,2,393887,text/html; charset=UTF-8,Cep Telefonu Modelleri ve Fiyatları | Samsung Türkiye,https://www.samsung.com/tr/smartphones/all-smartphones/,https://www.samsung.com/tr/smartphones/all-smartphones/
 mediamarkt,403,False,True,0,5728,text/html; charset=UTF-8,Just a moment...,https://www.mediamarkt.com.tr/tr/category/camasir-makinesi-1310.html,https://www.mediamarkt.com.tr/tr/category/camasir-makinesi-1310.html
 teknosa,403,False,True,0,5756,text/html; charset=UTF-8,Just a moment...,https://www.teknosa.com/camasir-makinesi-c-100005003,https://www.teknosa.com/camasir-makinesi-c-100005003
 ibb_hal,ERR ConnectTimeout,,,,,,,,https://data.ibb.gov.tr/api/3/action/package_search?q=hal
 ankara_hal,200,False,False,0,52727,text/html; charset=UTF-8,Hal Fiyatları,https://www.ankara.bel.tr/hal-fiyatlari,https://www.ankara.bel.tr/hal-fiyatlari
-tarim_hal,200,True,True,199,80407,text/html; charset=utf-8,"T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - 
-Ana Sayfa",https://www.hal.gov.tr/Sayfalar/AnaSayfa.aspx,https://www.hal.gov.tr/
+tarim_hal,ERR ConnectionError,,,,,,,,https://www.hal.gov.tr/
 yemeksepeti,403,False,True,0,5633,text/html; charset=UTF-8,Just a moment...,https://www.yemeksepeti.com/,https://www.yemeksepeti.com/
 getir_yemek,403,False,False,0,919,text/html,ERROR: The request could not be satisfied,https://getir.com/yemek/,https://getir.com/yemek/
 kahvedunyasi,200,True,False,37,460357,text/html; charset=utf-8,Hepimizin Ortak Noktası | Kahve Dünyası,https://www.kahvedunyasi.com/,https://www.kahvedunyasi.com/
