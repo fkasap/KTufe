@@ -82,3 +82,20 @@ TCMB EVDS, GitHub runner'ının yurt dışı IP'sine JSON yerine HTML doğrulama
 TÜİK'in her ayın 3'ünde açıkladığı veriden sonra tazelenir (25 seri, 2024-12'den itibaren).
 Tazeleme: EVDS erişimi olan bir yerden `scripts/refresh_tuik.py` ya da elle. Kira, tarife,
 eğitim gibi bu kalemler ay içinde değişmediği için günlük çekimde canlı veri kaybı yoktur.
+
+## Kaynak durumu — 26.10.2026 canlı testleri (GitHub bulut runner, ABD IP)
+| Kaynak | Sonuç | Not |
+|---|---|---|
+| Market Fiyatı (40 SKU) | ✅ 37 ok | Zincirler ulusal fiyat uyguluyor; İstanbul=Ankara |
+| Petrol Ofisi (3 ürün × 2 il) | ✅ 6/6 | Tek bölgesel fark üreten canlı kaynak |
+| Toyota (6 model) | ✅ 6/6 | Model çapalı, kampanyalı fiyat |
+| Apple TR (3 ürün) | ✅ 3/3 | iPhone 17 256/512, MacBook Air |
+| EVDS alt endeksleri (21 seri) | ✅ dosyadan | Canlı EVDS yurt dışı IP'ye kapalı |
+| LCW giyim (30 SKU) | ❌ Access Denied | IP engeli; self-hosted (TR) runner'da çalışır |
+| Arçelik | ❌ robots disallow | Uyuluyor; TÜİK taşıma |
+| Togg | ⏳ Playwright'a alındı | Fiyat tablosu JS ile yükleniyor |
+| İBB Hal | ❌ zaman aşımı | IP engeli olası; resource_id de girilmeli |
+| Lokanta zincirleri | ❌ fiyat yok | Konum/sipariş akışı gerektiriyor; TÜİK taşıma |
+
+**Öneri:** `collect.yml` için Mac'te self-hosted runner (TR IP). EVDS canlı, LCW, Hal tek
+hamlede açılır; haftalık hesap bulutta kalır. `runs-on: [self-hosted, macOS]` yeterli.

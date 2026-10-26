@@ -288,15 +288,14 @@ items:
 
 # ------------------------------------------------------- 05 EV EŞYASI (7.92)
   - coicop: "05312"
-    ad: "Beyaz eşya (Arçelik, 4 sabit model)"
+    ad: "Beyaz eşya"
     anagrup: "05"
     agirlik: 1.06
     agirlik_durum: tuik
     skus:
-      - {id: arcelik_cm_10122, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '10122.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
-      - {id: arcelik_cm_12142, adapter: playwright, url: "https://www.arcelik.com.tr/camasir-makinesi", pattern: '12142 A.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
-      - {id: arcelik_bd_283616, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '283616 EI.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
-      - {id: arcelik_bd_278551, adapter: playwright, url: "https://www.arcelik.com.tr/buzdolabi", pattern: '278551 EGC.*?(\d{2,3}\.\d{3})\s*TL', wait_ms: 9000}
+      # Arçelik robots.txt kategori sayfalarını otomatik erişime kapatıyor (uyuluyor).
+      # Beyaz eşya TÜİK alt endeksiyle taşınır; self-hosted runner'da da robots geçerli.
+      - {id: evds_beyaz_esya, adapter: evds_file, series: "TP.TUKFIY2025.05312"}
   - coicop: "05611"
     ad: "Temizlik ürünleri"
     anagrup: "05"
@@ -370,7 +369,7 @@ items:
       - {id: toyota_yaris_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Yaris Cross[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
       - {id: toyota_chr, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'C-HR[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
       - {id: toyota_corolla_cross, adapter: html_regex, url: "https://www.toyota.com.tr/araba-modelleri/corolla-sedan", pattern: 'Corolla Cross[^0-9]{0,160}?(\d\.\d{3}\.\d{3})\s*TL'}
-      - {id: togg_t10x_v1, adapter: html_regex, url: "https://www.togg.com.tr/price-list", pattern: 'V1 RWD Standart Menzil[^0-9]{0,120}?(\d\.\d{3}\.\d{3})'}
+      - {id: togg_t10x_v1, adapter: playwright, url: "https://www.togg.com.tr/price-list", pattern: 'V1 RWD Standart Menzil[^0-9]{0,120}?(\d\.\d{3}\.\d{3})', wait_ms: 6000}
   - coicop: "07321"
     ad: "Toplu taşıma + uçak"
     anagrup: "07"
