@@ -91,11 +91,15 @@ eğitim gibi bu kalemler ay içinde değişmediği için günlük çekimde canl�
 | Toyota (6 model) | ✅ 6/6 | Model çapalı, kampanyalı fiyat |
 | Apple TR (3 ürün) | ✅ 3/3 | iPhone 17 256/512, MacBook Air |
 | EVDS alt endeksleri (21 seri) | ✅ dosyadan | Canlı EVDS yurt dışı IP'ye kapalı |
-| LCW giyim (30 SKU) | ❌ Access Denied | IP engeli; self-hosted (TR) runner'da çalışır |
+| **Boyner giyim/ayakkabı (19 SKU)** | ✅ 19/19 | Sunucu tarafı JSON-LD fiyat; çok markalı (Mavi, Lee Cooper, Wrangler, Fabrika…) |
+| LCW giyim | ❌ Access Denied | Bulut IP engeli; Boyner ile değiştirildi |
 | Arçelik | ❌ robots disallow | Uyuluyor; TÜİK taşıma |
 | Togg | ⏳ Playwright'a alındı | Fiyat tablosu JS ile yükleniyor |
-| İBB Hal | ❌ zaman aşımı | IP engeli olası; resource_id de girilmeli |
+| **Hal Kayıt Sistemi (hal.gov.tr, 13 ürün)** | ✅ 7/13 → desen gevşetildi | Ticaret Bakanlığı ulusal günlük toptan fiyat, statik HTML |
+| İBB Hal | ❌ zaman aşımı | hal.gov.tr ile değiştirildi |
 | Lokanta zincirleri | ❌ fiyat yok | Konum/sipariş akışı gerektiriyor; TÜİK taşıma |
 
-**Öneri:** `collect.yml` için Mac'te self-hosted runner (TR IP). EVDS canlı, LCW, Hal tek
-hamlede açılır; haftalık hesap bulutta kalır. `runs-on: [self-hosted, macOS]` yeterli.
+**Tasarım kararı:** Kişisel bilgisayara bağımlı runner kullanılmaz. Kaynaklar, bulut runner IP'sinden
+ölçülen erişilebilirliğe göre seçildi (`scripts/probe_sources.py`, `reports/probe_*.csv`). Zamanlı
+çekim `collect.yml` (06:15) `ktufe` etiketli runner yoksa kuyrukta kalır; `collect_cloud_fallback.yml`
+(08:15) o günün verisi yoksa bulutta çeker — fiilen günlük çekim buluttadır.

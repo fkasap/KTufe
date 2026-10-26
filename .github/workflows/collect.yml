@@ -24,7 +24,7 @@ permissions:
 # GitHub işi kuyrukta bekletir -> cron için yedek olarak bulut işi 2 saat sonra koşar.
 jobs:
   collect-mac:
-    if: github.event_name == 'schedule' || inputs.runner == 'mac'
+    if: inputs.runner == 'mac'
     runs-on: [self-hosted, ktufe]
     timeout-minutes: 40
     continue-on-error: true
@@ -43,7 +43,7 @@ jobs:
           git commit -m "data: $(date -u +%F) çekimi (mac)"; git pull --rebase origin ${{ github.ref_name }}; git push
 
   collect:
-    if: github.event_name != 'schedule' && (inputs.runner == '' || inputs.runner == 'cloud')
+    if: github.event_name == 'schedule' || inputs.runner == '' || inputs.runner == 'cloud'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
