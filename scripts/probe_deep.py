@@ -4,7 +4,7 @@ UA = "KTufe-Probe/0.1 (akademik enflasyon olcumu; github.com/fkasap/KTufe)"
 H = {"User-Agent": UA, "Accept-Language": "tr-TR,tr;q=0.9"}
 PRICE = r"\d{1,3}(?:\.\d{3})*,\d{2}\s*(?:TL|₺)|\d{1,3}(?:\.\d{3})+\s*(?:TL|₺)"
 def get(u):
-    r = requests.get(u, headers=H, timeout=30)
+    r = requests.get(u, headers=H, timeout=(10, 20))
     if "charset" not in r.headers.get("content-type","").lower(): r.encoding = r.apparent_encoding or "utf-8"
     return r
 out = {}
@@ -25,20 +25,21 @@ except Exception as e:
     out["boyner_err"] = repr(e)[:200]
 # --- Boyner: bulunan ilk 4 giyim kategorisinden 3'er ürün + JSON-LD fiyat
 out["boyner_products"] = []
-for href in list(out.get("boyner_cats", {}))[:6]:
+for href in list(out.get("boyner_cats", {}))[:3]:
     try:
-        time.sleep(2); c = get("https://www.boyner.com.tr" + href).text
+        time.sleep(1); c = get("https://www.boyner.com.tr" + href).text
         links = []
         for m in re.finditer(r'href="(/[^"]+-p-\d+)"', c):
             if m.group(1) not in links: links.append(m.group(1))
             if len(links) >= 3: break
         rec = {"cat": href, "status": "ok", "links": links, "prods": []}
         for l in links[:2]:
-            time.sleep(2); p = get("https://www.boyner.com.tr" + l).text
+            time.sleep(1); p = get("https://www.boyner.com.tr" + l).text
             og = re.search(r'property="og:title"\s+content="([^"]{0,120})"', p)
             ld = re.findall(r'"price"\s*:\s*"?([\d.]+)', p)[:3]
             rec["prods"].append({"url": l, "og": og.group(1) if og else "", "ld_prices": ld})
         out["boyner_products"].append(rec)
+        json.dump(out, open(f"reports/probe_deep_{dt.date.today()}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     except Exception as e:
         out["boyner_products"].append({"cat": href, "err": repr(e)[:120]})
 # --- Hal Kayıt Sistemi
