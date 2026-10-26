@@ -1,225 +1,225 @@
-date,region,item,sku,price,source,status
-2026-10-26,istanbul,01113,mf_ekmek_1,135.07,marketfiyati,ok
-2026-10-26,ankara,01113,mf_ekmek_1,135.07,marketfiyati,ok
-2026-10-26,istanbul,01113,mf_ekmek_2,,marketfiyati,missing
-2026-10-26,ankara,01113,mf_ekmek_2,,marketfiyati,missing
-2026-10-26,istanbul,01113,mf_ekmek_3,43.0,marketfiyati,ok
-2026-10-26,ankara,01113,mf_ekmek_3,43.0,marketfiyati,ok
-2026-10-26,istanbul,01115,mf_makarna_1,17.0,marketfiyati,ok
-2026-10-26,ankara,01115,mf_makarna_1,17.0,marketfiyati,ok
-2026-10-26,istanbul,01115,mf_makarna_2,17.95,marketfiyati,ok
-2026-10-26,ankara,01115,mf_makarna_2,17.95,marketfiyati,ok
-2026-10-26,istanbul,01111,mf_pirinc_1,87.0,marketfiyati,ok
-2026-10-26,ankara,01111,mf_pirinc_1,87.0,marketfiyati,ok
-2026-10-26,istanbul,01111,mf_pirinc_2,152.475,marketfiyati,ok
-2026-10-26,ankara,01111,mf_pirinc_2,152.475,marketfiyati,ok
-2026-10-26,istanbul,01122,mf_dana_kiyma,645.0,marketfiyati,ok
-2026-10-26,ankara,01122,mf_dana_kiyma,645.0,marketfiyati,ok
-2026-10-26,istanbul,01122,mf_dana_kusbasi,875.0,marketfiyati,ok
-2026-10-26,ankara,01122,mf_dana_kusbasi,875.0,marketfiyati,ok
-2026-10-26,istanbul,01125,mf_tavuk_but,149.475,marketfiyati,ok
-2026-10-26,ankara,01125,mf_tavuk_but,149.475,marketfiyati,ok
-2026-10-26,istanbul,01125,mf_tavuk_gogus,1149.0,marketfiyati,ok
-2026-10-26,ankara,01125,mf_tavuk_gogus,1149.0,marketfiyati,ok
-2026-10-26,istanbul,01125,mf_tavuk_butun,79.0,marketfiyati,ok
-2026-10-26,ankara,01125,mf_tavuk_butun,79.0,marketfiyati,ok
-2026-10-26,istanbul,01141,mf_sut_1,85.95,marketfiyati,ok
-2026-10-26,ankara,01141,mf_sut_1,85.95,marketfiyati,ok
-2026-10-26,istanbul,01141,mf_sut_2,59.0,marketfiyati,ok
-2026-10-26,ankara,01141,mf_sut_2,59.0,marketfiyati,ok
-2026-10-26,istanbul,01145,mf_beyaz_peynir,259.0,marketfiyati,ok
-2026-10-26,ankara,01145,mf_beyaz_peynir,259.0,marketfiyati,ok
-2026-10-26,istanbul,01145,mf_kasar,407.95,marketfiyati,ok
-2026-10-26,ankara,01145,mf_kasar,407.95,marketfiyati,ok
-2026-10-26,istanbul,01148,mf_yumurta_1,79.0,marketfiyati,ok
-2026-10-26,ankara,01148,mf_yumurta_1,79.0,marketfiyati,ok
-2026-10-26,istanbul,01148,mf_yumurta_2,79.0,marketfiyati,ok
-2026-10-26,ankara,01148,mf_yumurta_2,79.0,marketfiyati,ok
-2026-10-26,istanbul,01151,mf_aycicek_1,445.0,marketfiyati,ok
-2026-10-26,ankara,01151,mf_aycicek_1,445.0,marketfiyati,ok
-2026-10-26,istanbul,01151,mf_aycicek_2,445.0,marketfiyati,ok
-2026-10-26,ankara,01151,mf_aycicek_2,445.0,marketfiyati,ok
-2026-10-26,istanbul,01163,hal_elma,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01163,hal_muz,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01163,hal_portakal,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01163,mf_elma,39.45,marketfiyati,ok
-2026-10-26,ankara,01163,mf_elma,39.45,marketfiyati,ok
-2026-10-26,istanbul,01163,mf_muz,119.25,marketfiyati,ok
-2026-10-26,ankara,01163,mf_muz,119.25,marketfiyati,ok
-2026-10-26,istanbul,01172,hal_domates,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01172,hal_salatalik,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01172,hal_biber,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01172,hal_patates,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01172,hal_sogan,,ibb_hal,error:ConnectTimeout
-2026-10-26,istanbul,01172,mf_domates,69.95,marketfiyati,ok
-2026-10-26,ankara,01172,mf_domates,69.95,marketfiyati,ok
-2026-10-26,istanbul,01172,mf_patates,59.5,marketfiyati,ok
-2026-10-26,ankara,01172,mf_patates,59.5,marketfiyati,ok
-2026-10-26,istanbul,01181,mf_seker_1,52.5,marketfiyati,ok
-2026-10-26,ankara,01181,mf_seker_1,52.5,marketfiyati,ok
-2026-10-26,istanbul,01181,mf_seker_2,50.0,marketfiyati,ok
-2026-10-26,ankara,01181,mf_seker_2,50.0,marketfiyati,ok
-2026-10-26,istanbul,01230,mf_cay_1,609.95,marketfiyati,ok
-2026-10-26,ankara,01230,mf_cay_1,609.95,marketfiyati,ok
-2026-10-26,istanbul,01230,mf_cay_2,150.0,marketfiyati,ok
-2026-10-26,ankara,01230,mf_cay_2,150.0,marketfiyati,ok
-2026-10-26,istanbul,01260,mf_su_5l,,marketfiyati,missing
-2026-10-26,ankara,01260,mf_su_5l,,marketfiyati,missing
-2026-10-26,istanbul,01260,mf_kola_1l,70.0,marketfiyati,ok
-2026-10-26,ankara,01260,mf_kola_1l,70.0,marketfiyati,ok
-2026-10-26,istanbul,01,evds_gida_01,134.04,evds_file,ok
-2026-10-26,ankara,01,evds_gida_01,134.04,evds_file,ok
-2026-10-26,istanbul,02301,evds_tutun,141.35,evds_file,ok
-2026-10-26,ankara,02301,evds_tutun,141.35,evds_file,ok
-2026-10-26,istanbul,02130,evds_alkol,138.36,evds_file,ok
-2026-10-26,ankara,02130,evds_alkol,138.36,evds_file,ok
-2026-10-26,istanbul,03122,lcw_k_jean_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_jean_1,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_jean_2,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_jean_2,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_jean_3,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_jean_3,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_kaban_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_kaban_1,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_mont_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_mont_1,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_mont_2,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_mont_2,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_kazak_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_kazak_1,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_kazak_2,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_kazak_2,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_tunik_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_tunik_1,,playwright,missing
-2026-10-26,istanbul,03122,lcw_k_hirka_1,,playwright,missing
-2026-10-26,ankara,03122,lcw_k_hirka_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_jean_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_jean_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_jean_2,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_jean_2,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_jean_3,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_jean_3,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_tisort_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_tisort_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_tisort_2,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_tisort_2,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_gomlek_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_gomlek_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_gomlek_2,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_gomlek_2,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_gomlek_3,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_gomlek_3,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_mont_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_mont_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_mont_2,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_mont_2,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_ceket_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_ceket_1,,playwright,missing
-2026-10-26,istanbul,03121,lcw_e_boxer_1,,playwright,missing
-2026-10-26,ankara,03121,lcw_e_boxer_1,,playwright,missing
-2026-10-26,istanbul,03123,lcw_c_esofman_1,,playwright,missing
-2026-10-26,ankara,03123,lcw_c_esofman_1,,playwright,missing
-2026-10-26,istanbul,03123,lcw_c_esofman_2,,playwright,missing
-2026-10-26,ankara,03123,lcw_c_esofman_2,,playwright,missing
-2026-10-26,istanbul,03123,lcw_c_mont_1,,playwright,missing
-2026-10-26,ankara,03123,lcw_c_mont_1,,playwright,missing
-2026-10-26,istanbul,03123,lcw_c_mont_2,,playwright,missing
-2026-10-26,ankara,03123,lcw_c_mont_2,,playwright,missing
-2026-10-26,istanbul,03211,lcw_a_spor_1,,playwright,missing
-2026-10-26,ankara,03211,lcw_a_spor_1,,playwright,missing
-2026-10-26,istanbul,03211,lcw_a_spor_2,,playwright,missing
-2026-10-26,ankara,03211,lcw_a_spor_2,,playwright,missing
-2026-10-26,istanbul,03211,lcw_a_bot_1,,playwright,missing
-2026-10-26,ankara,03211,lcw_a_bot_1,,playwright,missing
-2026-10-26,istanbul,03211,lcw_a_bot_2,,playwright,missing
-2026-10-26,ankara,03211,lcw_a_bot_2,,playwright,missing
-2026-10-26,istanbul,04110,evds_kira,156.04,evds_file,ok
-2026-10-26,ankara,04110,evds_kira,156.04,evds_file,ok
-2026-10-26,istanbul,04510,evds_elektrik,135.57,evds_file,ok
-2026-10-26,ankara,04510,evds_elektrik,135.57,evds_file,ok
-2026-10-26,istanbul,04521,evds_dogalgaz,179.9,evds_file,ok
-2026-10-26,ankara,04521,evds_dogalgaz,179.9,evds_file,ok
-2026-10-26,istanbul,04411,evds_su,134.15,evds_file,ok
-2026-10-26,ankara,04411,evds_su,134.15,evds_file,ok
-2026-10-26,istanbul,04,mf_tup,122.5,marketfiyati,ok
-2026-10-26,ankara,04,mf_tup,122.5,marketfiyati,ok
-2026-10-26,istanbul,04,evds_konut_diger,152.1,evds_file,ok
-2026-10-26,ankara,04,evds_konut_diger,152.1,evds_file,ok
-2026-10-26,istanbul,05312,arcelik_cm_10122,,playwright,missing
-2026-10-26,ankara,05312,arcelik_cm_10122,,playwright,missing
-2026-10-26,istanbul,05312,arcelik_cm_12142,,playwright,missing
-2026-10-26,ankara,05312,arcelik_cm_12142,,playwright,missing
-2026-10-26,istanbul,05312,arcelik_bd_283616,,playwright,missing
-2026-10-26,ankara,05312,arcelik_bd_283616,,playwright,missing
-2026-10-26,istanbul,05312,arcelik_bd_278551,,playwright,missing
-2026-10-26,ankara,05312,arcelik_bd_278551,,playwright,missing
-2026-10-26,istanbul,05611,mf_deterjan_toz,529.0,marketfiyati,ok
-2026-10-26,ankara,05611,mf_deterjan_toz,529.0,marketfiyati,ok
-2026-10-26,istanbul,05611,mf_bulasik,62.5,marketfiyati,ok
-2026-10-26,ankara,05611,mf_bulasik,62.5,marketfiyati,ok
-2026-10-26,istanbul,05611,mf_camasir_suyu,179.475,marketfiyati,ok
-2026-10-26,ankara,05611,mf_camasir_suyu,179.475,marketfiyati,ok
-2026-10-26,istanbul,05611,mf_tuvalet_kagidi,175.0,marketfiyati,ok
-2026-10-26,ankara,05611,mf_tuvalet_kagidi,175.0,marketfiyati,ok
-2026-10-26,istanbul,05,evds_ev_esyasi,128.81,evds_file,ok
-2026-10-26,ankara,05,evds_ev_esyasi,128.81,evds_file,ok
-2026-10-26,istanbul,06111,evds_ilac,139.03,evds_file,ok
-2026-10-26,ankara,06111,evds_ilac,139.03,evds_file,ok
-2026-10-26,istanbul,06,evds_saglik,146.58,evds_file,ok
-2026-10-26,ankara,06,evds_saglik,146.58,evds_file,ok
-2026-10-26,istanbul,07222,po_benzin_ist_avr,76.3,petrolofisi,ok
-2026-10-26,ankara,07222,po_benzin_ist_avr,77.3,petrolofisi,ok
-2026-10-26,istanbul,07221,po_motorin_ist_avr,96.8,petrolofisi,ok
-2026-10-26,ankara,07221,po_motorin_ist_avr,97.9,petrolofisi,ok
-2026-10-26,istanbul,07223,po_lpg_ist_avr,41.2,petrolofisi,ok
-2026-10-26,ankara,07223,po_lpg_ist_avr,41.29,petrolofisi,ok
-2026-10-26,istanbul,07111,toyota_corolla_sedan,,html_regex,missing
-2026-10-26,ankara,07111,toyota_corolla_sedan,,html_regex,missing
-2026-10-26,istanbul,07111,toyota_corolla_hb,,html_regex,missing
-2026-10-26,ankara,07111,toyota_corolla_hb,,html_regex,missing
-2026-10-26,istanbul,07111,toyota_yaris,,html_regex,missing
-2026-10-26,ankara,07111,toyota_yaris,,html_regex,missing
-2026-10-26,istanbul,07111,toyota_yaris_cross,,html_regex,missing
-2026-10-26,ankara,07111,toyota_yaris_cross,,html_regex,missing
-2026-10-26,istanbul,07111,toyota_chr,,html_regex,missing
-2026-10-26,ankara,07111,toyota_chr,,html_regex,missing
-2026-10-26,istanbul,07111,toyota_corolla_cross,,html_regex,missing
-2026-10-26,ankara,07111,toyota_corolla_cross,,html_regex,missing
-2026-10-26,istanbul,07111,togg_t10x_v1,,html_regex,missing
-2026-10-26,ankara,07111,togg_t10x_v1,,html_regex,missing
-2026-10-26,istanbul,07321,evds_yolcu_tasima,153.92,evds_file,ok
-2026-10-26,ankara,07321,evds_yolcu_tasima,153.92,evds_file,ok
-2026-10-26,istanbul,07,evds_ulastirma_diger,144.05,evds_file,ok
-2026-10-26,ankara,07,evds_ulastirma_diger,144.05,evds_file,ok
-2026-10-26,istanbul,08120,apple_iphone17_256,,html_regex,missing
-2026-10-26,ankara,08120,apple_iphone17_256,,html_regex,missing
-2026-10-26,istanbul,08120,apple_iphone17_512,,html_regex,missing
-2026-10-26,ankara,08120,apple_iphone17_512,,html_regex,missing
-2026-10-26,istanbul,08120,apple_macbook_air,84999.0,html_regex,ok
-2026-10-26,ankara,08120,apple_macbook_air,84999.0,html_regex,ok
-2026-10-26,istanbul,08320,evds_telekom,151.17,evds_file,ok
-2026-10-26,ankara,08320,evds_telekom,151.17,evds_file,ok
-2026-10-26,istanbul,09800,evds_paket_tur,126.67,evds_file,ok
-2026-10-26,ankara,09800,evds_paket_tur,126.67,evds_file,ok
-2026-10-26,istanbul,09,mf_defter,,marketfiyati,missing
-2026-10-26,ankara,09,mf_defter,,marketfiyati,missing
-2026-10-26,istanbul,09,evds_eglence,129.49,evds_file,ok
-2026-10-26,ankara,09,evds_eglence,129.49,evds_file,ok
-2026-10-26,istanbul,10,evds_egitim,175.66,evds_file,ok
-2026-10-26,ankara,10,evds_egitim,175.66,evds_file,ok
-2026-10-26,istanbul,11111,evds_lokanta,137.53,evds_file,ok
-2026-10-26,ankara,11111,evds_lokanta,137.53,evds_file,ok
-2026-10-26,istanbul,11201,evds_konaklama,126.99,evds_file,ok
-2026-10-26,ankara,11201,evds_konaklama,126.99,evds_file,ok
-2026-10-26,istanbul,12,evds_sigorta,134.98,evds_file,ok
-2026-10-26,ankara,12,evds_sigorta,134.98,evds_file,ok
-2026-10-26,istanbul,13120,mf_sampuan,175.0,marketfiyati,ok
-2026-10-26,ankara,13120,mf_sampuan,175.0,marketfiyati,ok
-2026-10-26,istanbul,13120,mf_dis_macunu,218.5,marketfiyati,ok
-2026-10-26,ankara,13120,mf_dis_macunu,218.5,marketfiyati,ok
-2026-10-26,istanbul,13120,mf_sabun,119.0,marketfiyati,ok
-2026-10-26,ankara,13120,mf_sabun,119.0,marketfiyati,ok
-2026-10-26,istanbul,13120,mf_bebek_bezi,85.0,marketfiyati,ok
-2026-10-26,ankara,13120,mf_bebek_bezi,85.0,marketfiyati,ok
-2026-10-26,istanbul,13,evds_kisisel_diger,127.79,evds_file,ok
-2026-10-26,ankara,13,evds_kisisel_diger,127.79,evds_file,ok
+date,region,item,sku,price,source,status,note
+2026-10-26,istanbul,01113,mf_ekmek_1,135.07,marketfiyati,ok,
+2026-10-26,ankara,01113,mf_ekmek_1,135.07,marketfiyati,ok,
+2026-10-26,istanbul,01113,mf_ekmek_2,,marketfiyati,missing,
+2026-10-26,ankara,01113,mf_ekmek_2,,marketfiyati,missing,
+2026-10-26,istanbul,01113,mf_ekmek_3,43.0,marketfiyati,ok,
+2026-10-26,ankara,01113,mf_ekmek_3,43.0,marketfiyati,ok,
+2026-10-26,istanbul,01115,mf_makarna_1,17.0,marketfiyati,ok,
+2026-10-26,ankara,01115,mf_makarna_1,17.0,marketfiyati,ok,
+2026-10-26,istanbul,01115,mf_makarna_2,17.95,marketfiyati,ok,
+2026-10-26,ankara,01115,mf_makarna_2,17.95,marketfiyati,ok,
+2026-10-26,istanbul,01111,mf_pirinc_1,87.0,marketfiyati,ok,
+2026-10-26,ankara,01111,mf_pirinc_1,87.0,marketfiyati,ok,
+2026-10-26,istanbul,01111,mf_pirinc_2,152.475,marketfiyati,ok,
+2026-10-26,ankara,01111,mf_pirinc_2,152.475,marketfiyati,ok,
+2026-10-26,istanbul,01122,mf_dana_kiyma,645.0,marketfiyati,ok,
+2026-10-26,ankara,01122,mf_dana_kiyma,645.0,marketfiyati,ok,
+2026-10-26,istanbul,01122,mf_dana_kusbasi,875.0,marketfiyati,ok,
+2026-10-26,ankara,01122,mf_dana_kusbasi,875.0,marketfiyati,ok,
+2026-10-26,istanbul,01125,mf_tavuk_but,149.475,marketfiyati,ok,
+2026-10-26,ankara,01125,mf_tavuk_but,149.475,marketfiyati,ok,
+2026-10-26,istanbul,01125,mf_tavuk_gogus,1149.0,marketfiyati,ok,
+2026-10-26,ankara,01125,mf_tavuk_gogus,1149.0,marketfiyati,ok,
+2026-10-26,istanbul,01125,mf_tavuk_butun,79.0,marketfiyati,ok,
+2026-10-26,ankara,01125,mf_tavuk_butun,79.0,marketfiyati,ok,
+2026-10-26,istanbul,01141,mf_sut_1,85.95,marketfiyati,ok,
+2026-10-26,ankara,01141,mf_sut_1,85.95,marketfiyati,ok,
+2026-10-26,istanbul,01141,mf_sut_2,59.0,marketfiyati,ok,
+2026-10-26,ankara,01141,mf_sut_2,59.0,marketfiyati,ok,
+2026-10-26,istanbul,01145,mf_beyaz_peynir,259.0,marketfiyati,ok,
+2026-10-26,ankara,01145,mf_beyaz_peynir,259.0,marketfiyati,ok,
+2026-10-26,istanbul,01145,mf_kasar,407.95,marketfiyati,ok,
+2026-10-26,ankara,01145,mf_kasar,407.95,marketfiyati,ok,
+2026-10-26,istanbul,01148,mf_yumurta_1,79.0,marketfiyati,ok,
+2026-10-26,ankara,01148,mf_yumurta_1,79.0,marketfiyati,ok,
+2026-10-26,istanbul,01148,mf_yumurta_2,79.0,marketfiyati,ok,
+2026-10-26,ankara,01148,mf_yumurta_2,79.0,marketfiyati,ok,
+2026-10-26,istanbul,01151,mf_aycicek_1,445.0,marketfiyati,ok,
+2026-10-26,ankara,01151,mf_aycicek_1,445.0,marketfiyati,ok,
+2026-10-26,istanbul,01151,mf_aycicek_2,445.0,marketfiyati,ok,
+2026-10-26,ankara,01151,mf_aycicek_2,445.0,marketfiyati,ok,
+2026-10-26,istanbul,01163,hal_elma,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=ELMA&limit=50&sort=_id+desc (Caused by ConnectTimeo"
+2026-10-26,istanbul,01163,hal_muz,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=MUZ&limit=50&sort=_id+desc (Caused by ConnectTimeou"
+2026-10-26,istanbul,01163,hal_portakal,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=PORTAKAL&limit=50&sort=_id+desc (Caused by ConnectT"
+2026-10-26,istanbul,01163,mf_elma,39.45,marketfiyati,ok,
+2026-10-26,ankara,01163,mf_elma,39.45,marketfiyati,ok,
+2026-10-26,istanbul,01163,mf_muz,119.25,marketfiyati,ok,
+2026-10-26,ankara,01163,mf_muz,119.25,marketfiyati,ok,
+2026-10-26,istanbul,01172,hal_domates,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=DOMATES&limit=50&sort=_id+desc (Caused by ConnectTi"
+2026-10-26,istanbul,01172,hal_salatalik,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=SALATALIK&limit=50&sort=_id+desc (Caused by Connect"
+2026-10-26,istanbul,01172,hal_biber,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=BIBER&limit=50&sort=_id+desc (Caused by ConnectTime"
+2026-10-26,istanbul,01172,hal_patates,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=PATATES&limit=50&sort=_id+desc (Caused by ConnectTi"
+2026-10-26,istanbul,01172,hal_sogan,,ibb_hal,error:ConnectTimeout,"HTTPSConnectionPool(host='data.ibb.gov.tr', port=443): Max retries exceeded with url: /api/3/action/datastore_search?resource_id=RESOURCE_ID_GIRIN&q=SOGAN&limit=50&sort=_id+desc (Caused by ConnectTime"
+2026-10-26,istanbul,01172,mf_domates,69.95,marketfiyati,ok,
+2026-10-26,ankara,01172,mf_domates,69.95,marketfiyati,ok,
+2026-10-26,istanbul,01172,mf_patates,59.5,marketfiyati,ok,
+2026-10-26,ankara,01172,mf_patates,59.5,marketfiyati,ok,
+2026-10-26,istanbul,01181,mf_seker_1,52.5,marketfiyati,ok,
+2026-10-26,ankara,01181,mf_seker_1,52.5,marketfiyati,ok,
+2026-10-26,istanbul,01181,mf_seker_2,50.0,marketfiyati,ok,
+2026-10-26,ankara,01181,mf_seker_2,50.0,marketfiyati,ok,
+2026-10-26,istanbul,01230,mf_cay_1,609.95,marketfiyati,ok,
+2026-10-26,ankara,01230,mf_cay_1,609.95,marketfiyati,ok,
+2026-10-26,istanbul,01230,mf_cay_2,150.0,marketfiyati,ok,
+2026-10-26,ankara,01230,mf_cay_2,150.0,marketfiyati,ok,
+2026-10-26,istanbul,01260,mf_su_5l,,marketfiyati,missing,
+2026-10-26,ankara,01260,mf_su_5l,,marketfiyati,missing,
+2026-10-26,istanbul,01260,mf_kola_1l,70.0,marketfiyati,ok,
+2026-10-26,ankara,01260,mf_kola_1l,70.0,marketfiyati,ok,
+2026-10-26,istanbul,01,evds_gida_01,134.04,evds_file,ok,
+2026-10-26,ankara,01,evds_gida_01,134.04,evds_file,ok,
+2026-10-26,istanbul,02301,evds_tutun,141.35,evds_file,ok,
+2026-10-26,ankara,02301,evds_tutun,141.35,evds_file,ok,
+2026-10-26,istanbul,02130,evds_alkol,138.36,evds_file,ok,
+2026-10-26,ankara,02130,evds_alkol,138.36,evds_file,ok,
+2026-10-26,istanbul,03122,lcw_k_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/crop-flare-kadin-jean-pantolon"
+2026-10-26,ankara,03122,lcw_k_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/crop-flare-kadin-jean-pantolon"
+2026-10-26,istanbul,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
+2026-10-26,ankara,03122,lcw_k_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/flare-kadin-jean-pantolon-kahv"
+2026-10-26,istanbul,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=228 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
+2026-10-26,ankara,03122,lcw_k_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=228 :: Access Denied You don't have permission to access ""http://www.lcw.com/cepli-wideleg-jean-indigo-o-54"
+2026-10-26,istanbul,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
+2026-10-26,ankara,03122,lcw_k_kaban_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kruvaze-yaka-kadin-kase-kaban-"
+2026-10-26,istanbul,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=244 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
+2026-10-26,ankara,03122,lcw_k_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=244 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-kadin-sisme"
+2026-10-26,istanbul,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
+2026-10-26,ankara,03122,lcw_k_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=258 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kapitone-oversize-ka"
+2026-10-26,istanbul,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
+2026-10-26,ankara,03122,lcw_k_kazak_1,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/baklava-desenli-oversize-kadin"
+2026-10-26,istanbul,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
+2026-10-26,ankara,03122,lcw_k_kazak_2,,playwright,missing,"nomatch title=Access Denied textlen=240 :: Access Denied You don't have permission to access ""http://www.lcw.com/parlak-dokulu-kadin-triko-kaza"
+2026-10-26,istanbul,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
+2026-10-26,ankara,03122,lcw_k_tunik_1,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/yarim-balikci-yaka-kadin-triko"
+2026-10-26,istanbul,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
+2026-10-26,ankara,03122,lcw_k_hirka_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/bisiklet-yaka-cizgili-kadin-tr"
+2026-10-26,istanbul,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,ankara,03121,lcw_e_jean_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,istanbul,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,ankara,03121,lcw_e_jean_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,istanbul,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,ankara,03121,lcw_e_jean_3,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/779-regular-fit-esnek-kumas-je"
+2026-10-26,istanbul,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,ankara,03121,lcw_e_tisort_1,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,istanbul,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,ankara,03121,lcw_e_tisort_2,,playwright,missing,"nomatch title=Access Denied textlen=241 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ince-kumas-tisort-"
+2026-10-26,istanbul,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,ankara,03121,lcw_e_gomlek_1,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,istanbul,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,ankara,03121,lcw_e_gomlek_2,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-oxford-erkek-gomle"
+2026-10-26,istanbul,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
+2026-10-26,ankara,03121,lcw_e_gomlek_3,,playwright,missing,"nomatch title=Access Denied textlen=239 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-ekose-erkek-gomlek"
+2026-10-26,istanbul,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
+2026-10-26,ankara,03121,lcw_e_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-kapusonlu-erkek-si"
+2026-10-26,istanbul,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
+2026-10-26,ankara,03121,lcw_e_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=242 :: Access Denied You don't have permission to access ""http://www.lcw.com/regular-fit-pelus-yaka-erkek-m"
+2026-10-26,istanbul,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=250 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
+2026-10-26,ankara,03121,lcw_e_ceket_1,,playwright,missing,"nomatch title=Access Denied textlen=250 :: Access Denied You don't have permission to access ""http://www.lcw.com/standart-kalip-erkek-deri-goru"
+2026-10-26,istanbul,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
+2026-10-26,ankara,03121,lcw_e_boxer_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/5li-pamuklu-esnek-erkek-boxer-"
+2026-10-26,istanbul,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
+2026-10-26,ankara,03123,lcw_c_esofman_1,,playwright,missing,"nomatch title=Access Denied textlen=247 :: Access Denied You don't have permission to access ""http://www.lcw.com/baskili-erkek-cocuk-esofman-ta"
+2026-10-26,istanbul,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
+2026-10-26,ankara,03123,lcw_c_esofman_2,,playwright,missing,"nomatch title=Access Denied textlen=254 :: Access Denied You don't have permission to access ""http://www.lcw.com/dinozor-baskili-erkek-cocuk-es"
+2026-10-26,istanbul,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
+2026-10-26,ankara,03123,lcw_c_mont_1,,playwright,missing,"nomatch title=Access Denied textlen=238 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-sisme-mont"
+2026-10-26,istanbul,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
+2026-10-26,ankara,03123,lcw_c_mont_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/kapusonlu-kiz-cocuk-mont-yesil"
+2026-10-26,istanbul,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
+2026-10-26,ankara,03211,lcw_a_spor_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/topuk-detayli-spor-ayakkabi-be"
+2026-10-26,istanbul,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
+2026-10-26,ankara,03211,lcw_a_spor_2,,playwright,missing,"nomatch title=Access Denied textlen=233 :: Access Denied You don't have permission to access ""http://www.lcw.com/fileli-erkek-spor-ayakkabi-gri"
+2026-10-26,istanbul,03211,lcw_a_bot_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/bilekte-kalin-topuklu-bot-siya"
+2026-10-26,ankara,03211,lcw_a_bot_1,,playwright,missing,"nomatch title=Access Denied textlen=234 :: Access Denied You don't have permission to access ""http://www.lcw.com/bilekte-kalin-topuklu-bot-siya"
+2026-10-26,istanbul,03211,lcw_a_bot_2,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/kut-burunlu-bilekte-topuklu-bo"
+2026-10-26,ankara,03211,lcw_a_bot_2,,playwright,missing,"nomatch title=Access Denied textlen=245 :: Access Denied You don't have permission to access ""http://www.lcw.com/kut-burunlu-bilekte-topuklu-bo"
+2026-10-26,istanbul,04110,evds_kira,156.04,evds_file,ok,
+2026-10-26,ankara,04110,evds_kira,156.04,evds_file,ok,
+2026-10-26,istanbul,04510,evds_elektrik,135.57,evds_file,ok,
+2026-10-26,ankara,04510,evds_elektrik,135.57,evds_file,ok,
+2026-10-26,istanbul,04521,evds_dogalgaz,179.9,evds_file,ok,
+2026-10-26,ankara,04521,evds_dogalgaz,179.9,evds_file,ok,
+2026-10-26,istanbul,04411,evds_su,134.15,evds_file,ok,
+2026-10-26,ankara,04411,evds_su,134.15,evds_file,ok,
+2026-10-26,istanbul,04,mf_tup,122.5,marketfiyati,ok,
+2026-10-26,ankara,04,mf_tup,122.5,marketfiyati,ok,
+2026-10-26,istanbul,04,evds_konut_diger,152.1,evds_file,ok,
+2026-10-26,ankara,04,evds_konut_diger,152.1,evds_file,ok,
+2026-10-26,istanbul,05312,arcelik_cm_10122,,playwright,missing,
+2026-10-26,ankara,05312,arcelik_cm_10122,,playwright,missing,
+2026-10-26,istanbul,05312,arcelik_cm_12142,,playwright,missing,
+2026-10-26,ankara,05312,arcelik_cm_12142,,playwright,missing,
+2026-10-26,istanbul,05312,arcelik_bd_283616,,playwright,missing,
+2026-10-26,ankara,05312,arcelik_bd_283616,,playwright,missing,
+2026-10-26,istanbul,05312,arcelik_bd_278551,,playwright,missing,
+2026-10-26,ankara,05312,arcelik_bd_278551,,playwright,missing,
+2026-10-26,istanbul,05611,mf_deterjan_toz,529.0,marketfiyati,ok,
+2026-10-26,ankara,05611,mf_deterjan_toz,529.0,marketfiyati,ok,
+2026-10-26,istanbul,05611,mf_bulasik,62.5,marketfiyati,ok,
+2026-10-26,ankara,05611,mf_bulasik,62.5,marketfiyati,ok,
+2026-10-26,istanbul,05611,mf_camasir_suyu,179.475,marketfiyati,ok,
+2026-10-26,ankara,05611,mf_camasir_suyu,179.475,marketfiyati,ok,
+2026-10-26,istanbul,05611,mf_tuvalet_kagidi,175.0,marketfiyati,ok,
+2026-10-26,ankara,05611,mf_tuvalet_kagidi,175.0,marketfiyati,ok,
+2026-10-26,istanbul,05,evds_ev_esyasi,128.81,evds_file,ok,
+2026-10-26,ankara,05,evds_ev_esyasi,128.81,evds_file,ok,
+2026-10-26,istanbul,06111,evds_ilac,139.03,evds_file,ok,
+2026-10-26,ankara,06111,evds_ilac,139.03,evds_file,ok,
+2026-10-26,istanbul,06,evds_saglik,146.58,evds_file,ok,
+2026-10-26,ankara,06,evds_saglik,146.58,evds_file,ok,
+2026-10-26,istanbul,07222,po_benzin_ist_avr,76.3,petrolofisi,ok,
+2026-10-26,ankara,07222,po_benzin_ist_avr,77.3,petrolofisi,ok,
+2026-10-26,istanbul,07221,po_motorin_ist_avr,96.8,petrolofisi,ok,
+2026-10-26,ankara,07221,po_motorin_ist_avr,97.9,petrolofisi,ok,
+2026-10-26,istanbul,07223,po_lpg_ist_avr,41.2,petrolofisi,ok,
+2026-10-26,ankara,07223,po_lpg_ist_avr,41.29,petrolofisi,ok,
+2026-10-26,istanbul,07111,toyota_corolla_sedan,1965000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_corolla_sedan,1965000.0,html_regex,ok,
+2026-10-26,istanbul,07111,toyota_corolla_hb,2230000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_corolla_hb,2230000.0,html_regex,ok,
+2026-10-26,istanbul,07111,toyota_yaris,2080000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_yaris,2080000.0,html_regex,ok,
+2026-10-26,istanbul,07111,toyota_yaris_cross,2388000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_yaris_cross,2388000.0,html_regex,ok,
+2026-10-26,istanbul,07111,toyota_chr,2400000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_chr,2400000.0,html_regex,ok,
+2026-10-26,istanbul,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
+2026-10-26,ankara,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
+2026-10-26,istanbul,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79579 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas NoktalarÄ± English TÃ¼rkÃ§e 
+2026-10-26,ankara,07111,togg_t10x_v1,,html_regex,missing,nomatch len=79579 title=Togg T10X Fiyat Listesi | Togg ::  Togg T10X Fiyat Listesi | Togg T10X T10F Trumore Trugo Temas NoktalarÄ± English TÃ¼rkÃ§e 
+2026-10-26,istanbul,07321,evds_yolcu_tasima,153.92,evds_file,ok,
+2026-10-26,ankara,07321,evds_yolcu_tasima,153.92,evds_file,ok,
+2026-10-26,istanbul,07,evds_ulastirma_diger,144.05,evds_file,ok,
+2026-10-26,ankara,07,evds_ulastirma_diger,144.05,evds_file,ok,
+2026-10-26,istanbul,08120,apple_iphone17_256,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
+2026-10-26,ankara,08120,apple_iphone17_256,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
+2026-10-26,istanbul,08120,apple_iphone17_512,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
+2026-10-26,ankara,08120,apple_iphone17_512,,html_regex,missing,nomatch len=374125 title=iPhone 17 satın alın - Apple (TR) ::  iPhone 17 satın alın - Apple (TR) wzlhp Store Mac iPad iPhone Watch AirPods Ev Eğlence Ak
+2026-10-26,istanbul,08120,apple_macbook_air,84999.0,html_regex,ok,
+2026-10-26,ankara,08120,apple_macbook_air,84999.0,html_regex,ok,
+2026-10-26,istanbul,08320,evds_telekom,151.17,evds_file,ok,
+2026-10-26,ankara,08320,evds_telekom,151.17,evds_file,ok,
+2026-10-26,istanbul,09800,evds_paket_tur,126.67,evds_file,ok,
+2026-10-26,ankara,09800,evds_paket_tur,126.67,evds_file,ok,
+2026-10-26,istanbul,09,mf_defter,,marketfiyati,missing,
+2026-10-26,ankara,09,mf_defter,,marketfiyati,missing,
+2026-10-26,istanbul,09,evds_eglence,129.49,evds_file,ok,
+2026-10-26,ankara,09,evds_eglence,129.49,evds_file,ok,
+2026-10-26,istanbul,10,evds_egitim,175.66,evds_file,ok,
+2026-10-26,ankara,10,evds_egitim,175.66,evds_file,ok,
+2026-10-26,istanbul,11111,evds_lokanta,137.53,evds_file,ok,
+2026-10-26,ankara,11111,evds_lokanta,137.53,evds_file,ok,
+2026-10-26,istanbul,11201,evds_konaklama,126.99,evds_file,ok,
+2026-10-26,ankara,11201,evds_konaklama,126.99,evds_file,ok,
+2026-10-26,istanbul,12,evds_sigorta,134.98,evds_file,ok,
+2026-10-26,ankara,12,evds_sigorta,134.98,evds_file,ok,
+2026-10-26,istanbul,13120,mf_sampuan,175.0,marketfiyati,ok,
+2026-10-26,ankara,13120,mf_sampuan,175.0,marketfiyati,ok,
+2026-10-26,istanbul,13120,mf_dis_macunu,218.5,marketfiyati,ok,
+2026-10-26,ankara,13120,mf_dis_macunu,218.5,marketfiyati,ok,
+2026-10-26,istanbul,13120,mf_sabun,119.0,marketfiyati,ok,
+2026-10-26,ankara,13120,mf_sabun,119.0,marketfiyati,ok,
+2026-10-26,istanbul,13120,mf_bebek_bezi,85.0,marketfiyati,ok,
+2026-10-26,ankara,13120,mf_bebek_bezi,85.0,marketfiyati,ok,
+2026-10-26,istanbul,13,evds_kisisel_diger,127.79,evds_file,ok,
+2026-10-26,ankara,13,evds_kisisel_diger,127.79,evds_file,ok,
