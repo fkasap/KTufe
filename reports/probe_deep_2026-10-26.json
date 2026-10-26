@@ -1,28 +1,334 @@
 {
- "boyner_cats": {},
- "boyner_sitemap_status": 200,
- "boyner_sitemap_sample": [
-  "https://sitemap.boyner.com.tr/bynsitemap/product.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/productimage.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/category.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/brand.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/brandproducttype.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/campaign.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/brand_gender_category.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/brand_gender.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/gender_category.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/internal_search_sitemap.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/merchants.xml",
-  "https://sitemap.boyner.com.tr/bynsitemap/custom_sitemap.xml"
+ "product_xml_status": 200,
+ "product_xml_len": 4443,
+ "product_xml_locs": 46,
+ "product_xml_sample": [
+  "https://sitemap.boyner.com.tr/bynsitemap/product1.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/product2.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/product3.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/product4.xml",
+  "https://sitemap.boyner.com.tr/bynsitemap/product5.xml"
  ],
- "boyner_products": [],
- "hal https://hal.gov.tr/": {
+ "prod_urls_total": 30000,
+ "picks": {
+  "jean": [
+   "https://www.boyner.com.tr/kelly-mom-fit-acik-indigo-kadin-jean-pantolon-p-1366736",
+   "https://www.boyner.com.tr/erkek-pamuklu-denim-pantolon-w121hrz93texas-jean-pantolon-p-1592148",
+   "https://www.boyner.com.tr/only-juichy-kadin-jean-pantolon-15234743-p-15031904",
+   "https://www.boyner.com.tr/erkek-lacivert-eskitme-yikama-esnek-berlin-slim-fit-jean-pantolon-b003521-p-15114382",
+   "https://www.boyner.com.tr/arka-cep-nakis-detayli-ic-paca-yirtmacli-jean-pantolon-p-15152797",
+   "https://www.boyner.com.tr/aksesuar-toka-detayli-boru-paca-basic-jean-pantolon-p-15152825"
+  ],
+  "tisort": [
+   "https://www.boyner.com.tr/mavi-siyah-erkek-100-pamuk-t-shirt-063747-900-tisort-siyah-p-561501",
+   "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-064622-21842-uzun-kol-penye-siyah-p-880621",
+   "https://www.boyner.com.tr/hummel-910953-4039-pembe-yuvarlak-yaka-kadin-t-shirt-p-960280",
+   "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-063748-900-v-yaka-tisort-siyah-p-143677",
+   "https://www.boyner.com.tr/beyaz-erkek-100-pamuk-t-shirt-066248-620-cepli-tisort-beyaz-p-970346",
+   "https://www.boyner.com.tr/skechers-s211800-001-sleeve-siyah-erkek-regular-fit-polo-t-shirt-p-1017791"
+  ],
+  "gomlek": [
+   "https://www.boyner.com.tr/didem-soydan-x-fabrika-oversize-duz-bej-kadin-gomlek-d150-p-1398445",
+   "https://www.boyner.com.tr/people-by-fabrika-bej-kadin-bol-kesim-cizgili-gomlek-roll-p-1410940",
+   "https://www.boyner.com.tr/turuncu-kadin-gomlek-12234997-p-1617530",
+   "https://www.boyner.com.tr/tas-erkek-100-keten-gomlek-mr-madrid-p-1649716",
+   "https://www.boyner.com.tr/dugmeli-yaka-haki-erkek-gomlek-mr-short-sleeve-p-1649718",
+   "https://www.boyner.com.tr/dugmeli-yaka-koyu-bej-erkek-gomlek-mr-short-sleeve-p-1649727"
+  ],
+  "mont": [
+   "https://www.boyner.com.tr/national-geographic-tas-kadin-kisa-sisme-mont-w-haku-p-1084822",
+   "https://www.boyner.com.tr/discovery-expedition-lacivert-erkek-kapuson-yaka-mont-d3wm-mnt16-p-1636337",
+   "https://www.boyner.com.tr/discovery-expedition-acik-haki-erkek-kapuson-yaka-relaxed-fit-blok-desenli-kaban-d3wm-kbn2-p-1710570",
+   "https://www.boyner.com.tr/timberland-tb0a6s41p571dwr-outdoor-archive-pu-sari-erkek-spor-mont-p-1721139",
+   "https://www.boyner.com.tr/only-siyah-kadin-kaban-onlasta-oversized-puffer-coat-cc-ot-p-1722129",
+   "https://www.boyner.com.tr/pierre-cardin-deri-gri-erkek-deri-mont-pcserileykur-p-1738605"
+  ],
+  "kazak": [
+   "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w221328614-p-1129826",
+   "https://www.boyner.com.tr/lee-cooper-o-yaka-duz-siyah-erkek-kazak-231-lcm-241005-holden-sayah-p-1299626",
+   "https://www.boyner.com.tr/altinyildiz-classics-tam-balikci-yaka-siyah-erkek-kazak-4a4923100007-p-1300902",
+   "https://www.boyner.com.tr/altinyildiz-classics-bej-erkek-kazak-4a4923100048-p-1301022",
+   "https://www.boyner.com.tr/fabrika-comfort-acik-haki-erkek-uzun-kollu-fermuarli-regular-fit-jakarli-kazak-fc3wm-kzk333-p-1652109",
+   "https://www.boyner.com.tr/fabrika-fermuarli-yaka-genis-fit-payetli-ekru-kazak-kadin-f3wl-kzk7-p-1653766"
+  ],
+  "elbise": [
+   "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w221328614-p-1129826",
+   "https://www.boyner.com.tr/fabrika-v-yaka-desenli-kahve-bej-midi-kadin-elbise-ymn-6-p-1301781",
+   "https://www.boyner.com.tr/lacivert-kadin-kare-dantel-elbise-22ysl7121-p-1152558",
+   "https://www.boyner.com.tr/selen-siyah-kadin-deri-gorunumlu-elbise-22ksl7209-p-1373808",
+   "https://www.boyner.com.tr/fabrika-fusya-beyaz-kadin-askili-mini-basic-cicekli-kare-yaka-elbise-point-4-p-1330756",
+   "https://www.boyner.com.tr/basic-lacivert-erkek-takim-elbise-f3wm-tkm-501-p-1661040"
+  ],
+  "sneaker": [
+   "https://www.boyner.com.tr/bulldozer-siyah-turuncu-kadin-60-suni-deri-40-sentetik-gunluk-ayakkabi-unisex-spor-ayakkabi-bul-231924-p-1481673",
+   "https://www.boyner.com.tr/fabrika-bej-kadin-sneaker-marta-p-1714813",
+   "https://www.boyner.com.tr/fabrika-siyah-erkek-deri-sneaker-jarod-p-1757323",
+   "https://www.boyner.com.tr/liu-jo-siyah-kadin-sneaker-cleo-09-p-1763256",
+   "https://www.boyner.com.tr/fabrika-siyah-kadin-sneaker-corabi-ul-kdn-ptk-p-1785625",
+   "https://www.boyner.com.tr/mavi-cok-renkli-erkek-bebek-sneaker-ibiza-p-1793431"
+  ],
+  "bot": [
+   "https://www.boyner.com.tr/harley-davidson-siyah-kadin-deri-bot-laconia644-025g-p-86935",
+   "https://www.boyner.com.tr/harley-davidson-siyah-erkek-deri-bot-colmar-025m10055-p-612521",
+   "https://www.boyner.com.tr/timberland-tb0a2k280191-toddle-tracks-hl-boot-lacivert-erkek-bot-p-1082220",
+   "https://www.boyner.com.tr/timberland-siyah-erkek-bot-seneca-bay-mid-lace-up-p-1719510",
+   "https://www.boyner.com.tr/siyah-erkek-outdoor-bot-jack-wolfskin-terraventure-texapore-p-1741095",
+   "https://www.boyner.com.tr/tamer-tanca-erkek-hakiki-deri-kahverengi-suet-casual-bot-p-15016944"
+  ],
+  "cocuk": [
+   "https://www.boyner.com.tr/blackspade-cok-renkli-kiz-cocuk-duz-kulot-42-1294-3-pack-bri-p-95534",
+   "https://www.boyner.com.tr/blackspade-beyaz-kiz-cocuk-duz-boxer-1298-p-811000",
+   "https://www.boyner.com.tr/limon-bej-erkek-cocuk-plaj-terligi-p-860782",
+   "https://www.boyner.com.tr/igor-erkek-cocuk-lacivert-sandalet-p-943854",
+   "https://www.boyner.com.tr/xonix-xox-km002-unisex-cocuk-saati-p-543796",
+   "https://www.boyner.com.tr/igor-kirmizi-erkek-cocuk-yagmur-botu-w10207-005-p-898403"
+  ],
+  "ic_giyim": [
+   "https://www.boyner.com.tr/blackspade-fume-melanj-erkek-corap-9271-men-p-147950",
+   "https://www.boyner.com.tr/the-don-turkuaz-boxer-p-375374",
+   "https://www.boyner.com.tr/the-don-siyah-erkek-boxer-tdnbms001-p-375376",
+   "https://www.boyner.com.tr/the-don-pembe-boxer-p-653739",
+   "https://www.boyner.com.tr/the-don-sari-boxer-p-691576",
+   "https://www.boyner.com.tr/blackspade-beyaz-kiz-cocuk-duz-boxer-1298-p-811000"
+  ]
+ },
+ "verified": [
+  {
+   "k": "jean",
+   "url": "https://www.boyner.com.tr/kelly-mom-fit-acik-indigo-kadin-jean-pantolon-p-1366736",
+   "status": 200,
+   "og": "Kelly Mom Fit Açık İndigo Kadın Jean Pantolon - 1366736 | Boyner",
+   "ld": [
+    "1150"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "jean",
+   "url": "https://www.boyner.com.tr/erkek-pamuklu-denim-pantolon-w121hrz93texas-jean-pantolon-p-1592148",
+   "status": 200,
+   "og": " Erkek Pamuklu Denim Pantolon W121hrz93_Texas Jean  Pantolon - 1592148 | Boyner",
+   "ld": [
+    "2924.35",
+    "4499"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "tisort",
+   "url": "https://www.boyner.com.tr/mavi-siyah-erkek-100-pamuk-t-shirt-063747-900-tisort-siyah-p-561501",
+   "status": 200,
+   "og": "Mavi Siyah Erkek %100 Pamuk T-Shirt 063747-900 Tİşört Siyah - 561501 | Boyner",
+   "ld": [
+    "449.99"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "tisort",
+   "url": "https://www.boyner.com.tr/siyah-erkek-100-pamuk-t-shirt-064622-21842-uzun-kol-penye-siyah-p-880621",
+   "status": 200,
+   "og": "Siyah Erkek %100 Pamuk T-Shirt 064622-21842 Uzun Kol Penye Siyah - 880621 | Boyner",
+   "ld": [
+    "999.99"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "gomlek",
+   "url": "https://www.boyner.com.tr/didem-soydan-x-fabrika-oversize-duz-bej-kadin-gomlek-d150-p-1398445",
+   "status": 200,
+   "og": "Didem Soydan X Fabrika Oversize Düz Bej Kadın Gömlek D150 - 1398445 | Boyner",
+   "ld": [
+    "629.99",
+    "739.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "gomlek",
+   "url": "https://www.boyner.com.tr/people-by-fabrika-bej-kadin-bol-kesim-cizgili-gomlek-roll-p-1410940",
+   "status": 200,
+   "og": "People By Fabrika Bej Kadın Bol Kesim Çizgili Gömlek Roll - 1410940 | Boyner",
+   "ld": [
+    "399.99",
+    "789.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "mont",
+   "url": "https://www.boyner.com.tr/national-geographic-tas-kadin-kisa-sisme-mont-w-haku-p-1084822",
+   "status": 200,
+   "og": "National Geographic  Taş Kadın Kısa Şişme Mont W-Haku - 1084822 | Boyner",
+   "ld": [
+    "2239.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "mont",
+   "url": "https://www.boyner.com.tr/discovery-expedition-lacivert-erkek-kapuson-yaka-mont-d3wm-mnt16-p-1636337",
+   "status": 200,
+   "og": "Discovery Expedition Lacivert Erkek Kapüşon Yaka Mont D3wm-Mnt16 - 1636337 | Boyner",
+   "ld": [
+    "4499.99",
+    "6299"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "kazak",
+   "url": "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w221328614-p-1129826",
+   "status": 200,
+   "og": "Wrangler Bisiklet Yaka Bej Kadın Midi Triko Kalem Elbise W221328614 - 1129826 | Boyner",
+   "ld": [
+    "2735",
+    "3799"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "kazak",
+   "url": "https://www.boyner.com.tr/lee-cooper-o-yaka-duz-siyah-erkek-kazak-231-lcm-241005-holden-sayah-p-1299626",
+   "status": 200,
+   "og": "Lee Cooper O Yaka Düz Siyah Erkek Kazak 231 Lcm 241005 Holden Sä°Yah - 1299626 | Boyner",
+   "ld": [
+    "1999"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "elbise",
+   "url": "https://www.boyner.com.tr/wrangler-bisiklet-yaka-bej-kadin-midi-triko-kalem-elbise-w221328614-p-1129826",
+   "status": 200,
+   "og": "Wrangler Bisiklet Yaka Bej Kadın Midi Triko Kalem Elbise W221328614 - 1129826 | Boyner",
+   "ld": [
+    "2735",
+    "3799"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "elbise",
+   "url": "https://www.boyner.com.tr/fabrika-v-yaka-desenli-kahve-bej-midi-kadin-elbise-ymn-6-p-1301781",
+   "status": 200,
+   "og": "Fabrika V Yaka Desenli Kahve - Bej Midi Kadın Elbise Ymn-6 - 1301781 | Boyner",
+   "ld": [
+    "749.99",
+    "1999"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "sneaker",
+   "url": "https://www.boyner.com.tr/bulldozer-siyah-turuncu-kadin-60-suni-deri-40-sentetik-gunluk-ayakkabi-unisex-spor-ayakkabi-bul-231924-p-1481673",
+   "status": 200,
+   "og": "",
+   "ld": [
+    "799.95",
+    "1099"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "sneaker",
+   "url": "https://www.boyner.com.tr/fabrika-bej-kadin-sneaker-marta-p-1714813",
+   "status": 200,
+   "og": "Fabrika Bej Kadın Sneaker Marta - 1714813 | Boyner",
+   "ld": [
+    "2624.25",
+    "3499"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "bot",
+   "url": "https://www.boyner.com.tr/harley-davidson-siyah-kadin-deri-bot-laconia644-025g-p-86935",
+   "status": 200,
+   "og": "Harley Davidson Siyah Kadın Deri Bot Laconia/644 - 025G - 86935 | Boyner",
+   "ld": [
+    "6959.2",
+    "8699"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "bot",
+   "url": "https://www.boyner.com.tr/harley-davidson-siyah-erkek-deri-bot-colmar-025m10055-p-612521",
+   "status": 200,
+   "og": "Harley Davidson Siyah Erkek Deri Bot Colmar   025M10055 - 612521 | Boyner",
+   "ld": [
+    "6959.2",
+    "8699"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "cocuk",
+   "url": "https://www.boyner.com.tr/blackspade-cok-renkli-kiz-cocuk-duz-kulot-42-1294-3-pack-bri-p-95534",
+   "status": 200,
+   "og": "Blackspade Çok Renkli Kız Çocuk Düz Külot 42-1294-3 Pack Bri     - 95534 | Boyner",
+   "ld": [
+    "674.95",
+    "749.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "cocuk",
+   "url": "https://www.boyner.com.tr/blackspade-beyaz-kiz-cocuk-duz-boxer-1298-p-811000",
+   "status": 200,
+   "og": "Blackspade Beyaz Kız Çocuk Düz Boxer 1298     - 811000 | Boyner",
+   "ld": [
+    "674.95",
+    "749.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "ic_giyim",
+   "url": "https://www.boyner.com.tr/blackspade-fume-melanj-erkek-corap-9271-men-p-147950",
+   "status": 200,
+   "og": "Blackspade Füme Melanj Erkek Çorap 9271 Men - 147950 | Boyner",
+   "ld": [
+    "349.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  },
+  {
+   "k": "ic_giyim",
+   "url": "https://www.boyner.com.tr/the-don-turkuaz-boxer-p-375374",
+   "status": 200,
+   "og": "The Don Turkuaz Boxer - 375374 | Boyner",
+   "ld": [
+    "549.95"
+   ],
+   "avail": "https://schema.org/InStock"
+  }
+ ],
+ "hal https://www.hal.gov.tr/": {
+  "status": 200,
+  "len": 80407,
+  "title": "T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - \r\nAna Sayfa",
+  "links": [
+   [
+    "/Sayfalar/FiyatDetaylari.aspx",
+    "Fiyatlar"
+   ]
+  ],
+  "domates": "DOMATES(AYAŞ) &nbsp(Kg Fiyatı) 5,37 TL    DOMATES(BEEF) &nbsp(Kg Fiyatı) 30,57 TL    DOMATES(CHERRY) &nbsp(Kg Fiyatı) 96,24 TL    DOMATES(DİĞER) &nbsp(Kg Fiyatı) 33,89 TL    DOMATES(KOKTEYL) &nbsp(Kg Fiyatı)",
+  "sample": "            T.C. Ticaret Bakanlığı Hal Kayıt Sistemi - Ana Sayfa                                                                                              Daha yüksek erişilebilirlik modunu aç         Daha yüksek erişilebilirlik modunu kapat                  Şerit Komutlarını Atla        Ana içeriğe atla                     T.C. Ticaret Bakanlığı Hal Kayıt Sistemi   Hal Kayıt Sistemi   -->     "
+ },
+ "hal https://www.hal.gov.tr/Sayfalar/FiyatSorgula.aspx": {
   "status": 404,
-  "len": 315,
-  "prices": [],
-  "title": "Not Found",
+  "len": 668,
+  "title": "",
   "links": [],
-  "sample": "",
-  "domates": ""
+  "domates": "",
+  "sample": "                   File Not Found      "
+ },
+ "hal https://hal.ticaret.gov.tr/": {
+  "err": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'hal.ticaret.gov.tr\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTP"
  }
 }
