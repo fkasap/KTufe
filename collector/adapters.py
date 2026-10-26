@@ -252,6 +252,26 @@ def html_regex(cfg: dict) -> Optional[float]:
     return None
 
 
+# ------------------------------------------------------------ EVDS (dosya)
+_EVDS_FILE = None
+def evds_file(cfg: dict) -> Optional[float]:
+    """
+    TÜİK alt endeksini data/reference/evds_alt_endeksler.csv'den okur (EVDS yurt dışı
+    runner IP'sine HTML doğrulama sayfası döndürdüğü için aylık tazelenen anlık görüntü).
+    cfg: series = "TP.TUKFIY2025.04110". Son satır = TÜİK'in son açıkladığı ay.
+    """
+    global _EVDS_FILE
+    import pandas as pd, pathlib
+    if _EVDS_FILE is None:
+        f = pathlib.Path(__file__).resolve().parents[1] / "data/reference/evds_alt_endeksler.csv"
+        _EVDS_FILE = pd.read_csv(f, index_col=0) if f.exists() else pd.DataFrame()
+    col = cfg["series"]
+    if col not in _EVDS_FILE.columns:
+        _note("seri dosyada yok"); return None
+    v = _EVDS_FILE[col].dropna()
+    return float(v.iloc[-1]) if len(v) else None
+
+
 ADAPTERS = {
     "evds_file": evds_file,
     "marketfiyati": marketfiyati,
