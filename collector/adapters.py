@@ -239,7 +239,13 @@ def playwright_text(cfg: dict) -> Optional[float]:
 def html_regex(cfg: dict) -> Optional[float]:
     if not _polite(cfg["url"]):
         _note("robots disallow"); return None
-    r = requests.get(cfg["url"], headers={"User-Agent": UA, "Accept-Language": "tr-TR,tr;q=0.9"}, timeout=25)
+    for attempt in range(2):
+        try:
+            r = requests.get(cfg["url"], headers={"User-Agent": UA, "Accept-Language": "tr-TR,tr;q=0.9"}, timeout=25)
+            break
+        except requests.ConnectionError as e:   # hal.gov.tr DNS dalgalı
+            if attempt: raise
+            time.sleep(4)
     if r.status_code != 200:
         _note(f"HTTP {r.status_code} len={len(r.text)}"); return None
     if "charset" not in r.headers.get("content-type", "").lower():
