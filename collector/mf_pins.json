@@ -4,6 +4,11 @@
   "product_id": "1F5L",
   "title": "Turna Ayçiçek Yağı 5 Lt"
  },
+ "mf_aycicek_2": {
+  "brand": "Biryağ",
+  "product_id": "16E9",
+  "title": "Biryağ Ayçiçek Yağı 1 Lt"
+ },
  "mf_bebek_bezi": {
   "brand": "Sleepy",
   "product_id": "1VN2",
@@ -34,6 +39,11 @@
   "product_id": "01KL",
   "title": "Berk Filiz Siyah Çay 500 Gr"
  },
+ "mf_dana_kiyma": {
+  "brand": "Kombinet",
+  "product_id": "12Y7",
+  "title": "Dana Kıyma 400 Gr"
+ },
  "mf_dana_kusbasi": {
   "brand": "Haket",
   "product_id": "2ACU",
@@ -49,15 +59,40 @@
   "product_id": "0RQP",
   "title": "Sensodyne Beyazlatıcı Diş Macunu 75 Ml"
  },
+ "mf_domates": {
+  "brand": "Tat",
+  "product_id": "1SF4",
+  "title": "Tat Doğranmış Domates 400 Gr"
+ },
+ "mf_ekmek_1": {
+  "brand": "Markasız",
+  "product_id": "1OLH",
+  "title": "Ekmek 1 Adet"
+ },
+ "mf_ekmek_2": {
+  "brand": "Ihe",
+  "product_id": "1PL0",
+  "title": "İHE Tost Ekmeği 670 Gr"
+ },
  "mf_ekmek_3": {
   "brand": "Nimet",
   "product_id": "1033",
   "title": "Nimet Tam Buğday Ekmeği 350 Gr"
  },
+ "mf_elma": {
+  "brand": "Markasız",
+  "product_id": "00UT",
+  "title": "Elma Kırmızı 1 Kg"
+ },
  "mf_kasar": {
   "brand": "Sek",
   "product_id": "1RFJ",
   "title": "Sek Tam Yağlı Taze Kaşar Peyniri 600 Gr"
+ },
+ "mf_kola_1l": {
+  "brand": "Coca-Cola",
+  "product_id": "1O9J",
+  "title": "Coca-Cola 1 Lt"
  },
  "mf_makarna_1": {
   "brand": "Piyale",
@@ -68,6 +103,11 @@
   "brand": "Migros",
   "product_id": "0M0B",
   "title": "Migros Spagetti Makarna 500 Gr"
+ },
+ "mf_muz": {
+  "brand": "Markasız",
+  "product_id": "1Y3Q",
+  "title": "Yerli Muz 1 Kg"
  },
  "mf_pirinc_1": {
   "brand": "Ovadan",
@@ -109,14 +149,34 @@
   "product_id": "00DR",
   "title": "Dost Günlük Pastörize Süt 1 Lt"
  },
+ "mf_tavuk_but": {
+  "brand": "Gedik Piliç",
+  "product_id": "186C",
+  "title": "Gedik Piliç But Izgara Tava 1 Kg"
+ },
  "mf_tavuk_butun": {
   "brand": "Erpiliç",
   "product_id": "1FUK",
   "title": "Erpiliç Donuk Bütün Piliç 1 Kg"
  },
+ "mf_tavuk_gogus": {
+  "brand": "Keskinoğlu",
+  "product_id": "1FAL",
+  "title": "Keskinoğlu Piliç Göğüs Fileto 1 Kg"
+ },
  "mf_tuvalet_kagidi": {
   "brand": "Carrefour Eco Planet",
   "product_id": "1UOH",
   "title": "Carrefour Eco Planet Tuvalet Kağıdı 32'li"
+ },
+ "mf_yumurta_1": {
+  "brand": "Anadolu Çiftliği",
+  "product_id": "0OCL",
+  "title": "Anadolu Çiftliği Omega 3 Yumurta M Boy 53-62 Gr 10 Adet"
+ },
+ "mf_yumurta_2": {
+  "brand": "Markasız",
+  "product_id": "21EH",
+  "title": "Yumurta L Boy 63-72 Gr 15 Adet"
  }
 }
