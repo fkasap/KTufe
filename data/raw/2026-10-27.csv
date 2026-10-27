@@ -69,10 +69,10 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,01172,hal_kabak,37.14,html_regex,ok,
 2026-10-27,istanbul,01172,hal_patlican,36.04,html_regex,ok,
 2026-10-27,ankara,01172,hal_patlican,36.04,html_regex,ok,
-2026-10-27,istanbul,01172,mf_domates,50.715,marketfiyati,ok,
-2026-10-27,ankara,01172,mf_domates,50.715,marketfiyati,ok,
-2026-10-27,istanbul,01172,mf_patates,,marketfiyati,missing,filtreye uyan ürün yok: Ruffles Original Patates Cipsi 193 Gr; Samba Tırtıklı Patates Cipsi 150 Gr; Lorenz Paprika Aromalı Patates Cipsi 100; Patito Pesto Barbekü Aromalı Patates Cip
-2026-10-27,ankara,01172,mf_patates,,marketfiyati,missing,filtreye uyan ürün yok: Ruffles Original Patates Cipsi 193 Gr; Samba Tırtıklı Patates Cipsi 150 Gr; Lorenz Paprika Aromalı Patates Cipsi 100; Patito Pesto Barbekü Aromalı Patates Cip
+2026-10-27,istanbul,01172,mf_domates,52.88,marketfiyati,ok,
+2026-10-27,ankara,01172,mf_domates,52.88,marketfiyati,ok,
+2026-10-27,istanbul,01172,mf_patates,,marketfiyati,missing,arama boş
+2026-10-27,ankara,01172,mf_patates,,marketfiyati,missing,arama boş
 2026-10-27,istanbul,01181,mf_seker_1,52.5,marketfiyati,ok,
 2026-10-27,ankara,01181,mf_seker_1,52.5,marketfiyati,ok,
 2026-10-27,istanbul,01181,mf_seker_2,50.0,marketfiyati,ok,
@@ -81,8 +81,8 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,01230,mf_cay_1,609.95,marketfiyati,ok,
 2026-10-27,istanbul,01230,mf_cay_2,150.0,marketfiyati,ok,
 2026-10-27,ankara,01230,mf_cay_2,150.0,marketfiyati,ok,
-2026-10-27,istanbul,01260,mf_su_5l,,marketfiyati,missing,arama boş
-2026-10-27,ankara,01260,mf_su_5l,,marketfiyati,missing,arama boş
+2026-10-27,istanbul,01260,mf_su_5l,36.0,marketfiyati,ok,
+2026-10-27,ankara,01260,mf_su_5l,36.0,marketfiyati,ok,
 2026-10-27,istanbul,01260,mf_kola_1l,57.5,marketfiyati,ok,
 2026-10-27,ankara,01260,mf_kola_1l,57.5,marketfiyati,ok,
 2026-10-27,istanbul,01,evds_gida_01,134.04,evds_file,ok,
@@ -137,8 +137,6 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,04521,evds_dogalgaz,179.9,evds_file,ok,
 2026-10-27,istanbul,04411,evds_su,134.15,evds_file,ok,
 2026-10-27,ankara,04411,evds_su,134.15,evds_file,ok,
-2026-10-27,istanbul,04,mf_tup,,marketfiyati,missing,filtreye uyan ürün yok: Giz Tül Ve Çamaşır Beyazlatıcı 750 Gr
-2026-10-27,ankara,04,mf_tup,,marketfiyati,missing,filtreye uyan ürün yok: Giz Tül Ve Çamaşır Beyazlatıcı 750 Gr
 2026-10-27,istanbul,04,evds_konut_diger,152.1,evds_file,ok,
 2026-10-27,ankara,04,evds_konut_diger,152.1,evds_file,ok,
 2026-10-27,istanbul,05312,evds_beyaz_esya,133.3,evds_file,ok,
@@ -185,8 +183,8 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,08120,apple_iphone17_256,99999.0,html_regex,ok,
 2026-10-27,istanbul,08120,apple_iphone17_512,116999.0,html_regex,ok,
 2026-10-27,ankara,08120,apple_iphone17_512,116999.0,html_regex,ok,
-2026-10-27,istanbul,08120,apple_macbook_air,84999.0,html_regex,ok,
-2026-10-27,ankara,08120,apple_macbook_air,84999.0,html_regex,ok,
+2026-10-27,istanbul,08120,apple_macbook_air,89999.0,html_regex,ok,
+2026-10-27,ankara,08120,apple_macbook_air,89999.0,html_regex,ok,
 2026-10-27,istanbul,08320,evds_telekom,151.17,evds_file,ok,
 2026-10-27,ankara,08320,evds_telekom,151.17,evds_file,ok,
 2026-10-27,istanbul,09800,evds_paket_tur,126.67,evds_file,ok,

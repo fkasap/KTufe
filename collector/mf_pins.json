@@ -59,6 +59,11 @@
   "product_id": "0RQP",
   "title": "Sensodyne Beyazlatıcı Diş Macunu 75 Ml"
  },
+ "mf_domates": {
+  "brand": "Tamek",
+  "product_id": "21JW",
+  "title": "Tamek Domates Rendesi 685 G"
+ },
  "mf_ekmek_1": {
   "brand": "Markasız",
   "product_id": "1OLH",
@@ -133,6 +138,11 @@
   "brand": "Carrefour",
   "product_id": "0ICB",
   "title": "Carrefour Küp Şeker 1 Kg"
+ },
+ "mf_su_5l": {
+  "brand": "Markasız",
+  "product_id": "12HG",
+  "title": "Su 5 Lt"
  },
  "mf_sut_1": {
   "brand": "Sütaş",
