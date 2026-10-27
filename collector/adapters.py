@@ -119,7 +119,15 @@ def marketfiyati(cfg: dict) -> Optional[float]:
         content = r.json().get("content") or []; pid = None
     if not content:
         _note("arama boş"); return None
-    prod = content[0]
+    # Başlık filtresi: title_re (zorunlu) / title_not (yasak) — yanlış ürün sınıfına pinlenmeyi önler
+    def _ok(c):
+        t = (c.get("title") or "")
+        return (not cfg.get("title_re") or re.search(cfg["title_re"], t, re.I)) and \
+               (not cfg.get("title_not") or not re.search(cfg["title_not"], t, re.I))
+    cands = [c for c in content if _ok(c)] if not pid else content
+    if not cands:
+        _note("filtreye uyan ürün yok: " + "; ".join((c.get("title") or "")[:40] for c in content[:4])); return None
+    prod = cands[0]
     if not pid and sku_id:
         pins[sku_id] = {"product_id": prod.get("id"), "title": prod.get("title"), "brand": prod.get("brand")}
         _mf_pin_save()

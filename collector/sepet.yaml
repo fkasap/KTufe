@@ -39,8 +39,8 @@ items:
     agirlik: 1.60
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_ekmek_1, adapter: marketfiyati, keywords: "ekmek 250 g", market: "Migros"}
-      - {id: mf_ekmek_2, adapter: marketfiyati, keywords: "ekmek 250 g", market: "CarrefourSA"}
+      - {id: mf_ekmek_1, adapter: marketfiyati, keywords: "ekmek", title_re: "ekmek", title_not: "glutensiz|kepek|tost|bazlama|lavaş|çavdar|tam buğday"}
+      - {id: mf_ekmek_2, adapter: marketfiyati, keywords: "tost ekmeği", title_re: "tost ekme", title_not: "glutensiz"}
       - {id: mf_ekmek_3, adapter: marketfiyati, keywords: "tam buğday ekmeği 350 g"}
   - coicop: "01115"
     ad: "Makarna"
@@ -64,7 +64,7 @@ items:
     agirlik: 1.90
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_dana_kiyma, adapter: marketfiyati, keywords: "dana kıyma kg"}
+      - {id: mf_dana_kiyma, adapter: marketfiyati, keywords: "dana kıyma", title_re: "kıyma", title_not: "dondur|donuk|köfte|burger|kuzu"}
       - {id: mf_dana_kusbasi, adapter: marketfiyati, keywords: "dana kuşbaşı kg"}
   - coicop: "01125"
     ad: "Tavuk eti"
@@ -72,8 +72,8 @@ items:
     agirlik: 1.20
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_tavuk_but, adapter: marketfiyati, keywords: "piliç but kg"}
-      - {id: mf_tavuk_gogus, adapter: marketfiyati, keywords: "piliç göğüs kg"}
+      - {id: mf_tavuk_but, adapter: marketfiyati, keywords: "piliç but", title_re: "but|baget|pirzola", title_not: "füme|marine|dondur|donuk|baharat"}
+      - {id: mf_tavuk_gogus, adapter: marketfiyati, keywords: "piliç göğüs", title_re: "göğüs|gögüs|bonfile", title_not: "füme|baharat|marine|nugget|şinitzel|burger|dondur|donuk|sosis|salam|jambon"}
       - {id: mf_tavuk_butun, adapter: marketfiyati, keywords: "bütün piliç kg"}
   - coicop: "01141"
     ad: "Süt"
@@ -98,7 +98,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: mf_yumurta_1, adapter: marketfiyati, keywords: "yumurta 30 lu"}
-      - {id: mf_yumurta_2, adapter: marketfiyati, keywords: "yumurta 15 li l"}
+      - {id: mf_yumurta_2, adapter: marketfiyati, keywords: "yumurta 15 li", title_re: "15", title_not: "10 adet|30 adet|6 adet|omega|organik|gezen"}
   - coicop: "01151"
     ad: "Ayçiçek yağı"
     anagrup: "01"
@@ -106,7 +106,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: mf_aycicek_1, adapter: marketfiyati, keywords: "ayçiçek yağı 5 l"}
-      - {id: mf_aycicek_2, adapter: marketfiyati, keywords: "ayçiçek yağı 1 l"}
+      - {id: mf_aycicek_2, adapter: marketfiyati, keywords: "ayçiçek yağı 1 l", title_re: "1 lt|1lt|1 l\\b", title_not: "5 lt|4 lt|2 lt|3 lt"}
   - coicop: "01163"
     ad: "Taze meyve (sepet)"
     anagrup: "01"
@@ -119,8 +119,8 @@ items:
       - {id: hal_portakal, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PORTAKAL[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_mandalina, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'MANDALİNA[^0-9]{0,60}?([0-9.,]+)\s*TL'}
       - {id: hal_limon, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'LİMON[^0-9]{0,60}?([0-9.,]+)\s*TL'}
-      - {id: mf_elma, adapter: marketfiyati, keywords: "elma kg"}
-      - {id: mf_muz, adapter: marketfiyati, keywords: "muz kg"}
+      - {id: mf_elma, adapter: marketfiyati, keywords: "elma", title_re: "elma", title_not: "suyu|sirke|kurusu|cips|püre|nektar"}
+      - {id: mf_muz, adapter: marketfiyati, keywords: "muz", title_re: "muz", title_not: "suyu|nektar|aromalı|süt|cips|kurusu"}
   - coicop: "01172"
     ad: "Taze sebze (sepet)"
     anagrup: "01"
@@ -136,8 +136,8 @@ items:
       - {id: hal_sogan, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'SOĞAN[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_kabak, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'KABAK[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_patlican, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PATLICAN[^0-9]{0,60}?([0-9.,]+)\s*TL'}
-      - {id: mf_domates, adapter: marketfiyati, keywords: "domates kg"}
-      - {id: mf_patates, adapter: marketfiyati, keywords: "patates kg"}
+      - {id: mf_domates, adapter: marketfiyati, keywords: "domates", title_re: "domates", title_not: "salça|konserve|kurutul|sos|çorba|cherry|kokteyl|tohum"}
+      - {id: mf_patates, adapter: marketfiyati, keywords: "patates", title_re: "^patates|patates 1 kg|patates kg|yerli patates|taze patates", title_not: "cips|kızart|dondur|donuk|püre|nişasta|un"}
   - coicop: "01181"
     ad: "Şeker"
     anagrup: "01"
@@ -161,7 +161,7 @@ items:
     agirlik_durum: yaklasik
     skus:
       - {id: mf_su_5l, adapter: marketfiyati, keywords: "su 5 l"}
-      - {id: mf_kola_1l, adapter: marketfiyati, keywords: "kola 1 l"}
+      - {id: mf_kola_1l, adapter: marketfiyati, keywords: "coca-cola 1 l", title_re: "1 lt|1lt|1 l\\b", title_not: "1\\.75|1,75|2\\.5|2,5|zero|şekersiz|light"}
   - coicop: "01"
     artik: true
     ad: "Gıda - diğer (TÜİK alt endeksi ile taşınır)"
@@ -274,7 +274,7 @@ items:
     agirlik: 1.60
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_tup, adapter: marketfiyati, keywords: "tüp 12 kg"}
+      - {id: mf_tup, adapter: marketfiyati, keywords: "tüp gaz 12 kg", title_re: "tüp|lpg|gaz", title_not: "boya|krem|diş|macun|yapıştır"}
       - {id: evds_konut_diger, adapter: evds_file, series: "TP.TUKFIY2025.04"}
 
 # ------------------------------------------------------- 05 EV EŞYASI (7.92)
