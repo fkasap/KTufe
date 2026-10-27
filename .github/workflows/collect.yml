@@ -2,7 +2,7 @@ name: Günlük fiyat çekimi
 
 on:
   schedule:
-    - cron: "15 3 * * *"      # 06:15 TR — sakin saat, cron gecikmesi az
+    - cron: "47 2 * * *"      # 05:47 TR — :00/:15 dakikaları GitHub'da yoğun, 26.10'da 5.5 saat gecikti
   workflow_dispatch:
     inputs:
       date:
@@ -39,7 +39,7 @@ jobs:
       - name: Commit
         run: |
           git config user.name "ktufe-bot"; git config user.email "ktufe-bot@users.noreply.github.com"
-          git add data/raw; git diff --cached --quiet && exit 0
+          git add data/raw collector/mf_pins.json; git diff --cached --quiet && exit 0
           git commit -m "data: $(date -u +%F) çekimi (mac)"; git pull --rebase origin ${{ github.ref_name }}; git push
 
   collect:
@@ -64,7 +64,7 @@ jobs:
         run: |
           git config user.name "ktufe-bot"
           git config user.email "ktufe-bot@users.noreply.github.com"
-          git add data/raw
+          git add data/raw collector/mf_pins.json
           git diff --cached --quiet && echo "yeni veri yok" && exit 0
           git commit -m "data: $(date -u +%F) çekimi"
           git pull --rebase origin ${{ github.ref_name }}

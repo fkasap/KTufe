@@ -74,40 +74,61 @@ def _tr_float(s: str) -> float:
 MF_URL = "https://api.marketfiyati.org.tr/api/v2/search"
 MF_ID_URL = "https://api.marketfiyati.org.tr/api/v2/searchByIdentity"
 
+_MF_PINS_PATH = None
+_MF_PINS: dict | None = None
+
+def _mf_pins():
+    """collector/mf_pins.json: sku -> {product_id, title}. İlk görülen ürün sabitlenir;
+    sonraki günler searchByIdentity ile AYNI ürün istenir (SKU kayması önlenir)."""
+    global _MF_PINS, _MF_PINS_PATH
+    import pathlib
+    if _MF_PINS is None:
+        _MF_PINS_PATH = pathlib.Path(__file__).resolve().parent / "mf_pins.json"
+        _MF_PINS = json.load(open(_MF_PINS_PATH, encoding="utf-8")) if _MF_PINS_PATH.exists() else {}
+    return _MF_PINS
+
+def _mf_pin_save():
+    json.dump(_MF_PINS, open(_MF_PINS_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
+
+
 def marketfiyati(cfg: dict) -> Optional[float]:
     """
-    cfg:
-      keywords     : arama metni (ör. "Uno Tam Buğday Ekmeği 350 g")
-      product_id   : (tercih) sabit ürün kimliği -> searchByIdentity; SKU sabitliği için şart
-      market       : (ops.) tek zincir adı filtresi (ör. "Migros"); yoksa tüm zincirler
-      agg          : "median" (varsayılan) | "min" | "mean"  -> depolar arası toplulaştırma
-      lat, lon, distance : konum (varsayılan İstanbul merkez, 15 km)
-    Döner: seçilen ürünün o günkü fiyatı (TL).
-    Not: aynı maddeye 3-6 farklı product_id koyun; Jevons ortalaması tek ürünün
-    kampanya gürültüsünü sönümler.
+    cfg: keywords, product_id (ops.), market (ops. zincir filtresi), agg (median|min|mean),
+         lat/lon/distance, id (SKU kimliği; pin dosyası için)
+    Ürün sabitleme: cfg.product_id yoksa mf_pins.json'a bakılır; o da yoksa arama yapılır,
+    ilk ürün pinlenir. Böylece her gün aynı ürün fiyatlanır (matched-sample şartı).
     """
     if not _polite(MF_URL):
-        return None
+        _note("robots disallow"); return None
+    pins = _mf_pins(); sku_id = cfg.get("id", "")
+    pid = cfg.get("product_id") or (pins.get(sku_id) or {}).get("product_id")
     body = {"latitude": cfg.get("lat", 41.03), "longitude": cfg.get("lon", 28.98),
             "distance": cfg.get("distance", 15000), "keywords": cfg.get("keywords", "")}
-    if cfg.get("product_id"):
-        url = MF_ID_URL
-        body.update({"identity": cfg["product_id"], "identityType": "id"})
+    if pid:
+        url = MF_ID_URL; body.update({"identity": pid, "identityType": "id"})
     else:
         url = MF_URL
     r = requests.post(url, json=body, timeout=15,
                       headers={"User-Agent": UA, "content-type": "application/json"})
     r.raise_for_status()
     content = r.json().get("content") or []
+    if not content and pid:                       # pinli ürün kalktıysa: aramaya dön, yeniden pinle
+        _note(f"pin {pid} bulunamadı; yeniden arandı")
+        r = requests.post(MF_URL, json={k: v for k, v in body.items() if k not in ("identity", "identityType")},
+                          timeout=15, headers={"User-Agent": UA, "content-type": "application/json"})
+        content = r.json().get("content") or []; pid = None
     if not content:
-        return None
+        _note("arama boş"); return None
     prod = content[0]
+    if not pid and sku_id:
+        pins[sku_id] = {"product_id": prod.get("id"), "title": prod.get("title"), "brand": prod.get("brand")}
+        _mf_pin_save()
     depots = prod.get("productDepotInfoList") or []
     if cfg.get("market"):
         depots = [d for d in depots if cfg["market"].lower() in d["marketAdi"].lower()]
     prices = [float(d["price"]) for d in depots if d.get("price")]
     if not prices:
-        return None
+        _note("depo/fiyat yok"); return None
     agg = cfg.get("agg", "median")
     return {"median": statistics.median, "min": min, "mean": statistics.fmean}[agg](prices)
 
