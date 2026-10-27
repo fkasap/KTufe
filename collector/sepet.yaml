@@ -136,8 +136,8 @@ items:
       - {id: hal_sogan, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'SOĞAN[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_kabak, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'KABAK[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_patlican, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PATLICAN[^0-9]{0,60}?([0-9.,]+)\s*TL'}
-      - {id: mf_domates, adapter: marketfiyati, keywords: "domates", title_re: "domates", title_not: "salça|konserve|kurutul|sos|çorba|cherry|kokteyl|tohum"}
-      - {id: mf_patates, adapter: marketfiyati, keywords: "patates", title_re: "^patates|patates 1 kg|patates kg|yerli patates|taze patates", title_not: "cips|kızart|dondur|donuk|püre|nişasta|un"}
+      - {id: mf_domates, adapter: marketfiyati, keywords: "domates kg", title_re: "domates", title_not: "salça|konserve|kurutul|sos|çorba|cherry|kokteyl|tohum|doğranmış|rendelen|kutu|gr\\b|püre|suyu"}
+      - {id: mf_patates, adapter: marketfiyati, keywords: "yerli patates", title_re: "patates", title_not: "cips|kızart|dondur|donuk|püre|nişasta|un\\b|aromal|gr\\b"}
   - coicop: "01181"
     ad: "Şeker"
     anagrup: "01"
@@ -160,7 +160,7 @@ items:
     agirlik: 0.70
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_su_5l, adapter: marketfiyati, keywords: "su 5 l"}
+      - {id: mf_su_5l, adapter: marketfiyati, keywords: "su 5 lt", title_re: "5 lt|5lt|5 l\\b"}
       - {id: mf_kola_1l, adapter: marketfiyati, keywords: "coca-cola 1 l", title_re: "1 lt|1lt|1 l\\b", title_not: "1\\.75|1,75|2\\.5|2,5|zero|şekersiz|light"}
   - coicop: "01"
     artik: true
@@ -274,7 +274,6 @@ items:
     agirlik: 1.60
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_tup, adapter: marketfiyati, keywords: "tüp gaz 12 kg", title_re: "tüp|lpg|gaz", title_not: "boya|krem|diş|macun|yapıştır"}
       - {id: evds_konut_diger, adapter: evds_file, series: "TP.TUKFIY2025.04"}
 
 # ------------------------------------------------------- 05 EV EŞYASI (7.92)
@@ -412,7 +411,7 @@ items:
     agirlik: 2.74
     agirlik_durum: yaklasik
     skus:
-      - {id: mf_defter, adapter: marketfiyati, keywords: "defter a4 80 yaprak"}
+      - {id: mf_defter, adapter: marketfiyati, keywords: "defter", title_re: "defter", title_not: "ajanda|boyama"}
       - {id: evds_eglence, adapter: evds_file, series: "TP.TUKFIY2025.09"}
 
 # ------------------------------------------------------------ 10 EĞİTİM (2.02)
