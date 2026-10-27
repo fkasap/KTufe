@@ -1,0 +1,192 @@
+{
+ "mf_aycicek_1": {
+  "brand": "Turna",
+  "product_id": "1F5L",
+  "title": "Turna Ayçiçek Yağı 5 Lt"
+ },
+ "mf_aycicek_2": {
+  "brand": "Turna",
+  "product_id": "1F5L",
+  "title": "Turna Ayçiçek Yağı 5 Lt"
+ },
+ "mf_bebek_bezi": {
+  "brand": "Sleepy",
+  "product_id": "1VN2",
+  "title": "Sleepy Natural Jumbo Maxi Bebek Bezi 27 Adet"
+ },
+ "mf_beyaz_peynir": {
+  "brand": "Ulus",
+  "product_id": "1WAP",
+  "title": "Ulus Klasik Tam Yağlı Olgunlaştırılmış Beyaz Peynir 600 Gr"
+ },
+ "mf_bulasik": {
+  "brand": "Desto",
+  "product_id": "035S",
+  "title": "Desto Sıvı Bulaşık Deterjanı 750 Ml"
+ },
+ "mf_camasir_suyu": {
+  "brand": "Ace",
+  "product_id": "214J",
+  "title": "Ace Klasik Çamaşır Suyu 5 Lt"
+ },
+ "mf_cay_1": {
+  "brand": "Lipton",
+  "product_id": "1R1Z",
+  "title": "Lipton Earl Grey Dökme Çay 1 Kg"
+ },
+ "mf_cay_2": {
+  "brand": "Berk",
+  "product_id": "01KL",
+  "title": "Berk Filiz Siyah Çay 500 Gr"
+ },
+ "mf_dana_kiyma": {
+  "brand": "Markasız",
+  "product_id": "147T",
+  "title": "Dondurulmuş Dana Kıyma 1 Kg"
+ },
+ "mf_dana_kusbasi": {
+  "brand": "Haket",
+  "product_id": "2ACU",
+  "title": "Haket Yemeklik Dana Kuşbaşı 1 Kg"
+ },
+ "mf_deterjan_toz": {
+  "brand": "Alo",
+  "product_id": "037P",
+  "title": "Alo Beyazlar Ve Renkliler Toz Deterjan 6 Kg"
+ },
+ "mf_dis_macunu": {
+  "brand": "Sensodyne",
+  "product_id": "0RQP",
+  "title": "Sensodyne Beyazlatıcı Diş Macunu 75 Ml"
+ },
+ "mf_domates": {
+  "brand": "Tat",
+  "product_id": "1ZZK",
+  "title": "Tat Cam Domates Salçası 360 Gr"
+ },
+ "mf_ekmek_1": {
+  "brand": "Schar",
+  "product_id": "0UTL",
+  "title": "Schar Pan Rustico Glutensiz Ekmek 250 Gr"
+ },
+ "mf_ekmek_2": {
+  "brand": "Schar",
+  "product_id": "0UTL",
+  "title": "Schar Pan Rustico Glutensiz Ekmek 250 Gr"
+ },
+ "mf_ekmek_3": {
+  "brand": "Nimet",
+  "product_id": "1033",
+  "title": "Nimet Tam Buğday Ekmeği 350 Gr"
+ },
+ "mf_elma": {
+  "brand": "Markasız",
+  "product_id": "01MZ",
+  "title": "Ekonomik Elma 1 Kg"
+ },
+ "mf_kasar": {
+  "brand": "Sek",
+  "product_id": "1RFJ",
+  "title": "Sek Tam Yağlı Taze Kaşar Peyniri 600 Gr"
+ },
+ "mf_kola_1l": {
+  "brand": "Coca-Cola",
+  "product_id": "0ZND",
+  "title": "Coca-Cola Kola 1.75 Lt"
+ },
+ "mf_makarna_1": {
+  "brand": "Piyale",
+  "product_id": "0B11",
+  "title": "Piyale Burgu Makarna 500 Gr"
+ },
+ "mf_makarna_2": {
+  "brand": "Migros",
+  "product_id": "0M0B",
+  "title": "Migros Spagetti Makarna 500 Gr"
+ },
+ "mf_muz": {
+  "brand": "Markasız",
+  "product_id": "1Y3Q",
+  "title": "Yerli Muz 1 Kg"
+ },
+ "mf_patates": {
+  "brand": "Pattes",
+  "product_id": "2B98",
+  "title": "Pattes Mevsim Yeşillikleri Ve Ketçaplı Patates Cipsi 100 Gr"
+ },
+ "mf_pirinc_1": {
+  "brand": "Ovadan",
+  "product_id": "10YW",
+  "title": "Ovadan Baldo Pirinç 1 Kg"
+ },
+ "mf_pirinc_2": {
+  "brand": "Reis",
+  "product_id": "15TJ",
+  "title": "Reis Osmancık Pirinç 1 Kg"
+ },
+ "mf_sabun": {
+  "brand": "Senfoni",
+  "product_id": "1BE3",
+  "title": "Senfoni Sıvı Sabun 4 Lt"
+ },
+ "mf_sampuan": {
+  "brand": "Blendax",
+  "product_id": "1NAZ",
+  "title": "Blendax Şampuan 500 Ml"
+ },
+ "mf_seker_1": {
+  "brand": "Markasız",
+  "product_id": "04GE",
+  "title": "Toz Şeker 1 Kg"
+ },
+ "mf_seker_2": {
+  "brand": "Carrefour",
+  "product_id": "0ICB",
+  "title": "Carrefour Küp Şeker 1 Kg"
+ },
+ "mf_sut_1": {
+  "brand": "Sütaş",
+  "product_id": "1HEV",
+  "title": "Sütaş %3,5 Tam Yağlı Süt 1 Lt"
+ },
+ "mf_sut_2": {
+  "brand": "Dost",
+  "product_id": "00DR",
+  "title": "Dost Günlük Pastörize Süt 1 Lt"
+ },
+ "mf_tavuk_but": {
+  "brand": "Keskinoğlu",
+  "product_id": "1ZYW",
+  "title": "Piliç Kalçalı But 1 Adet"
+ },
+ "mf_tavuk_butun": {
+  "brand": "Erpiliç",
+  "product_id": "1FUK",
+  "title": "Erpiliç Donuk Bütün Piliç 1 Kg"
+ },
+ "mf_tavuk_gogus": {
+  "brand": "Polonez",
+  "product_id": "0J3F",
+  "title": "Polonez Füme Piliç Göğüs 1 Kg"
+ },
+ "mf_tup": {
+  "brand": "Sea Color",
+  "product_id": "0U28",
+  "title": "Sea Color Saç Boyası 2 Tüp 2 Adet"
+ },
+ "mf_tuvalet_kagidi": {
+  "brand": "Carrefour Eco Planet",
+  "product_id": "1UOH",
+  "title": "Carrefour Eco Planet Tuvalet Kağıdı 32'li"
+ },
+ "mf_yumurta_1": {
+  "brand": "Anadolu Çiftliği",
+  "product_id": "0OCL",
+  "title": "Anadolu Çiftliği Omega 3 Yumurta M Boy 53-62 Gr 10 Adet"
+ },
+ "mf_yumurta_2": {
+  "brand": "Anadolu Çiftliği",
+  "product_id": "0OCL",
+  "title": "Anadolu Çiftliği Omega 3 Yumurta M Boy 53-62 Gr 10 Adet"
+ }
+}

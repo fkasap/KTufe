@@ -1,8 +1,8 @@
 date,region,item,sku,price,source,status,note
 2026-10-27,istanbul,01113,mf_ekmek_1,135.07,marketfiyati,ok,
 2026-10-27,ankara,01113,mf_ekmek_1,135.07,marketfiyati,ok,
-2026-10-27,istanbul,01113,mf_ekmek_2,,marketfiyati,missing,
-2026-10-27,ankara,01113,mf_ekmek_2,,marketfiyati,missing,
+2026-10-27,istanbul,01113,mf_ekmek_2,,marketfiyati,missing,depo/fiyat yok
+2026-10-27,ankara,01113,mf_ekmek_2,,marketfiyati,missing,depo/fiyat yok
 2026-10-27,istanbul,01113,mf_ekmek_3,43.0,marketfiyati,ok,
 2026-10-27,ankara,01113,mf_ekmek_3,43.0,marketfiyati,ok,
 2026-10-27,istanbul,01115,mf_makarna_1,17.0,marketfiyati,ok,
@@ -81,8 +81,8 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,01230,mf_cay_1,609.95,marketfiyati,ok,
 2026-10-27,istanbul,01230,mf_cay_2,150.0,marketfiyati,ok,
 2026-10-27,ankara,01230,mf_cay_2,150.0,marketfiyati,ok,
-2026-10-27,istanbul,01260,mf_su_5l,,marketfiyati,missing,
-2026-10-27,ankara,01260,mf_su_5l,,marketfiyati,missing,
+2026-10-27,istanbul,01260,mf_su_5l,,marketfiyati,missing,arama boş
+2026-10-27,ankara,01260,mf_su_5l,,marketfiyati,missing,arama boş
 2026-10-27,istanbul,01260,mf_kola_1l,70.0,marketfiyati,ok,
 2026-10-27,ankara,01260,mf_kola_1l,70.0,marketfiyati,ok,
 2026-10-27,istanbul,01,evds_gida_01,134.04,evds_file,ok,
@@ -175,8 +175,8 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,07111,toyota_chr,2400000.0,html_regex,ok,
 2026-10-27,istanbul,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
 2026-10-27,ankara,07111,toyota_corolla_cross,2899000.0,html_regex,ok,
-2026-10-27,istanbul,07111,togg_t10x_v1,,playwright,missing,nomatch title=Togg T10X Fiyat Listesi | Togg textlen=2553 :: T10X T10F Trumore Trugo Temas Noktaları Anasayfa T10X T10F Trumore Trugo Akıllı Destek Temas Noktala
-2026-10-27,ankara,07111,togg_t10x_v1,,playwright,missing,nomatch title=Togg T10X Fiyat Listesi | Togg textlen=2553 :: T10X T10F Trumore Trugo Temas Noktaları Anasayfa T10X T10F Trumore Trugo Akıllı Destek Temas Noktala
+2026-10-27,istanbul,07111,togg_t10x_v1,,playwright,missing,nomatch title=Togg T10X Fiyat Listesi | Togg textlen=3326 :: Bu internet sitesinde çerezler kullanılmaktadır İnternet sitemizde çerezler yoluyla kişisel veri işl
+2026-10-27,ankara,07111,togg_t10x_v1,,playwright,missing,nomatch title=Togg T10X Fiyat Listesi | Togg textlen=3326 :: Bu internet sitesinde çerezler kullanılmaktadır İnternet sitemizde çerezler yoluyla kişisel veri işl
 2026-10-27,istanbul,07321,evds_yolcu_tasima,153.92,evds_file,ok,
 2026-10-27,ankara,07321,evds_yolcu_tasima,153.92,evds_file,ok,
 2026-10-27,istanbul,07,evds_ulastirma_diger,144.05,evds_file,ok,
@@ -191,8 +191,8 @@ date,region,item,sku,price,source,status,note
 2026-10-27,ankara,08320,evds_telekom,151.17,evds_file,ok,
 2026-10-27,istanbul,09800,evds_paket_tur,126.67,evds_file,ok,
 2026-10-27,ankara,09800,evds_paket_tur,126.67,evds_file,ok,
-2026-10-27,istanbul,09,mf_defter,,marketfiyati,missing,
-2026-10-27,ankara,09,mf_defter,,marketfiyati,missing,
+2026-10-27,istanbul,09,mf_defter,,marketfiyati,missing,arama boş
+2026-10-27,ankara,09,mf_defter,,marketfiyati,missing,arama boş
 2026-10-27,istanbul,09,evds_eglence,129.49,evds_file,ok,
 2026-10-27,ankara,09,evds_eglence,129.49,evds_file,ok,
 2026-10-27,istanbul,10,evds_egitim,175.66,evds_file,ok,
