@@ -136,8 +136,8 @@ items:
       - {id: hal_sogan, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'SOĞAN[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_kabak, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'KABAK[^0-9]{0,80}?([0-9.,]+)\s*TL'}
       - {id: hal_patlican, adapter: html_regex, url: "https://www.hal.gov.tr/", pattern: 'PATLICAN[^0-9]{0,60}?([0-9.,]+)\s*TL'}
-      - {id: mf_domates, adapter: marketfiyati, keywords: "domates kg", title_re: "domates", title_not: "salça|konserve|kurutul|sos|çorba|cherry|kokteyl|tohum|doğranmış|rendelen|kutu|gr\\b|püre|suyu"}
-      - {id: mf_patates, adapter: marketfiyati, keywords: "yerli patates", title_re: "patates", title_not: "cips|kızart|dondur|donuk|püre|nişasta|un\\b|aromal|gr\\b"}
+      - {id: mf_domates, adapter: marketfiyati, keywords: "salkım domates", title_re: "domates", title_not: "salça|konserve|kurutul|sos|çorba|cherry|kokteyl|tohum|doğranmış|rende|kutu|\\bgr?\\b|püre|suyu|tamek|tat\\b|öncü"}
+      - {id: mf_patates, adapter: marketfiyati, keywords: "patates 1 kg", title_re: "patates", title_not: "cips|kızart|dondur|donuk|püre|nişasta|un\\b|aromal|\\bgr?\\b"}
   - coicop: "01181"
     ad: "Şeker"
     anagrup: "01"
