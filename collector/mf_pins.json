@@ -59,6 +59,11 @@
   "product_id": "0RQP",
   "title": "Sensodyne Beyazlatıcı Diş Macunu 75 Ml"
  },
+ "mf_domates": {
+  "brand": "Markasız",
+  "product_id": "1IQ0",
+  "title": "Salkım Domates 1 Kg"
+ },
  "mf_ekmek_1": {
   "brand": "Markasız",
   "product_id": "1OLH",
@@ -103,6 +108,11 @@
   "brand": "Markasız",
   "product_id": "1Y3Q",
   "title": "Yerli Muz 1 Kg"
+ },
+ "mf_patates": {
+  "brand": "Markasız",
+  "product_id": "1NCL",
+  "title": "Patates 1 Kg"
  },
  "mf_pirinc_1": {
   "brand": "Ovadan",
